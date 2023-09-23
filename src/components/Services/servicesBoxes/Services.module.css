@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding-left: var(--plpr);
+  padding-right: var(--plpr);
+}
+
+.contentContainer {
+  max-width: var(--maxWidth);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: aqua;
+}
+
+.titleContainer h1 {
+    font-size: var(--titleh1);
+    text-align: center;
+}
+
+
+.titleContainer h2 {
+    font-size: var(--titleh2);
+    text-align: center;
+}
+
+.boxContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.boxContainerItems {
+  width: 100%;
+  min-height: 200px;
+  padding: 4rem;
+  border-radius: 7px;
+  background-color: black;
+}

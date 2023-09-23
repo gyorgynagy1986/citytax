@@ -3,25 +3,80 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --bcColor: #ffffff;
+  --mainTextColor: #414141;
+  --titleColor: #ffffff;
+  --titleColor2: #00c2ff;
+  --navTextColor: #353535;
+  --mobileMenuColor: #2d2d2d;
+
+  --btnTextColor: #ffeeee;
+  --btnColor: #0dceb5;
+  --iconColor: #0dceb5;
+
+  --h1Size: max(42px, min(4vw, 62px));
+
+  --maxWidth: 1400px;
+  --plpr: 5vw;
+  --fsBtn: 1.7rem;
+  --logo: 200px;
+  --fsNav: 20px;
+
+  --titleh1: 20px;
+  --titleh2: 45px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+*::-webkit-scrollbar {
+  width: 0.8em;
+  background-color: #fde4cf;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #f4730ab2;
+  height: 300px;
+  border-radius: 50px;
+}
+
+*:focus,
+*:active {
+  box-shadow: none;
+  outline: none !important;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  outline: none !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-size: 62.5%;
+  scroll-behavior: inherit;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--bcColor);
+  color: var(--mainTextColor);
+  margin-inline: auto;
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

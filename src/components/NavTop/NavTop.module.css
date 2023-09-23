@@ -1,0 +1,44 @@
+.navTop {
+  border-bottom: 1px solid #edf2f5;
+  display: flex;
+  justify-content: center;
+  padding-left: var(--plpr);
+  padding-right: var(--plpr);
+}
+
+@media screen and (max-width: 880px) {
+  .navTop {
+    display: none;
+  }
+}
+
+.socialIcon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 9px;
+  max-width: var(--maxWidth)
+}
+
+.emailContainer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.emailContainer svg {
+  color:var(--iconColor)
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
