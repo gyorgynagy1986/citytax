@@ -36,3 +36,12 @@
     background-color: transparent;
     border:2px solid rgba(255, 255, 255, 0.102);
 }
+
+.typeBlack {
+    background: transparent;
+    background-color: #fff;
+    border:2px solid #424242;
+    color: var(--mainTextColor);
+    padding: 10px 30px;
+
+}

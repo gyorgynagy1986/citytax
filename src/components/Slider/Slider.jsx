@@ -5,13 +5,23 @@ import style from "@/components/Slider/Slider.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+import arrow from "../../../public/assets/svg/arrow.svg";
 import cover from "../../../public/assets/sections/finance.jpg";
-import { GiChart } from "react-icons/gi";
+import { BsArrowRightCircle } from "react-icons/bs";
 
+const data = [
+  { name: "Online könyvelés" },
+  { name: "Adótanácsadás" },
+  { name: "Cégalapítás" },
+  { name: "Bérszámfejtés" },
+  { name: "Könyvvizsgálat" },
+  { name: "Hitelkérelem Széchenyi-kártya ügyintézés" },
+  { name: "Ügyfélkör átvétel" },
+];
 
 const SliderR = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     autoPlay: true,
     speed: 500,
@@ -19,9 +29,9 @@ const SliderR = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1100,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
       {
@@ -35,83 +45,18 @@ const SliderR = () => {
   return (
     <div className={style.container}>
       <Slider {...settings}>
-        <div className={style.sliderBox}>
-          <div className={style.sliderBoxItem}>
-            {" "}
-            <Image alt="services" src={cover} />{" "}
-            <div className={style.sliderBoxItemTitleContainer}>
-                    <GiChart />
-                <p className={style.sliderBoxItemTitle}>Online könyvelés</p>
+        {data.map((name, index) => (
+          <div key={index} className={style.sliderBox}>
+            <div className={style.sliderBoxItem}>
+              {" "}
+              <Image alt="services" src={cover} />{" "}
+              <div className={style.sliderBoxItemTitleContainer}>
+                <p className={style.sliderBoxItemTitle}>{name.name}</p>
+                <Image className={style.arrow} src={arrow} alt="arrow" />
+              </div>
             </div>
           </div>
-        </div>
-
-       <div className={style.sliderBox}>
-          <div className={style.sliderBoxItem}>
-            {" "}
-            <Image alt="services" src={cover} />{" "}
-            <div className={style.sliderBoxItemTitleContainer}>
-                    <GiChart />
-                <p className={style.sliderBoxItemTitle}>Adótanácsadás </p>
-            </div>
-          </div>
-        </div>
-
-        <div className={style.sliderBox}>
-          <div className={style.sliderBoxItem}>
-            {" "}
-            <Image alt="services" src={cover} />{" "}
-            <div className={style.sliderBoxItemTitleContainer}>
-                    <GiChart />
-                <p className={style.sliderBoxItemTitle}> Cégalapítás</p>
-            </div>
-          </div>
-        </div>
-
-        <div className={style.sliderBox}>
-          <div className={style.sliderBoxItem}>
-            {" "}
-            <Image alt="services" src={cover} />{" "}
-            <div className={style.sliderBoxItemTitleContainer}>
-                    <GiChart />
-                <p className={style.sliderBoxItemTitle}> Bérszámfejtés</p>
-            </div>
-          </div>
-        </div>
-
-         <div className={style.sliderBox}>
-          <div className={style.sliderBoxItem}>
-            {" "}
-            <Image alt="services" src={cover} />{" "}
-            <div className={style.sliderBoxItemTitleContainer}>
-                    <GiChart />
-                <p className={style.sliderBoxItemTitle}>Könyvvizsgálat</p>
-            </div>
-          </div>
-        </div>
-
-         <div className={style.sliderBox}>
-          <div className={style.sliderBoxItem}>
-            {" "}
-            <Image alt="services" src={cover} />{" "}
-            <div className={style.sliderBoxItemTitleContainer}>
-                    <GiChart />
-                <p className={style.sliderBoxItemTitle}>Hitelkérelem <br/>Széchenyi-kártya ügyintézés</p>
-            </div>
-          </div>
-        </div>
-
-        <div className={style.sliderBox}>
-          <div className={style.sliderBoxItem}>
-            {" "}
-            <Image alt="services" src={cover} />{" "}
-            <div className={style.sliderBoxItemTitleContainer}>
-                <GiChart />
-                <p className={style.sliderBoxItemTitle}>Ügyfélkör átvétel</p>
-            </div>
-          </div>
-        </div>
-
+        ))}
       </Slider>
     </div>
   );

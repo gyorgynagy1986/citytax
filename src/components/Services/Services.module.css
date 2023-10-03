@@ -22,14 +22,11 @@
   gap: 3rem;
 }
 
-.images {
-}
 
 .img1 {
-  bottom: -80px;
-  position: relative;
-  width: 40%;
-  object-fit: contain;
+  min-width: auto;
+  min-height: 600px;
+  object-fit: cover;
 }
 
 .img2 {
@@ -39,7 +36,7 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   position: absolute;
-  opacity: 0;
+  display: none;
 }
 
 .img3 {
@@ -48,12 +45,16 @@
   object-fit: contain;
   top: -44px;
   position: relative;
+  display: none;
 }
 
 .textContainer {
   width: 50%;
   padding-left: 2vw;
   padding-right: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .textContainer p {

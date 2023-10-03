@@ -12,7 +12,7 @@
 
   --btnTextColor: #ffeeee;
   --btnColor: #00A9B4;
-  --iconColor: #0dceb5;
+  --iconColor: #00A9B4;
 
   --h1Size: max(42px, min(4vw, 68px));
   --titleFontW: 800;
@@ -25,8 +25,9 @@
   --fsNav: 18px;
 
   --sectionSmTitle:20px;
-  --sectionMdTitle:40px;
+  --sectionMdTitle:32px;
   --sectionPaddingTop:10rem;
+  --sectionPaddingTopBig:20rem;
 
   --titleh1: 20px;
   --titleh2: 45px;
@@ -89,3 +90,20 @@ a {
 
 
 
+.slick-dots li.slick-active button:before   {
+  color: white !important;
+}
+
+.slick-dots li button:before {
+  font-size: 20px !important;
+  content: '' !important;
+  height: 2px !important;
+  width: 35px;
+  background-color: white;
+}
+
+
+.slick-prev:before, .slick-next:before {
+  font-family: none !important;
+  font-size: 30px !important;
+}

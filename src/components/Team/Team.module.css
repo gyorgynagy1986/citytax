@@ -2,20 +2,12 @@
   width: 100%;
   height: 100%;
   padding-top: var(--sectionPaddingTop);
+  padding-bottom: var(--sectionPaddingTop);
+
   padding-left: var(--plpr);
   padding-right: var(--plpr);
   overflow: hidden;
   position: relative;
-  background-color: #ededed39;
-}
-
-.shape {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  opacity: .5;
-  z-index: -1;
 }
 
 .contentContainer {
@@ -40,7 +32,6 @@
 .titleContainer h1 {
   font-size: var(--sectionSmTitle);
   color: var(--titleColor2);
-  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -62,7 +53,7 @@
   text-align: center;
   font-size: var(--sectionMdTitle);
   font-weight: var(--titleFontW);
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .teamContainer {
@@ -75,11 +66,26 @@
 
 .cards {
   border: 1px solid rgba(24, 28, 34, 0.102);
-  padding: 4rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 30rem;
+  width: 25rem;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+.cards::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 1px solid rgba(24, 28, 34, 0.102);
+  width: 25rem;
+  height: 100%;
+  top:-5px;
+  right: -5px;
+  z-index: 0;
 }
 
 .name {
@@ -97,8 +103,16 @@
 }
 
 .circle {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 100%;
-  background-color: aquamarine;
+  position: relative;
+}
+
+.teamPhoto {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
 }

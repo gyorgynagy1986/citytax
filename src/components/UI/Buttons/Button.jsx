@@ -5,11 +5,11 @@ import { IBM_Plex_Sans } from "next/font/google";
 import style from "./Button.module.css";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "600" });
 
-const Button = ({ name, url, heroColor, heroColor2 }) => {
+const Button = ({ name, url, heroColor, heroColor2, typeBlack}) => {
   return (
     <Link href={url}>
       <button
-        className={`${imb.className} ${style.button} ${heroColor2 && style.heroColor2} ${
+        className={`${imb.className} ${style.button} ${typeBlack && style.typeBlack} ${heroColor2 && style.heroColor2} ${
           heroColor && style.heroColor
         }`}
       >

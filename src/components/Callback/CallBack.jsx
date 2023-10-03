@@ -1,6 +1,10 @@
 import React from "react";
 import Button from "@/components/UI/Buttons/Button";
 import style from './Callback.module.css'
+import Image from 'next/image'
+import bcg from '../../../public/assets/sections/services_1.jpg'
+
+//{<Image className={style.bcgImage} alt="callback" src={bcg} /> }
 
 const CallBack = () => {
   return (
@@ -11,7 +15,6 @@ const CallBack = () => {
           visszahívsát{" "}
         </h2>
         <Button
-          heroColor={true}
           url={"/kapcsoalt"}
           name={"Visszahívást kérek"}
         />
