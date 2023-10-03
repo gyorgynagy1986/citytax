@@ -1,0 +1,104 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding-top: var(--sectionPaddingTop);
+  padding-left: var(--plpr);
+  padding-right: var(--plpr);
+  overflow: hidden;
+  position: relative;
+  background-color: #ededed39;
+}
+
+.shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: .5;
+  z-index: -1;
+}
+
+.contentContainer {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+
+.textContainer {
+  width: 100%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.textContainer p {
+  font-weight: normal;
+  font-style: normal;
+  color: #74787c;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.titleContainer h1 {
+  font-size: var(--sectionSmTitle);
+  color: var(--titleColor2);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.titleContainer h1:before {
+  display: inline-block;
+  content: "\00BB";
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.titleContainer h1:after {
+  display: inline-block;
+  content: " \00AB";
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.titleContainer h2 {
+  text-align: center;
+  font-size: var(--sectionMdTitle);
+  font-weight: var(--titleFontW);
+  margin-bottom: 2rem;
+}
+
+.teamContainer {
+  display: flex;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.cards {
+  border: 1px solid rgba(24, 28, 34, 0.102);
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 30rem;
+}
+
+.name {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 2rem;
+}
+
+.nameTitle {
+  margin-top: 1rem;
+  color: #74787c;
+  font-size: 16px;
+  text-align: center;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: aquamarine;
+}

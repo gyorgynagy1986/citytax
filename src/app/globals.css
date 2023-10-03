@@ -6,21 +6,27 @@
   --bcColor: #ffffff;
   --mainTextColor: #414141;
   --titleColor: #ffffff;
-  --titleColor2: #00c2ff;
+  --titleColor2: #0dceb5;
   --navTextColor: #353535;
   --mobileMenuColor: #2d2d2d;
 
   --btnTextColor: #ffeeee;
   --btnColor: #00A9B4;
-  --iconColor: #00A9B4;
+  --iconColor: #0dceb5;
 
-  --h1Size: max(42px, min(4vw, 62px));
+  --h1Size: max(42px, min(4vw, 68px));
+  --titleFontW: 800;
+
 
   --maxWidth: 1400px;
   --plpr: 5vw;
   --fsBtn: 1.7rem;
   --logo: 200px;
-  --fsNav: 20px;
+  --fsNav: 18px;
+
+  --sectionSmTitle:20px;
+  --sectionMdTitle:40px;
+  --sectionPaddingTop:10rem;
 
   --titleh1: 20px;
   --titleh2: 45px;
@@ -80,3 +86,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+
+

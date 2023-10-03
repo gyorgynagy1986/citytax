@@ -4,13 +4,13 @@ import React, { useRef, useEffect, useState } from "react";
 import style from "./Hero.module.css";
 import StickyNav from "../StickyNav/StickyNav";
 import Button from "../UI/Buttons/Button";
+import Image from "next/image";
+import hero from '../../../public/assets/hero/hero.webp'
 import { IBM_Plex_Sans, Nunito_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "300" });
-const nunito = Nunito_Sans({ subsets: ["latin"], weight: '700' });
 
 const textContent = {
   h1: "Megbízható könyvelés, közérthetően",
-  p: "Egy ízletes sült csirkére vagy sült kacsára vágysz fűszeres burgonyával? A legjobb helyen vagy!",
   btn: "Kapcsolat",
   btn2: "szolgáltatások",
   url: "/kapcsolat",
@@ -18,7 +18,6 @@ const textContent = {
 
 const textContentEn = {
   h1: "City Tax",
-  p: "Would you like to try a delicious grilled chicken or grilled duck with potatoes? You are at the best place!",
   btn: "Reservation",
   btn2: "Get in touch",
   url: "/en/contact",
@@ -49,12 +48,14 @@ const Hero = () => {
   }, []);
 
   return (
-    <header ref={menuRef} className={style.container}>
+    <header ref={menuRef} className={`${stickyNav && style.paddingZero} ${style.container}`}>
       {stickyNav && <StickyNav />}
       <div className={style.imageContainer}>
+        <div className={style.layer}></div>
+        <Image priority className={style.iamgeHero} src={hero} alt='main photo of citytax' />
         <div className={style.textContainer}>
           <p className={imb.className}>CITY TAX KÖNYVELŐIRODA</p>
-          <h1 className={nunito.className} >{!lang ? textContent.h1 : textContentEn.h1}</h1>
+          <h1 >{!lang ? textContent.h1 : textContentEn.h1}</h1>
           <div className={style.btnContainer}>
             <Button
               heroColor={true}

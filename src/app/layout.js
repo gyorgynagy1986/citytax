@@ -1,9 +1,9 @@
 import "./globals.css";
 import { Nunito_Sans } from "next/font/google";
 import NavTop from "@/components/NavTop/NavTop";
-import Navbar from '@/components/Navbar/NavCenter/Navbar'
+import Nav from '@/components/Navbar/NavCenter/Navbar'
 import MobileNav from '@/components/Mobile/MobileNav/MobileNav'
-const nunito = Nunito_Sans({ subsets: ["latin"], weight: '300' });
+const nunito = Nunito_Sans({ subsets: ["latin"], weight:  ['400', '500','600','700', '800'] });
 
 export const metadata = {
   title: "Create Next App",
@@ -12,10 +12,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="hu">
       <body className={nunito.className}>
         <NavTop />
-        <Navbar/>
+        <Nav/>
         <MobileNav />
         {children}
       </body>

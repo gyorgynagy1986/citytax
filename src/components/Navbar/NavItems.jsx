@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import style from "./NavItems.module.css";
 import Link from "next/link";
 import { Nunito_Sans } from "next/font/google";
-const nunito = Nunito_Sans({ subsets: ["latin"], weight: '700' });
+const nunito = Nunito_Sans({ subsets: ["latin"], weight: '500' });
 
 const items = [
   {
