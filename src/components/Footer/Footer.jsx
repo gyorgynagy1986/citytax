@@ -2,14 +2,9 @@ import Link from "next/link";
 import style from "@/components/Footer/Fotter.module.css";
 import { PiMapPinLine } from "react-icons/pi";
 import { FaFacebookF } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
 import { MdAlternateEmail } from "react-icons/md";
 import { HiMiniDevicePhoneMobile } from "react-icons/hi2";
-
-
-
-
-import Logo from "@/components/ui/Logo/Logo";
+import Logo from "@/components/UI/Logo/Logo";
 
 const Footer = () => (
   <footer className={style.container}>
