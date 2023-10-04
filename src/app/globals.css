@@ -9,6 +9,7 @@
   --titleColor2: #0dceb5;
   --navTextColor: #353535;
   --mobileMenuColor: #2d2d2d;
+  --footercolor: #181c22;
 
   --btnTextColor: #ffeeee;
   --btnColor: #00a9b4;
@@ -18,6 +19,7 @@
   --titleFontW: 800;
 
   --maxWidth: 1400px;
+  --footeritemsWidth: 33.3%;
   --plpr: 5vw;
   --fsBtn: 1.7rem;
   --logo: 200px;
@@ -34,11 +36,20 @@
   --titleh2: 45px;
 }
 
+
+
+@media screen and (max-width: 768px) {
+  :root {
+    --footeritemsWidth: 70%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   :root {
     --sectionMdTitle: 24px;
     --sectionPaddingTop: 5rem;
     --textContainerP: 16px;
+    --footeritemsWidth: 100%;
   }
 }
 

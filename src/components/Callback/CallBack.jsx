@@ -11,7 +11,7 @@ const CallBack = () => {
     <div className={style.callbackContainer}>
       <div className={style.btnContainer}>
         <h2>
-          További információra lenne szüksége? <br /> Kérjen ingyenes
+          További <span>információra</span> lenne szüksége? <br /> Kérjen ingyenes
           visszahívsát{" "}
         </h2>
         <Button

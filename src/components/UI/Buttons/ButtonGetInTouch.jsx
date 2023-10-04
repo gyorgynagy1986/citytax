@@ -4,7 +4,7 @@ import style from './Button.module.css'
 import {Bebas_Neue } from 'next/font/google'
 
 
-const bebas = Bebas_Neue({ subsets: ['latin'], weight: "500" })
+const bebas = Bebas_Neue({ subsets: ['latin'], weight: "400" })
 
 
 const ButtonGetInTouch = ({url, name, underline}) => {

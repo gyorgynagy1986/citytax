@@ -1,18 +1,20 @@
 import Hero from '@/components/Hero/Hero'
 import AdditionalServices from '@/components/Services/servicesBoxes/Services'
-import WhyUs from '@/components/Services/Services'
-import Team from '@/components/Team/Team'
+import Services from '@/components/Services/Services' 
 import MainServices from '@/components/Services/MainServices/MainServices'
 import CallBack from "@/components/Callback/CallBack";
-import Reviews from '@/components/Review/Reviews'
+import WhyUs from '@/components/WhyUs/WhyUs'
+
 
 export default function Home() {
   return (
    <main>
     <Hero />
     <AdditionalServices />
-    <WhyUs />
+    <Services />
     <MainServices />
+    <WhyUs />
+    <CallBack />
    </main>
   )
 }

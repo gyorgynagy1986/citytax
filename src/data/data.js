@@ -57,13 +57,33 @@ export const mainServices = {
 
 export const mainServicesEn = {};
 
+export const whyUs = {
+  title: "Miért a City Tax ? ",
+  title2: "Miért válassza a City Tax Könyvelőiroda könyvelési szolgáltatását? ",
+  text: "",
+  list: [
+    { title: "Folyamatos elérhetőség" },
+    { title: "Fix munkaközösség" },
+    { title: "Elhivatott kollégák" },
+    { title: "Szakmai kapcsolatok rendelkezésre állása" },
+    { title: "Könyvelés, bérszámfejtés, adótanácsadás" },
+  ],
+
+  list2: [
+    { title: "Ügyvéddel rendelkezünk" },
+    { title: "Könyvvizsgálóval rendelkezünk" },
+    { title: "Pályázatíróval rendelkezünk" },
+    { title: "Széleskörű tapasztalat a vállalkozások skáláján" },
+    { title: "Naprakész könyvelés" },
+  ],
+};
+
 export const team = {
   title: "Csapatunk",
   title2: "Csapatunk",
-} 
-
+};
 
 export const servicesMainPage = {
   title: "Services",
   title2: "További szolgáltatásaink ügyfeleink részére",
-}
+};
