@@ -16,13 +16,18 @@
 }
 
 .layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-image: linear-gradient(90deg,#28282841 100.15%,hsla(0,0%,9%,0) 22.23%,hsla(0,0%,9%,0) 101%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: linear-gradient(
+    90deg,
+    #28282841 100.15%,
+    hsla(0, 0%, 9%, 0) 22.23%,
+    hsla(0, 0%, 9%, 0) 101%
+  );
 }
 
 .iamgeHero {
@@ -41,6 +46,15 @@
 @media screen and (max-width: 600px) {
   .container {
     min-height: 60vh;
+  }
+
+  .layer {
+    background-image: linear-gradient(
+      90deg,
+      #282828a6 100.15%,
+      hsla(0, 0%, 9%, 0.482) 22.23%,
+      hsla(0, 0%, 9%, 0.427) 101%
+    );
   }
 }
 

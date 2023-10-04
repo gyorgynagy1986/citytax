@@ -17,7 +17,7 @@ export const metaEn = {
 
 export const servicesText = {
   title: "Szolgáltatások",
-  title2: "Amiben segíthetünk",
+  title2: "Teljeskörű szolgáltatások",
   text: [
     { title: "Banki hitel ügyintézés" },
     { title: "Pályázati segédanyagok összekészítése" },

@@ -11,12 +11,11 @@
   --mobileMenuColor: #2d2d2d;
 
   --btnTextColor: #ffeeee;
-  --btnColor: #00A9B4;
-  --iconColor: #00A9B4;
+  --btnColor: #00a9b4;
+  --iconColor: #00a9b4;
 
   --h1Size: max(42px, min(4vw, 68px));
   --titleFontW: 800;
-
 
   --maxWidth: 1400px;
   --plpr: 5vw;
@@ -24,13 +23,23 @@
   --logo: 200px;
   --fsNav: 18px;
 
-  --sectionSmTitle:20px;
-  --sectionMdTitle:32px;
-  --sectionPaddingTop:10rem;
-  --sectionPaddingTopBig:20rem;
+  --sectionSmTitle: 20px;
+  --sectionMdTitle: 32px;
+  --sectionPaddingTop: 10rem;
+  --sectionPaddingTopBig: 20rem;
+
+  --textContainerP: 18px;
 
   --titleh1: 20px;
   --titleh2: 45px;
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --sectionMdTitle: 24px;
+    --sectionPaddingTop: 5rem;
+    --textContainerP: 16px;
+  }
 }
 
 *::-webkit-scrollbar {
@@ -58,7 +67,6 @@
   outline: none !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 .overflow-hidden {
@@ -88,22 +96,14 @@ a {
   text-decoration: none;
 }
 
-
-
-.slick-dots li.slick-active button:before   {
+.slick-dots li.slick-active button:before {
   color: white !important;
 }
 
 .slick-dots li button:before {
   font-size: 20px !important;
-  content: '' !important;
+  content: "" !important;
   height: 2px !important;
   width: 35px;
   background-color: white;
-}
-
-
-.slick-prev:before, .slick-next:before {
-  font-family: none !important;
-  font-size: 30px !important;
 }

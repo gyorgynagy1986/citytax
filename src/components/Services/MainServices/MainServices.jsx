@@ -1,10 +1,12 @@
 import React from "react";
-import style from "./MainServices.module.css";
 import { servicesMainPage } from "@/data/data";
+import style from "./MainServices.module.css";
 import Slider from "@/components/Slider/Slider";
-import { IBM_Plex_Sans } from "next/font/google";
 import Image from "next/image";
 import shape from "../../../../public/assets/shapes/shape.svg";
+import NumberUp from '@/components/UI/NumberUp/NumberUp'
+
+import { IBM_Plex_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
 const Spinner = () => {
@@ -22,24 +24,7 @@ const Spinner = () => {
             {" "}
             <Slider />
           </div>
-          <div className={style.counterContainer}>
-            <div className={style.counterItem}>
-              <span>9</span>
-              <p>Munkatársak száma</p>
-            </div>
-            <div className={style.counterItem}>
-              <span>138 +</span>
-              <p>Ügyfelek száma</p>
-            </div>
-            <div className={style.counterItem}>
-              <span>138 +</span>
-              <p>Lezajlott adóellenőrzések </p>
-            </div>
-            <div className={style.counterItem}>
-              <span>138 +</span>
-              <p>NAV ellenőrzések száma</p>
-            </div>
-          </div>
+          <NumberUp />
         </div>
       </div>
     </section>
