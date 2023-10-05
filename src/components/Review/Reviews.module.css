@@ -2,24 +2,33 @@
   width: 100%;
   height: 100%;
   padding-top: var(--sectionPaddingTop);
+  padding-bottom: var(--sectionPaddingTop);
   padding-left: var(--plpr);
   padding-right: var(--plpr);
   overflow: hidden;
+  background: linear-gradient(to bottom, white 30%, #edf2f5 30%);
+  position: relative;
+  z-index: 0;
 }
 
 .contentContainer {
-  background-color: #edf2f556;
-  max-width: var(--maxWidth);
+  background-color: #222933;
+  max-width: 800px;
+  height: 100%;
   margin: 0 auto;
+  padding: 3rem;
+  z-index: 2;
 }
 
 .titleContainer {
-    padding: 4rem;
-    border-bottom: 1px solid black;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .titleContainer h1 {
-  font-size: var(--sectionSmTitle);
+  font-size: 16px;
   color: var(--titleColor2);
 }
 
@@ -30,10 +39,10 @@
   margin-right: 10px;
 }
 
-
 .titleContainer h2 {
-  font-size: var(--sectionMdTitle);
+  font-size: 24px;
   font-weight: var(--titleFontW);
+  color: white;
 }
 
 .sliderBox {
@@ -42,8 +51,6 @@
   display: flex !important;
   gap: 2rem !important;
   justify-content: center;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
 }
 
 .sliderBoxItem {
@@ -51,11 +58,9 @@
   width: 100%;
   margin-right: 3rem !important;
   margin-left: 3rem !important;
-  padding: 4rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  box-shadow: 0px 10px 60px 0px rgba(60, 126, 224, 0.093);
 }
 
 .container {
@@ -69,17 +74,17 @@
 }
 
 .starContainer svg {
-  width: 2rem;
-  height: 2rem;
-  color: var(--iconColor);
+  width: 1rem;
+  height: 1rem;
+  color: #f94d1c;
 }
 
 .sliderBoxItemText {
   margin-left: 1rem;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 130%;
-  color: #74787c;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 140%;
+  color: #eaeaea;
 }
 
 .sliderBoxItemName {
@@ -87,4 +92,13 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 130%;
+  color: #eaeaea;
+  padding-bottom: 1.5rem;
+
+}
+
+@media screen and (max-width: 600px) {
+  .contentContainer {
+    padding: 0rem 0rem 4rem 0rem;
+  }
 }

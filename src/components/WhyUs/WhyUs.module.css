@@ -2,10 +2,12 @@
   width: 100%;
   height: 100%;
   padding-top: var(--sectionPaddingTop);
-  padding-bottom: var(--sectionPaddingTop);
+  padding-bottom:  var(--sectionPaddingTop);
   padding-left: var(--plpr);
   padding-right: var(--plpr);
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .contentContainer {
@@ -13,11 +15,11 @@
   display: flex;
   gap: 2rem;
   margin: 0 auto;
+
 }
 
 .imageContainer {
   width: 40%;
-  position: relative;
   display: flex;
   justify-content: flex-end;
   gap: 3rem;

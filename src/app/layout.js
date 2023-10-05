@@ -4,7 +4,7 @@ import NavTop from "@/components/NavTop/NavTop";
 import Nav from '@/components/Navbar/NavCenter/Navbar'
 import MobileNav from '@/components/Mobile/MobileNav/MobileNav'
 import Footer from '@/components/Footer/Footer' 
-const nunito = Nunito_Sans({ subsets: ["latin"], weight:  ['400', '500','600','700', '800'] });
+const nunito = Nunito_Sans({ subsets: ["latin"], weight:  ['200','300','400', '500','600','700', '800'] });
 
 export const metadata = {
   title: "Create Next App",

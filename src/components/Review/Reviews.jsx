@@ -23,13 +23,39 @@ const data = [
   },
 ];
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none", background: "red" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none", background: "green" }}
+      onClick={onClick}
+    />
+  );
+}
+
 const SliderR = () => {
   const settings = {
     dots: true,
     infinite: true,
     autoPlay: true,
-    speed: 100,
+    speed: 500,
+    autoplaySpeed: 100,
     slidesToShow: 1,
+    cssEase: "linear",
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     slidesToScroll: 1,
     responsive: [
       {
@@ -48,28 +74,28 @@ const SliderR = () => {
   };
   return (
     <div className={style.container}>
-    <div className={style.contentContainer}>
-      <div className={style.titleContainer}>
-        <h1 className={imb.className}>ügyfélvélemények</h1>
-        <h2>Ügyfelenik rólunk</h2>
-      </div>
-      <Slider {...settings}>
-        {data.map((items, index) => (
-          <div key={index} className={style.sliderBox}>
-            <div className={style.sliderBoxItem}>
-              <div className={style.starContainer}>
-                <BsStarFill />
-                <BsStarFill />
-                <BsStarFill />
-                <BsStarFill />
-                <BsStarFill />
+      <div className={style.contentContainer}>
+        <div className={style.titleContainer}>
+          <h1 className={imb.className}>ügyfélvélemények</h1>
+          <h2>Ügyfelenik rólunk</h2>
+        </div>
+        <Slider {...settings}>
+          {data.map((items, index) => (
+            <div key={index} className={style.sliderBox}>
+              <div className={style.sliderBoxItem}>
+                <div className={style.starContainer}>
+                  <BsStarFill />
+                  <BsStarFill />
+                  <BsStarFill />
+                  <BsStarFill />
+                  <BsStarFill />
+                </div>
+                <p className={style.sliderBoxItemText}>{items.text}</p>
+                <p className={style.sliderBoxItemName}>{items.name}</p>
               </div>
-              <p className={style.sliderBoxItemText}>{items.text}</p>
-              <p className={style.sliderBoxItemName}>{items.name}</p>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
       </div>
     </div>
   );
