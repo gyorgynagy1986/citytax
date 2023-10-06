@@ -24,6 +24,11 @@ const items = [
   },
   {
     id: 4,
+    name: "Hírek & Blog",
+    url: "/blog",
+  },
+  {
+    id: 5,
     name: "Kapcsolat",
     url: "/kapcsolat",
   },
@@ -47,6 +52,11 @@ const itemsEng = [
   },
   {
     id: 4,
+    name: "News & Blogs",
+    url: "/en/blog",
+  },
+  {
+    id: 5,
     name: "Contact",
     url: "/en/contact",
   },

@@ -1,0 +1,108 @@
+export const singlePost = [
+  {
+    id: 1,
+    title: " Hogyan Takaríthat Meg Pénzt és Időt",
+    smallText:
+      " Ismerje meg az adóbevallás trükkjeit és tippeket, amelyek segítenek.",
+    text: "text",
+    photo: "/assets/blog/1.jpg",
+    date: "2023-10-05",
+    blog: false,
+    type: "Hír",
+    featured: true,
+    readmore: "Olvass Tovább",
+  },
+  {
+    id: 2,
+    title: " Pénzügyi Tervezés: Útmutató a Sikeres Jövőhöz",
+    smallText:
+      " Ismerje meg a pénzügyi tervezés alapelveit, és lépjen az első lépéseket a pénzügyi stabilitás és jólét felé. ",
+    text: "text",
+    photo: "/assets/blog/2.jpg",
+    date: "2000-01-22",
+    blog: true,
+    type: "Blog",
+    featured: false,
+    readmore: "Olvass Tovább",
+  },
+  {
+    id: 3,
+    title: "Fontos Tanácsok a Pénzügyi Biztonságért",
+    smallText:
+      "Ismerje meg a leggyakoribb könyvelési hibákat, és tanulja meg, hogyan kerülheti el őket. ",
+    text: "text",
+    photo: "/assets/blog/3.jpg",
+    date: "2000-01-22",
+    blog: true,
+    type: "Blog",
+    featured: true,
+    readmore: "Olvass Tovább",
+  },
+  {
+    id: 4,
+    title: "Hogyan Kezelje Jól A Pénzügyeit",
+    smallText:
+      "Tanulja meg, miért fontos a pénzügyi egészség és hogyan kezelje jól a pénzügyeit. ",
+    text: "text",
+    photo: "/assets/blog/2.jpg",
+    date: "2000-01-22",
+    type: "Blog",
+    blog: true,
+    featured: true,
+    readmore: "Olvass Tovább",
+  },
+];
+
+export const singlePostEn = [
+  {
+    id: 1,
+    title: "How to Save Money and Time",
+    smallText: "Learn the tricks and tips for tax filing that can help you.",
+    text: "text",
+    photo: "/assets/blog/1.jpg",
+    date: "2023-10-05",
+    blog: false,
+    type: "News",
+    featured: true,
+    readmore: "Read More",
+  },
+  {
+    id: 2,
+    title: "Financial Planning: A Guide to a Successful Future",
+    smallText:
+      "Learn the principles of financial planning and take the first steps toward financial stability and well-being.",
+    text: "text",
+    photo: "/assets/blog/2.jpg",
+    date: "2000-01-22",
+    blog: true,
+    type: "Blog",
+    featured: false,
+    readmore: "Read More",
+  },
+  {
+    id: 3,
+    title: "Important Tips for Financial Security",
+    smallText:
+      "Discover the most common accounting mistakes and learn how to avoid them.",
+    text: "text",
+    photo: "/assets/blog/3.jpg",
+    date: "2000-01-22",
+    blog: true,
+    type: "Blog",
+    featured: true,
+    readmore: "Read More",
+  },
+  {
+    id: 4,
+    title: "How to Manage Your Finances Well",
+    smallText:
+      "Learn why financial health is important and how to manage your finances well.",
+    text: "text",
+    photo: "/assets/blog/2.jpg",
+    date: "2000-01-22",
+    blog: true,
+    type: "Blog",
+    featured: true,
+    readmore: "Read More",
+  },
+];

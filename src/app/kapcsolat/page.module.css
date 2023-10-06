@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding-top: var(--sectionPaddingTop);
+  padding-left: var(--plpr);
+  padding-right: var(--plpr);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+
+}
+
+
+.contentContainer {
+  max-width: var(--maxWidth);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+.titleContainer h1 {
+  font-size: var(--sectionSmTitle);
+  text-align: center;
+  color: var(--titleColor2);
+}
+
+.titleContainer h1:before {
+  display: inline-block;
+  content: "\00BB";
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.titleContainer h1:after {
+  display: inline-block;
+  content: " \00AB";
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.titleContainer h2 {
+  font-size: var(--sectionMdTitle);
+  text-align: center;
+  font-weight: var(--titleFontW);
+}

@@ -5,7 +5,7 @@ export const socialIcons = {
 
 export const contactData = {
   email: "makoaudit@gmail.com",
-  phone: "06 30 000 000"
+  phone: "06 30 000 000",
 };
 
 export const meta = {
@@ -15,6 +15,25 @@ export const meta = {
 export const metaEn = {
   logoAlt: "City Tax könyvelőiroda logója ",
 };
+
+/* HERO*/
+export const heroContent = {
+  h1: "Megbízható könyvelés, közérthetően",
+  btn: "Kapcsolat",
+  btn2: "szolgáltatások",
+  url: "/kapcsolat",
+};
+
+export const heroContentEn = {
+  h1: "City Tax",
+  btn: "Reservation",
+  btn2: "Get in touch",
+  url: "/en/contact",
+};
+
+/* HERO*/
+
+/* SERVICES*/
 
 export const servicesText = {
   title: "Szolgáltatások",
@@ -50,6 +69,10 @@ export const servicesEn = {
   ],
 };
 
+/* SERVICES*/
+
+/*  MAIN SERVICES*/
+
 export const mainServices = {
   title: "Miért a City Tax ? ",
   title2: "Mivel teszünk mi többet és miért válasszon minket?",
@@ -57,6 +80,10 @@ export const mainServices = {
 };
 
 export const mainServicesEn = {};
+
+/*  MAIN SERVICES*/
+
+/*  WHY US SECTION */
 
 export const whyUs = {
   title: "Miért a City Tax ? ",
@@ -79,6 +106,8 @@ export const whyUs = {
   ],
 };
 
+/*  WHY US SECTION */
+
 export const team = {
   title: "Csapatunk",
   title2: "Csapatunk",
@@ -89,39 +118,42 @@ export const servicesMainPage = {
   title2: "További szolgáltatásaink ügyfeleink részére",
 };
 
+/*  FOOTER*/
+
 export const footerData = {
   text: "Az üzleti siker titka a könyvelői bizalom és tapasztalatban rejlik. Mia partnereinkre építünk, és hosszú távú kapcsolatokat alakítunk ki. Minőségi munkánkhoz elkötelezetten törekszünk, és folyamatosan fejlesztjük szolgáltatásainkat. Bízzon bennünk a könyvelés terén, legyen szó adóoptimalizálásról, NAV képviseletről vagy egyéb adózási kérdésekről. Számíthat ránk!",
-  servicesName:  "Szolgáltatások",
-  servicesName2:  "Elérhetőség",
-  address:"Makói Iroda",
+  servicesName: "Szolgáltatások",
+  servicesName2: "Elérhetőség",
+  address: "Makói Iroda",
   address2: "Szegedei Iroda",
   contact: "Kapcsolat",
-  services : [
-    {name: "Online könyvelés"},
-    {name: "Adótanácsadás"},
-    {name: "Hitelkérelem, Széchenyi-kártya ügyintézés"},
-    {name: "Cégalapítás"},
-    {name: "Bérszámfejtés"},
-    {name: "Könyvvizsgálat"},
-    {name: "Ügyfélkör átvétel"},
-  ]
-
+  services: [
+    { name: "Online könyvelés" },
+    { name: "Adótanácsadás" },
+    { name: "Hitelkérelem, Széchenyi-kártya ügyintézés" },
+    { name: "Cégalapítás" },
+    { name: "Bérszámfejtés" },
+    { name: "Könyvvizsgálat" },
+    { name: "Ügyfélkör átvétel" },
+  ],
 };
 
 export const footerDataEn = {
   text: "Az üzleti siker titka a könyvelői bizalom és tapasztalatban rejlik. Mia partnereinkre építünk, és hosszú távú kapcsolatokat alakítunk ki. Minőségi munkánkhoz elkötelezetten törekszünk, és folyamatosan fejlesztjük szolgáltatásainkat. Bízzon bennünk a könyvelés terén, legyen szó adóoptimalizálásról, NAV képviseletről vagy egyéb adózási kérdésekről. Számíthat ránk!",
-  servicesName:  "Szolgáltatások",
-  servicesName2:  "Elérhetőség",
-  address:"Makói Iroda",
+  servicesName: "Szolgáltatások",
+  servicesName2: "Elérhetőség",
+  address: "Makói Iroda",
   address2: "Szegedei Iroda",
   contact: "Kapcsolat",
-  services : [
-    {name: "Online könyvelés"},
-    {name: "Adótanácsadás"},
-    {name: "Hitelkérelem, Széchenyi-kártya ügyintézés"},
-    {name: "Cégalapítás"},
-    {name: "Bérszámfejtés"},
-    {name: "Könyvvizsgálat"},
-    {name: "Ügyfélkör átvétel"},
-  ]
+  services: [
+    { name: "Online könyvelés" },
+    { name: "Adótanácsadás" },
+    { name: "Hitelkérelem, Széchenyi-kártya ügyintézés" },
+    { name: "Cégalapítás" },
+    { name: "Bérszámfejtés" },
+    { name: "Könyvvizsgálat" },
+    { name: "Ügyfélkör átvétel" },
+  ],
 };
+
+/*  FOOTER*/

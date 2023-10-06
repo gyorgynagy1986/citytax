@@ -4,6 +4,7 @@
 
 :root {
   --bcColor: #ffffff;
+  --bcColorSec: #00a9b4;
   --mainTextColor: #414141;
   --titleColor: #ffffff;
   --titleColor2: #0dceb5;
@@ -17,6 +18,7 @@
 
   --h1Size: max(42px, min(4vw, 68px));
   --titleFontW: 800;
+  --SectionFontSize: max(20px, min(4vw, 42px));
 
   --maxWidth: 1400px;
   --footeritemsWidth: 33.3%;

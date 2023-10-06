@@ -6,7 +6,7 @@ import StickyNav from "../StickyNav/StickyNav";
 import Button from "../UI/Buttons/Button";
 import Image from "next/image";
 import hero from '../../../public/assets/hero/hero.webp'
-import { IBM_Plex_Sans, Nunito_Sans } from "next/font/google";
+import { IBM_Plex_Sans} from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "300" });
 
 const textContent = {
