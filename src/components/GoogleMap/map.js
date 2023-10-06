@@ -18,8 +18,8 @@ const Map = () =>  {
   const mapApiKey = process.env.GOOGLE_API_KEY;
   
   const { isLoaded } = useJsApiLoader({
-    id: "d7f9212f7c13ae23",
-    googleMapsApiKey: "AIzaSyANMCWmc3cLTBMXDrN_wdXsTGG4p5-Dzkg",
+    id: process.env.GOOGLE_API_ID,
+    googleMapsApiKey: process.env.GOOGLE_API_KEY,
   });
 
 
