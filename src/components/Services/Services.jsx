@@ -41,7 +41,7 @@ const Services = () => {
             <Button
               typeBlack={true}
               name={"Visszahívást kérek"}
-              url={"btnUrl"}
+              url={"/"}
             />
           </div>
         </div>

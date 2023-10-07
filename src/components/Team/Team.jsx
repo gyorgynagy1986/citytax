@@ -18,7 +18,6 @@ const Team = () => {
             <div className={style.titleContainer}>
               {" "}
               <h1 className={imb.className}>{team.title}</h1>
-              <h2>{team.title2}</h2>
             </div>
           </div>
 

@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
-import style from "../../Services/MainServices/MainServices.module.css";
+import style from "@/components/UI/NumberUp/NumberUp.module.css";
 
-const NumberUp = () => {
+const NumberUp = ({ rolunk }) => {
   const [numbers, setNumbers] = useState([0, 0, 0, 0]);
   const numberRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
   const countingStartedRefs = [
@@ -79,20 +79,20 @@ const NumberUp = () => {
 
   return (
     <>
-      <div className={style.counterContainer}>
-        <div ref={numberRefs[0]} className={style.counterItem}>
+      <div className={`${style.counterContainer} ${rolunk && style.roulunkCounterContainer}`}>
+        <div ref={numberRefs[0]} className={`${style.counterItem} ${rolunk && style.rolunkCounterItem}`}>
           <span>{numbers[0]}</span>
           <p>Munkatársak száma</p>
         </div>
-        <div ref={numberRefs[1]} className={style.counterItem}>
+        <div ref={numberRefs[1]}className={`${style.counterItem} ${rolunk && style.rolunkCounterItem}`}>
           <span>{numbers[1]} +</span>
           <p>Ügyfelek száma</p>
         </div>
-        <div ref={numberRefs[2]} className={style.counterItem}>
+        <div ref={numberRefs[2]} className={`${style.counterItem} ${rolunk && style.rolunkCounterItem}`}>
           <span>{numbers[2]} +</span>
           <p>Lezajlott adóellenőrzések </p>
         </div>
-        <div ref={numberRefs[3]} className={style.counterItem}>
+        <div ref={numberRefs[3]} className={`${style.counterItem} ${rolunk && style.rolunkCounterItem}`}>
           <span>{numbers[3]} +</span>
           <p>NAV ellenőrzések száma</p>
         </div>

@@ -4,13 +4,14 @@
 
 :root {
   --bcColor: #ffffff;
-  --bcColorSec: #00a9b4;
+  --bcgSec: #edf2f5 ;
   --mainTextColor: #414141;
   --titleColor: #ffffff;
   --titleColor2: #0dceb5;
   --navTextColor: #353535;
   --mobileMenuColor: #2d2d2d;
   --footercolor: #181c22;
+  --secColor: #f94d1c;
 
   --btnTextColor: #ffeeee;
   --btnColor: #00a9b4;

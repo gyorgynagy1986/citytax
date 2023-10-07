@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../../../public/assets/logo/logo.png'
+import logo from '../../../../public/logo.png'
 import Link from 'next/link'
 import Image from 'next/image'
 import style from './Logo.module.css'

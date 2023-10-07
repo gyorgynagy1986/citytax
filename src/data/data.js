@@ -116,7 +116,7 @@ export const whyUs = {
 /*  WHY US SECTION */
 
 export const team = {
-  title: "Csapatunk",
+  title: "Munkatársaink",
   title2: "Csapatunk",
 };
 

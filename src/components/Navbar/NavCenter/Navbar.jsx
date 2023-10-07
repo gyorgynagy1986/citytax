@@ -2,8 +2,7 @@
 
 import NavItems from "@/components/Navbar/NavItems";
 import Button from "@/components/UI/Buttons/Button";
-import Image from "next/image";
-import logo from "../../../../public/assets/logo/logo.png";
+import Logo from "@/components/UI/Logo/Logo";
 import style from "@/components/Navbar/NavCenter/Navbar.module.css";
 import { meta } from "@/data/data";
 
@@ -31,9 +30,9 @@ const Navbar = () => {
   }`;
 
   return (
-    <navbar className={style.navbar}>
+    <nav className={style.navbar}>
       <div className={style.container}>
-        <Image priority alt={meta.logoAlt} className={style.logo} src={logo} />
+      <Logo />
         <div className="flex justify-center items-center gap-20">
           <ul className={style.ul}>
             <NavItems />
@@ -41,7 +40,7 @@ const Navbar = () => {
           <Button url={"/"} name={btnEngLogic} />
         </div>
       </div>
-    </navbar>
+    </nav>
   );
 };
 

@@ -7,12 +7,14 @@ import Button from "@/components/UI/Buttons/Button";
 import { IBM_Plex_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
-import Team from "@/components/Team/Team"
+import Team from "@/components/Team/Team";
 
 import photo1 from "../../../public/assets/team/team.jpg";
+import NumberUp from "@/components/UI/NumberUp/NumberUp";
 
 const page = () => {
   return (
+    <>
     <div className={style.container}>
       <div className={style.contentContainer}>
         <div className={style.titleContainer}>
@@ -21,10 +23,9 @@ const page = () => {
         </div>
         <div className={style.aboutContainer}>
           <div className={style.textContainer}>
-            <div className={style.AboutTitleContainer}>
+            <div className={style.aboutTitleContainer}>
               {" "}
-              <h1 className={imb.className}>se</h1>
-              <h2>some text</h2>
+              <h1 className={imb.className}>City Tax Könyvelőiroda Makó</h1>
             </div>
             <p className="mb-20">
               Vállalkozásunk családi alapokra fektetve jött létre 1993-ban.
@@ -43,7 +44,7 @@ const page = () => {
             <Button
               typeBlack={true}
               name={"Visszahívást kérek"}
-              url={"btnUrl"}
+              url={"/"}
             />
           </div>
           <div className={style.imageContainer}>
@@ -54,9 +55,11 @@ const page = () => {
             />
           </div>
         </div>
+        <NumberUp rolunk={true} />
       </div>
-      <Team />
     </div>
+    <Team />
+    </>
   );
 };
 
