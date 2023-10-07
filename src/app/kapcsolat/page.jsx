@@ -18,7 +18,7 @@ const page = () => {
         <div className={style.contentContainer}>
           <div className={style.titleContainer}>
             <h1 className={imb.className}>Kapcsolat</h1>
-            <h2>Lépj Velünk Kapcsoaltba</h2>{" "}
+            <h2>Lépj Velünk Kapcsolatba</h2>{" "}
             <div className={style.btnContainer}></div>
           </div>
         </div>

@@ -58,7 +58,7 @@ const NavTop = () => {
         </div>
 
         <div className="flex text-2xl	 justify-center gap-10">
-          <ul className="flex justify-center items-center text-[#74787c] gap-4">
+          <ul className="flex justify-center items-center text-[#244f7a] gap-4">
             <li>
               <Link href={socialIcons.facebook} className={style.socialIcon}>
                 <RiFacebookCircleFill />

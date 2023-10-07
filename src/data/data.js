@@ -8,6 +8,13 @@ export const contactData = {
   phone: "06 30 000 000",
 };
 
+export const buttons = {
+  callbackHu: "Visszahívást kérek",
+  callbackEn: "Request callback",
+  contactHu: "Kapcsolat",
+  contanctEn: "contanct",
+};
+
 export const meta = {
   logoAlt: "City Tax könyvelőiroda logója ",
 };

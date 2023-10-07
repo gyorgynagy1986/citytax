@@ -1,23 +1,34 @@
+"use client";
+
 import React from "react";
 import Button from "@/components/UI/Buttons/Button";
-import style from './Callback.module.css'
-import Image from 'next/image'
-import bcg from '../../../public/assets/sections/services_1.jpg'
-
+import style from "./Callback.module.css";
+import { usePathname } from "next/navigation";
+import {buttons} from "@/data/data"
 //{<Image className={style.bcgImage} alt="callback" src={bcg} /> }
 
+const textHu = (
+  <h2>
+    További <span>információra</span> lenne szüksége? <br /> Kérjen ingyenes
+    visszahívást!{" "}
+  </h2>
+);
+
+const textEn = (
+  <h2>
+    Would you like more <span>information</span>? <br /> Request a free
+    callback!
+  </h2>
+);
+
 const CallBack = () => {
+  const pathname = usePathname();
+
   return (
     <div className={style.callbackContainer}>
       <div className={style.btnContainer}>
-        <h2>
-          További <span>információra</span> lenne szüksége? <br /> Kérjen ingyenes
-          visszahívsát{" "}
-        </h2>
-        <Button
-          url={"/kapcsoalt"}
-          name={"Visszahívást kérek"}
-        />
+        {pathname.includes("/en") ? textEn : textHu}
+        <Button url={"/kapcsoalt"} name={pathname.includes("/en") ? buttons.callbackEn : buttons.callbackHu} />
       </div>
     </div>
   );

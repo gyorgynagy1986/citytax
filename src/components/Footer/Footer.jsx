@@ -1,5 +1,5 @@
 import Link from "next/link";
-import style from "@/components/Footer/Fotter.module.css";
+import style from "@/components/Footer/Footer.module.css";
 import { PiMapPinLine } from "react-icons/pi";
 import { FaFacebookF } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";

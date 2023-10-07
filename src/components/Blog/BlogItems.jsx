@@ -1,6 +1,7 @@
 import style from "@/components/Blog/BlogItems.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import { BsFillCalendarFill } from "react-icons/bs";
 
 const BlogItems = ({ filteredItems }) => {
   return (
@@ -17,14 +18,19 @@ const BlogItems = ({ filteredItems }) => {
             />
           </div>
           <div className={style.infoContainer}>
-              <div className={style.dateContainer}>date<p>2023-08-23</p></div>
-              <span className={item.blog ? style.activeB : style.activeN}>{item.type}</span>
+            <div className={style.dateContainer}>
+              {" "}
+              <BsFillCalendarFill /> <p>{item.date}</p>
             </div>
+            <span className={item.blog ? style.activeB : style.activeN}>
+              {item.type}
+            </span>
+          </div>
           <div className={style.blogItemTextContainer}>
             <p className={style.blogItemTitle}>{item.title}</p>
             <p className={style.blogItemText}>{item.smallText}</p>
             <Link className={style.blogLink} href={`/blog/${item.id}`}>
-             {item.readmore}
+              {item.readmore}
             </Link>
           </div>
         </div>

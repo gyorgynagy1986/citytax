@@ -113,12 +113,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem 0rem 4rem;
+  padding: 1rem 3rem 0rem 3rem;
 }
 
 .dateContainer {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
+}
+
+.dateContainer p {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 0 !important;
+}
+
+.dateContainer svg {
+  width: 15px;
+  height: 15px;
+  color: #74787ca9;
 }
 
 .activeB,

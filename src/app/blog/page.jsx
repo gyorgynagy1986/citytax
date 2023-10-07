@@ -62,7 +62,6 @@ const Blog = () => {
           <BlogItems filteredItems={filteredPosts} />
         </div>
       </section>
-      <CallBack />
     </>
   );
 };

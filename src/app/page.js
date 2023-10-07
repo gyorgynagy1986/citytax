@@ -17,7 +17,6 @@ export default function Home() {
       <WhyUs />
       <Review />
       <Blog />
-      <CallBack />
     </main>
   );
 }
