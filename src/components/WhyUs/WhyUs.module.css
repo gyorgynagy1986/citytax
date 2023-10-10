@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   padding-top: var(--sectionPaddingTop);
-  padding-bottom:  var(--sectionPaddingTop);
+  padding-bottom: var(--sectionPaddingTop);
   padding-left: var(--plpr);
   padding-right: var(--plpr);
   overflow: hidden;
@@ -15,7 +15,6 @@
   display: flex;
   gap: 2rem;
   margin: 0 auto;
-
 }
 
 .imageContainer {
@@ -51,12 +50,12 @@
   gap: 2rem;
 }
 
-.titleContainer h1 {
+.titleContainer p {
   font-size: var(--sectionSmTitle);
   color: var(--titleColor2);
 }
 
-.titleContainer h1:before {
+.titleContainer p:before {
   display: inline-block;
   content: "\00BB";
   font-weight: 400;
@@ -76,8 +75,8 @@
 }
 
 .listContainerUl {
- padding-top: 2rem;
- width: 100%;
+  padding-top: 2rem;
+  width: 100%;
 }
 
 .listContainerUl li {
@@ -125,4 +124,14 @@
     font-size: var(--textContainerP);
     line-height: 30px;
   }
+}
+
+/* ROLUNK */
+
+.rolunkLi svg {
+  color: var(--btnColor) !important;
+}
+
+.rolunkP {
+  color: var(--btnColor) !important;
 }

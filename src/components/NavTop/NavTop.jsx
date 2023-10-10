@@ -21,7 +21,7 @@ const NavTop = () => {
     if (pathname.includes("/en")) {
       setdropdown(false);
     }
-  }, []);
+  }, [pathname]);
 
   const router = useRouter();
 
@@ -71,10 +71,10 @@ const NavTop = () => {
             </li>
           </ul>
           <div className="lang-dropdown">
-            <select className="text-2xl" onChange={languageHandler}>
+            <select className={style.select} onChange={languageHandler}>
               {!dropdown && (
                 <>
-                  <option value={2}>English</option>
+                  <option className={style.selectItem} value={2}>English</option>
                   <option value={1}>Magyar</option>
                 </>
               )}

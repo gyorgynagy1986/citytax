@@ -8,7 +8,7 @@ import { FiCheckCircle } from "react-icons/fi";
 import photo1 from "../../../public/assets/sections/services_1.jpg";
 import Button from "../UI/Buttons/Button";
 
-const WhyUs = () => {
+const WhyUs = ( {rolunk} ) => {
   return (
     <>
       <section className={style.container}>
@@ -16,14 +16,14 @@ const WhyUs = () => {
           <div className={style.textContainer}>
             <div className={style.titleContainer}>
               {" "}
-              <h1 className={imb.className}>{whyUs.title}</h1>
-              <h2>{whyUs.title2}</h2>
+              <p className={`${imb.className} ${rolunk && style.rolunkP} `}>{whyUs.title}</p>
+              <h2 >{whyUs.title2}</h2>
             </div>
 
             <div className={style.listContainer}>
               <ul className={style.listContainerUl}>
                 {whyUs.list.map((items, index) => (
-                  <li key={index}>
+                  <li className={rolunk && style.rolunkLi } key={index}>
                     {" "}
                     <FiCheckCircle /> {items.title}{" "}
                   </li>
@@ -31,7 +31,7 @@ const WhyUs = () => {
               </ul>
               <ul className={style.listContainerUl}>
                 {whyUs.list2.map((items, index) => (
-                  <li key={index + 1}> <FiCheckCircle /> {items.title}</li>
+                  <li className={rolunk && style.rolunkLi } key={index +1 }> <FiCheckCircle /> {items.title}</li>
                 ))}
               </ul>
             </div>

@@ -45,3 +45,11 @@
     padding: 10px 30px;
 
 }
+
+@media screen and (max-width: 986px) {
+    .button {
+        display: inline-flex;
+        width: 100%;
+    }
+  }
+

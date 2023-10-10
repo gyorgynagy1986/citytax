@@ -25,6 +25,7 @@ export const metaEn = {
 
 /* HERO*/
 export const heroContent = {
+  title: "CITY TAX KÖNYVELŐIRODA",
   h1: "Megbízható könyvelés, közérthetően",
   btn: "Kapcsolat",
   btn2: "szolgáltatások",
@@ -32,9 +33,10 @@ export const heroContent = {
 };
 
 export const heroContentEn = {
-  h1: "City Tax",
-  btn: "Reservation",
-  btn2: "Get in touch",
+  title: "CITY TAX ACCOUNTING",
+  h1: "Reliable accounting, in an understandable way",
+  btn: "Get in touch",
+  btn2: "Services",
   url: "/en/contact",
 };
 
@@ -72,6 +74,26 @@ export const servicesEn = {
     { title: "Igény szerint szabályzatok készítése" },
     {
       title: "Szinte bármely programból adatot importálunk saját programunkba",
+    },
+  ],
+};
+
+export const additionalService = {
+  list: [
+    { title: "Online könyvelés" },
+    { title: "Adótanácsadás" },
+    { title: "Cégalapítás" },
+    { title: "Ügyfélkör átvétel:" },
+
+  ],
+
+  list2: [
+    {
+      title: "Bérszámfejtés",
+    },
+    { title: "Könyvvizsgálat:" },
+    {
+      title: "Hitelkérelem, Széchenyi-kártya ügyintézés",
     },
   ],
 };

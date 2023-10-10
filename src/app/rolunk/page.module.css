@@ -1,11 +1,13 @@
 .container {
   width: 100%;
   height: 100%;
+  padding-top: var(--sectionPaddingTopSm);
   padding-left: var(--plpr);
   padding-right: var(--plpr);
   position: relative;
   background-position: center;
   background-size: cover;
+  background-color: #ebeff253;
 }
 
 .contentContainer {
@@ -13,39 +15,42 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 4rem;
-
+  padding: 4rem 0rem 4rem 0rem;
 }
-
 
 .aboutContainer {
-    max-width: var(--maxWidth);
-    display: flex;
-    gap: 2rem;
-    margin: 0 auto;
-  }
-
-.titleContainer h1 {
-  font-size: var(--sectionSmTitle);
-  text-align: center;
-  color: var(--titleColor2);
+  padding-top: var(--sectionPaddingTopSm);
+  max-width: var(--maxWidth);
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto;
 }
 
-.titleContainer h1:before {
+.titleContainer {
+  padding: 0rem 2rem 6rem 2rem;
+}
+
+.titleContainer p {
+  font-size: var(--sectionSmTitle);
+  text-align: center;
+  color: var(--btnColor);
+}
+
+.titleContainer p:before {
   display: inline-block;
   content: "\00BB";
   font-weight: 400;
   margin-right: 10px;
 }
 
-.titleContainer h1:after {
+.titleContainer p:after {
   display: inline-block;
   content: " \00AB";
   font-weight: 400;
   margin-left: 10px;
 }
 
-.titleContainer h2 {
+.titleContainer h1 {
   font-size: var(--sectionMdTitle);
   text-align: center;
   font-weight: var(--titleFontW);
@@ -55,29 +60,31 @@
   width: 50%;
   position: relative;
   display: flex;
- 
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 9% 100%, 0% 50%);
+    overflow: hidden;
 }
 
 .img1 {
   min-width: auto;
-  min-height: 500px;
+  max-height: 450px;
   object-fit: cover;
 }
-
 
 .textContainer {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 3%;
 }
 
 .textContainer p {
   font-weight: normal;
   font-style: normal;
-  color: #74787c;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 160%;
+  margin-bottom: 4rem;
+
 }
 
 .aboutTitleContainer {
@@ -86,21 +93,53 @@
   gap: 2rem;
 }
 
-.aboutTitleContainer h1 {
+.aboutTitleContainer p {
   font-size: var(--sectionSmTitle);
   color: var(--titleColor2);
 }
 
-.aboutTitleContainer h1:before {
+.aboutTitleContainer p:before {
   display: inline-block;
   content: "\00BB";
   font-weight: 400;
   margin-right: 10px;
 }
 
-.aboutTitleContainer h2 {
+.aboutTitleContainer p {
   font-size: var(--sectionMdTitle);
   font-weight: var(--titleFontW);
   margin-bottom: 2rem;
   line-height: 110%;
+}
+
+@media screen and (max-width: 1100px) {
+  .img1 {
+    max-height: 600px;
+  }
+}
+
+@media screen and (max-width: 986px) {
+  .textContainer {
+    width: 100%;
+  }
+
+  .textContainer p {
+    font-size: 16px;
+    margin-bottom: 2rem;
+    line-height: 160%;
+
+  }
+
+  .titleContainer {
+    padding: 0rem 2rem 4rem 2rem;
+  }
+  
+
+  .imageContainer {
+    width: 100%;
+  }
+
+  .aboutContainer {
+   flex-direction: column;
+  }
 }

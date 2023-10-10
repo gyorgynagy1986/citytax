@@ -8,19 +8,19 @@
 }
 
 @media screen and (max-width: 880px) {
-    .navbar {
-      display: none !important;
-    }
+  .navbar {
+    display: none !important;
   }
+}
 
 .navbar {
-    width: 100%;
-    margin-inline: auto;
-    display: flex;
-    justify-content: center;
-    padding-left: var(--plpr);
-    padding-right: var(--plpr);
-  }
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  padding-left: var(--plpr);
+  padding-right: var(--plpr);
+}
 
 .container {
   width: 100%;
@@ -36,9 +36,9 @@
 }
 
 .ul {
-    display: flex;
-    gap: 3rem;
-    font-size:var(--fsNav);
-    font-weight: 600;
-    color: var(--navTextColor);
+  display: flex;
+  gap: 3rem;
+  font-size: var(--fsNav);
+  font-weight: 600;
+  color: var(--navTextColor);
 }

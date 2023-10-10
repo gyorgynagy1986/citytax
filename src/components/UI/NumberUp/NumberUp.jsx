@@ -43,7 +43,7 @@ const NumberUp = ({ rolunk }) => {
       case 0:
         return 9;
       case 1:
-        return 120;
+        return 180;
       case 2:
         return 300;
       case 3:
@@ -75,24 +75,48 @@ const NumberUp = ({ rolunk }) => {
         }
       }
     };
-  }, []);
+  }, [numberRefs, observers]);
 
   return (
     <>
-      <div className={`${style.counterContainer} ${rolunk && style.roulunkCounterContainer}`}>
-        <div ref={numberRefs[0]} className={`${style.counterItem} ${rolunk && style.rolunkCounterItem}`}>
-          <span>{numbers[0]}</span>
+      <div
+        className={`${style.counterContainer} ${
+          rolunk && style.roulunkCounterContainer
+        }`}
+      >
+        <div
+          ref={numberRefs[0]}
+          className={`${style.counterItem} ${
+            rolunk && style.rolunkCounterItem
+          }`}
+        >
+          <span>{numbers[0]} &nbsp;</span>
           <p>Munkatársak száma</p>
         </div>
-        <div ref={numberRefs[1]}className={`${style.counterItem} ${rolunk && style.rolunkCounterItem}`}>
+        <div
+          ref={numberRefs[1]}
+          className={`${style.counterItem} ${
+            rolunk && style.rolunkCounterItem
+          }`}
+        >
           <span>{numbers[1]} +</span>
           <p>Ügyfelek száma</p>
         </div>
-        <div ref={numberRefs[2]} className={`${style.counterItem} ${rolunk && style.rolunkCounterItem}`}>
+        <div
+          ref={numberRefs[2]}
+          className={`${style.counterItem} ${
+            rolunk && style.rolunkCounterItem
+          }`}
+        >
           <span>{numbers[2]} +</span>
           <p>Lezajlott adóellenőrzések </p>
         </div>
-        <div ref={numberRefs[3]} className={`${style.counterItem} ${rolunk && style.rolunkCounterItem}`}>
+        <div
+          ref={numberRefs[3]}
+          className={`${style.counterItem} ${
+            rolunk && style.rolunkCounterItem
+          }`}
+        >
           <span>{numbers[3]} +</span>
           <p>NAV ellenőrzések száma</p>
         </div>

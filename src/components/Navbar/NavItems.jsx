@@ -13,7 +13,7 @@ const items = [
   {
     id: 3,
     name: "Szolgáltatások",
-    url: "/",
+    url: "/szolgaltatasok",
   },
   {
     id: 2,
@@ -40,15 +40,16 @@ const itemsEng = [
     url: "/en",
   },
   {
-    id: 2,
-    name: "About",
-    url: "/en/about",
-  },
-  {
     id: 3,
     name: "Services",
     url: "/en/services",
   },
+  {
+    id: 2,
+    name: "About",
+    url: "/en/about",
+  },
+
   {
     id: 4,
     name: "News & Blogs",

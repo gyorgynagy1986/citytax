@@ -1,7 +1,6 @@
 .container {
   width: 100%;
   height: 100%;
-  padding-top: var(--sectionPaddingTop);
   padding-bottom: var(--sectionPaddingTop);
   padding-left: var(--plpr);
   padding-right: var(--plpr);
@@ -28,29 +27,10 @@
   line-height: 30px;
 }
 
-.titleContainer h1 {
-  font-size: var(--sectionSmTitle);
-  color: var(--titleColor2);
+
+.titleContainer h3 {
   text-align: center;
-}
-
-.titleContainer h1:before {
-  display: inline-block;
-  content: "\00BB";
-  font-weight: 400;
-  margin-right: 10px;
-}
-
-.titleContainer h1:after {
-  display: inline-block;
-  content: " \00AB";
-  font-weight: 400;
-  margin-left: 10px;
-}
-
-.titleContainer h2 {
-  text-align: center;
-  font-size: var(--sectionMdTitle);
+  font-size: 25px;
   font-weight: var(--titleFontW);
   margin-bottom: 4rem;
 }
@@ -72,7 +52,7 @@
   width: 25rem;
   position: relative;
   background-color: rgba(255, 255, 255, 0);
-  box-shadow: 0px 10px 60px 0px rgba(49, 49, 49, 0.245);
+  box-shadow: 0px 10px 60px 0px rgba(49, 49, 49, 0.114);
 
   z-index: 1;
 }
@@ -93,14 +73,15 @@
   font-size: 20px;
   text-align: center;
   font-weight: 800;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .nameTitle {
-  margin-top: 1rem;
-  color: #74787c;
+  color: #011a33ad;
+  font-weight: 600;
   font-size: 16px;
   text-align: center;
+  margin-top: .5rem;
 }
 
 .circle {

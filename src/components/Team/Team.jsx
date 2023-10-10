@@ -17,7 +17,7 @@ const Team = () => {
           <div className={style.textContainer}>
             <div className={style.titleContainer}>
               {" "}
-              <h1 className={imb.className}>{team.title}</h1>
+              <h3 className={imb.className}>{team.title}</h3>
             </div>
           </div>
 

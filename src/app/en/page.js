@@ -10,14 +10,13 @@ import Blog from "@/components/Blog/BlogModule";
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <Hero langEn={true}/>
       <AdditionalServices />
       <Services />
       <MainServices />
       <WhyUs />
       <Review />
       <Blog />
-      <CallBack />
     </main>
   );
 }

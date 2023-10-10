@@ -1,74 +1,91 @@
 .counterContainer {
-    margin: 0 auto;
-    max-width: var(--maxWidth);
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.counterItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+}
+
+.counterItem span {
+  font-size: 35px;
+  font-weight: 800;
+  color: var(--iconColor);
+}
+
+.counterItem p {
+  font-size: 18px;
+  color: var(--titleColor);
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .counterContainer {
+    padding-top: 4rem;
+    gap: 1rem;
   }
-  
+
   .counterItem {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30rem;
+    width: 16rem;
+    margin-bottom: 2rem;
   }
-  
+
   .counterItem span {
-    font-size: 35px;
-    font-weight: 800;
-    color: var(--iconColor);
+    font-size: 25px;
   }
-  
+
   .counterItem p {
-    font-size: 18px;
-    color: var(--titleColor);
-    text-align: center;
+    font-size: 14px;
   }
-  
-  @media screen and (max-width: 600px) {
-    .counterContainer {
-      padding-top: 4rem;
-    }
-  
-    .counterItem {
-      width: 18rem;
-      margin-bottom: 2rem;
-    }
-  
-    .counterItem span {
-      font-size: 25px;
-    }
-  
-    .counterItem p {
-      font-size: 14px;
-    }
+}
+
+/*  ROLUNK */
+
+.roulunkCounterContainer {
+  padding: 4rem;
+  gap: 4rem;
+}
+
+.rolunkCounterItem {
+  width: 25rem;
+}
+
+.rolunkCounterItem span {
+  font-size: 28px;
+  color: var(--secColor);
+}
+
+.rolunkCounterItem p {
+  font-size: 17px;
+  font-weight: 700;
+  color: rgb(52, 52, 52);
+}
+
+@media screen and (max-width: 600px) {
+  .rolunkCounterItem {
+    width: 16rem;
+    margin-bottom: 2rem;
   }
-
-  /*  ROLUNK */
-
 
   .roulunkCounterContainer {
-    padding: 4rem;
-    background-color: rgba(186, 186, 186, 0.024);
-    bottom: 0;
-  }
-
-  .rolunkCounterItem {
-        width: 25rem;
+    padding: 2rem 0rem 0rem 0rem;
+    gap: 2rem;
   }
 
   .rolunkCounterItem span {
-    font-size: 28px;
-    color: var(--secColor);
+    font-size: 25px;
   }
 
-  
   .rolunkCounterItem p {
-    font-size: 17px;
-    font-weight: 700;
-    color: rgb(52, 52, 52);
-
+    font-size: 14px;
   }
+}

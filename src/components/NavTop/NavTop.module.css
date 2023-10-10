@@ -6,6 +6,22 @@
   padding-right: var(--plpr);
 }
 
+.select {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.select .option {
+  background-color: #fff;
+  color: #333;
+}
+
+.selectItem {
+  padding: 1rem;
+}
+
 @media screen and (max-width: 880px) {
   .navTop {
     display: none;

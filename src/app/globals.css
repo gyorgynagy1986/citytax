@@ -11,7 +11,9 @@
   --navTextColor: #353535;
   --mobileMenuColor: #2d2d2d;
   --footercolor: #181c22;
-  --secColor: #f94d1c;
+  --secColor2: #f94d1c;
+
+  --secColor: #0dceb5;
 
   --btnTextColor: #ffeeee;
   --btnColor: #00a9b4;
@@ -26,10 +28,11 @@
   --plpr: 5vw;
   --fsBtn: 1.7rem;
   --logo: 200px;
-  --fsNav: 18px;
+  --fsNav: 16px;
 
   --sectionSmTitle: 20px;
   --sectionMdTitle: 32px;
+  --sectionPaddingTopSm: 5rem;
   --sectionPaddingTop: 10rem;
   --sectionPaddingTopBig: 20rem;
 
@@ -40,6 +43,13 @@
 }
 
 
+img {
+  border-radius: 5px !important;
+}
+
+p {
+  color: var(--mainTextColor);
+}
 
 @media screen and (max-width: 768px) {
   :root {
