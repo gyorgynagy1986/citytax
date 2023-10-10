@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import photo1 from "../../../../public/assets/sections/services_1.jpg";
-import style from "@/components/Services/ServiceList/ServiceList.module.css";
+import style from "../../Services/Servicelist/ServiceList.module.css";
 
 const ServiceList = () => {
   return (
