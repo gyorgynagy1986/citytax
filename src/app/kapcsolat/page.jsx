@@ -8,8 +8,7 @@ import phone from "../../../public/assets/icons/contanct/3.png";
 import emailicon from "../../../public/assets/icons/contanct/2.png";
 import direction from "../../../public/assets/icons/contanct/1.png";
 import { MdPhoneAndroid, MdAlternateEmail, MdOutlineMap } from "react-icons/md";
-
-MdAlternateEmail;
+import Map from "@/components/GoogleMap/Map";
 
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
@@ -120,7 +119,9 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className={style.mapContainer}></div>
+      <div className={style.mapContainer}>
+        <Map />
+      </div>
     </>
   );
 };
