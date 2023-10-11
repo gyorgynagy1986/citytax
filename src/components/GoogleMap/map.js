@@ -4,6 +4,8 @@ import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 const containerStyle = {
   width: "100%",
   height: "100%",
+  minHeight:'40rem',
+  padding:"2rem"
 };
 
 const center = {
@@ -15,7 +17,6 @@ const Map = () =>  {
   
   const [map, setMap] = React.useState(null);
   
-  const mapApiKey = process.env.GOOGLE_API_KEY;
   
   const { isLoaded } = useJsApiLoader({
     id: process.env.GOOGLE_API_ID,
@@ -36,7 +37,7 @@ const Map = () =>  {
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={12}
+      zoom={11}
       onLoad={onLoad}
     >
       {/* Child components, such as markers, info windows, etc. */}

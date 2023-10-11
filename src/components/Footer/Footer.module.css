@@ -4,7 +4,7 @@
   padding-left: var(--plpr);
   padding-right: var(--plpr);
   background-color: var(--footercolor);
-  color: rgb(203, 203, 203);
+  color: var(--footerTextColor);
 }
 
 .contentContainer {
@@ -25,8 +25,9 @@
   width: var(--footeritemsWidth)}
 
 .containerIntroduction p {
-  font-size: 14px;
-  font-weight: normal;
+  font-size: 15px;
+  font-weight: 200;
+  color: var(--footerTextColor);
 }
 
 .socialIcons {
@@ -73,6 +74,8 @@
 .footerServices h3 {
   font-size: var(--sectionSmTitle);
   font-weight: 600;
+  color: var(--footerTextColor);
+
 }
 
 .footerServices ul {
@@ -114,6 +117,8 @@
   flex-direction: column;
   gap: 1rem;
   margin-bottom: .5rem;
+  color: var(--footerTextColor);
+
 }
 
 .addressAndIconContainer {
@@ -125,6 +130,8 @@
 
 .addressAndIconContainer p {
   font-size: 14px;
+  color: var(--footerTextColor);
+
 }
 
 .addressAndIconContainer svg {

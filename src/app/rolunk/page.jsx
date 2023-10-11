@@ -20,7 +20,6 @@ const page = () => {
         <div className={style.contentContainer}>
           <div className={style.titleContainer}>
             <p className={imb.className}>Rólunk</p>
-            <h1>City Tax Könyvelőiroda </h1>{" "}
           </div>
           <div className={style.aboutContainer}>
             <div className={style.textContainer}>

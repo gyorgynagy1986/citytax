@@ -1,0 +1,152 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding-top: var(--sectionPaddingTopSm);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.contentContainer {
+  max-width: var(--maxWidth);
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.titleContainer {
+  padding: 0rem 2rem 6rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleContainer p {
+  font-size: var(--sectionSmTitle);
+  text-align: center;
+  color: var(--btnColor);
+}
+
+.titleContainer p:before {
+  display: inline-block;
+  content: "\00BB";
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.titleContainer p:after {
+  display: inline-block;
+  content: " \00AB";
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.titleContainer h2 {
+  font-size: 24px;
+  max-width: 70%;
+  text-align: center;
+  font-weight: var(--titleFontW);
+}
+
+@media screen and (max-width: 1024px) {
+  .titleContainer h2 {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .titleContainer {
+    padding: 0rem 0rem 4rem 0rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.priceListcontainer {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 4rem;
+}
+
+.infoContainer {
+  padding: 4rem 2rem 2rem 2rem;
+}
+
+.infoContainer p {
+  font-weight: 800;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+@media screen and (max-width: 1024px) {
+  .priceListcontainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.priceItemContainer {
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.type {
+  background-color: var(--btnColor);
+  display: flex;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 4rem 1rem 4rem;
+  background: linear-gradient(45deg, #3498db, #007f8a, #00a9b4);
+}
+
+.lin1 {
+  background: linear-gradient(45deg, #007f8a, #00a9b4, #00cce0);
+}
+
+.lin2 {
+  background: linear-gradient(55deg, #007f8a, #00a9b4, #00cce0);
+}
+
+.lin3 {
+  background: linear-gradient(74deg, #007f8a, #00a9b4, #00cce0);
+}
+
+.lin4 {
+  background: linear-gradient(85deg, #007f8a, #00a9b4, #00cce0);
+}
+
+.type p {
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 2rem 2rem 2rem;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.textContainer {
+  padding: 0rem 2rem 2.5rem 2rem;
+}
+
+.textContainer p {
+  font-size: 16px;
+}

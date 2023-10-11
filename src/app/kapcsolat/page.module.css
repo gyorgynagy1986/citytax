@@ -7,9 +7,7 @@
   position: relative;
   background-position: center;
   background-size: cover;
-
 }
-
 
 .contentContainer {
   max-width: var(--maxWidth);
@@ -43,4 +41,66 @@
   font-size: var(--sectionMdTitle);
   text-align: center;
   font-weight: var(--titleFontW);
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputContainer {
+  width: 100%;
+  color: black;
+}
+
+.input {
+  width: 100%;
+  font-size: 16px;
+  color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.242);
+}
+
+.input .placeholder {
+  color: black;
+}
+
+.inputTextarea {
+  width: 100%;
+  font-size: 16px;
+  min-height: 10em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.242);
+
+}
+
+.form {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.btn{
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 11px 30px;
+    border: none;
+    background: var(--secColor);
+    font-size: 14px;
+    border-radius: 100px;
+    color: #fff;
+    line-height: 25px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
 }

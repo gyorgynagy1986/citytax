@@ -7,7 +7,7 @@ import { HiMiniDevicePhoneMobile } from "react-icons/hi2";
 import { footerData } from "../../data/data";
 import { contactData } from "../../data/data";
 
-import Logo from "@/components/UI/Logo/Logo";
+import Logo from "@/components/UI/Logo/LogoStanding";
 
 const Footer = () => (
   <footer className={style.container}>

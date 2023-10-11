@@ -13,6 +13,8 @@
   --footercolor: #181c22;
   --secColor2: #f94d1c;
 
+  --footerTextColor: #e9e9e9;
+
   --secColor: #0dceb5;
 
   --btnTextColor: #ffeeee;
@@ -49,6 +51,12 @@ img {
 
 p {
   color: var(--mainTextColor);
+}
+
+@media screen and (min-width: 1600px) {
+  :root {
+    --maxWidth: 1500px;
+  }
 }
 
 @media screen and (max-width: 768px) {

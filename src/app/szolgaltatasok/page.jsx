@@ -16,7 +16,6 @@ const page = () => {
       <div className={style.contentContainer}>
         <div className={style.titleContainer}>
           <p className={imb.className}>Szolgáltatások</p>
-          <h1>City Tax Könyvelőiroda </h1>{" "}
         </div>
         <div className={style.aboutContainer}>
           <div className={style.imageContainer}>
@@ -28,7 +27,7 @@ const page = () => {
           </div>
 
           <div className={style.textContainer}>
-            <h3>Könyvelés</h3>
+            <h1>Könyvelés</h1>
             <p>
               Irodánk 9 megbízható és naprakész szaktudású kollégával áll
               partnerei rendelkezésére annak érdekében, hogy az Ön vállalkozását

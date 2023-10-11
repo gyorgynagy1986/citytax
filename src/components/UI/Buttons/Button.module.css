@@ -39,7 +39,6 @@
 
 .typeBlack {
     background: transparent;
-    background-color: #fff;
     border:2px solid #424242;
     color: var(--mainTextColor);
     padding: 10px 30px;

@@ -17,6 +17,11 @@ const items = [
   },
   {
     id: 2,
+    name: "Árak",
+    url: "/arak",
+  },
+  {
+    id: 2,
     name: "Rólunk",
     url: "/rolunk",
   },
@@ -43,6 +48,11 @@ const itemsEng = [
     id: 3,
     name: "Services",
     url: "/en/services",
+  },
+  {
+    id: 2,
+    name: "Prices",
+    url: "/en/Prices",
   },
   {
     id: 2,
