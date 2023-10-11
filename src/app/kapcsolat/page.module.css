@@ -104,3 +104,34 @@
   height: 100%;
   background-color: aqua;
 }
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.iconBoxes  {
+ display: flex;
+ min-height: 12rem;
+ flex-direction: column;
+ justify-content:space-between;
+ align-items: center;
+ padding: 2rem 3rem 2rem 3rem;
+ border: 1px solid rgba(83, 83, 83, 0.221);
+}
+
+.iconBoxes  p{
+  font-size:16px;
+  font-weight: 600;
+}
+
+.image {
+  width: 25%;
+  height: 25%;
+  color: var(--secColor);
+}

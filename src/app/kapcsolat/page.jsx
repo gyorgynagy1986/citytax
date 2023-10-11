@@ -1,11 +1,19 @@
 "use client";
+
 import React, { useState } from "react";
 import style from "./page.module.css";
 import { IBM_Plex_Sans } from "next/font/google";
+import Image from "next/image";
+import phone from "../../../public/assets/icons/contanct/3.png";
+import emailicon from "../../../public/assets/icons/contanct/2.png";
+import direction from "../../../public/assets/icons/contanct/1.png";
+import { MdPhoneAndroid, MdAlternateEmail, MdOutlineMap } from "react-icons/md";
+
+MdAlternateEmail;
+
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
 const Page = () => {
- 
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -35,6 +43,27 @@ const Page = () => {
             <h1 className={imb.className}>Kapcsolat</h1>
             <h2>Lépj Velünk Kapcsolatba</h2>{" "}
             <div className={style.btnContainer}></div>
+          </div>
+
+          <div className={style.iconContainer}>
+            <div className={style.iconBoxes}>
+              {" "}
+              <Image className={style.image} alt="phone" src={emailicon} />
+              <p>
+                <a href="mailto: abc@example.com">email@email.com</a>
+              </p>
+            </div>
+
+            <div className={style.iconBoxes}>
+              {" "}
+              <Image className={style.image} alt="phone" src={direction} />
+              <p>6900 Makó, Hold utca 26</p>
+            </div>
+
+            <div className={style.iconBoxes}>
+              <Image className={style.image} alt="phone" src={phone} />
+              <p>06 30 000 00 00</p>
+            </div>
           </div>
 
           <div className={style.formContainer} data-aos="fade-up">
@@ -91,8 +120,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className={style.mapContainer}>
-      </div>
+      <div className={style.mapContainer}></div>
     </>
   );
 };

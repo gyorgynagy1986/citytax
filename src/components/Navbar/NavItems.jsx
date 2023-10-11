@@ -21,7 +21,7 @@ const items = [
     url: "/arak",
   },
   {
-    id: 2,
+    id: 6,
     name: "Rólunk",
     url: "/rolunk",
   },
@@ -45,28 +45,28 @@ const itemsEng = [
     url: "/en",
   },
   {
-    id: 3,
+    id: 2,
     name: "Services",
     url: "/en/services",
   },
   {
-    id: 2,
+    id: 3,
     name: "Prices",
     url: "/en/Prices",
   },
   {
-    id: 2,
+    id: 4,
     name: "About",
     url: "/en/about",
   },
 
   {
-    id: 4,
+    id: 5,
     name: "News & Blogs",
     url: "/en/news-blogs",
   },
   {
-    id: 5,
+    id: 6,
     name: "Contact",
     url: "/en/contact",
   },
