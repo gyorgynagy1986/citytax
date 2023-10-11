@@ -93,7 +93,6 @@ const Page = () => {
         </div>
       </div>
       <div className={style.mapContainer}>
-        <Map />
       </div>
     </>
   );
