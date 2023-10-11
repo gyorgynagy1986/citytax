@@ -132,15 +132,34 @@
     line-height: 120%;
   }
 
+  .circle  {
+    height:auto;
+    width: auto;
+   
+  }
+
+  .circle span {
+    height: 40px;
+    width: 40px;
+   
+  }
+
   .boxContainerItems {
     width: 100%;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 1rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
   }
+
+  
+.boxContainer {
+  
+  gap: 1rem;
+
+}
 
   .promo {
     font-size: 22px;
@@ -161,8 +180,8 @@
   }
 
   .icon {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 }
 
