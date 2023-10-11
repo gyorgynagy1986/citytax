@@ -1,12 +1,12 @@
 "use client";
 import React, { useState } from "react";
-
 import style from "./page.module.css";
 import { IBM_Plex_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 import Map from "@/components/GoogleMap/map";
 
-const page = () => {
+const Page = () => {
+ 
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -99,4 +99,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
