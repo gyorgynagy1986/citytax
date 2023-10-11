@@ -11,6 +11,15 @@ const MobileNav = () => {
 
   const [mobileMenuHandler, setMobileMenuHandler ] = useState(true)
 
+  useEffect(() => {
+    if (!mobileMenuHandler) {
+      document.documentElement.classList.add("overflow-hidden");
+    } else {
+      document.documentElement.classList.remove("overflow-hidden");
+    }
+  }, [mobileMenuHandler]);
+
+
   const mobileMenuOpen = () => {
     setMobileMenuHandler(false)
   }

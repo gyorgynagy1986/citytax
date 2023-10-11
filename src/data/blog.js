@@ -5,7 +5,7 @@ export const singlePost = [
     smallText:
       " Ismerje meg az adóbevallás trükkjeit és tippeket, amelyek segítenek.",
     text: "text",
-    photo: "/assets/blog/1.jpg",
+    photo: "/assets/blog/1.webp",
     date: "2023-10-05",
     blog: false,
     type: "Hír",
@@ -18,7 +18,7 @@ export const singlePost = [
     smallText:
       " Ismerje meg a pénzügyi tervezés alapelveit, és lépjen az első lépéseket a pénzügyi stabilitás és jólét felé. ",
     text: "text",
-    photo: "/assets/blog/2.jpg",
+    photo: "/assets/blog/2.webp",
     date: "2000-01-22",
     blog: true,
     type: "Blog",
@@ -31,7 +31,7 @@ export const singlePost = [
     smallText:
       "Ismerje meg a leggyakoribb könyvelési hibákat, és tanulja meg, hogyan kerülheti el őket. ",
     text: "text",
-    photo: "/assets/blog/3.jpg",
+    photo: "/assets/blog/3.webp",
     date: "2000-01-22",
     blog: true,
     type: "Blog",
@@ -44,7 +44,7 @@ export const singlePost = [
     smallText:
       "Tanulja meg, miért fontos a pénzügyi egészség és hogyan kezelje jól a pénzügyeit. ",
     text: "text",
-    photo: "/assets/blog/2.jpg",
+    photo: "/assets/blog/2.webp",
     date: "2000-01-22",
     type: "Blog",
     blog: true,
@@ -59,7 +59,7 @@ export const singlePostEn = [
     title: "How to Save Money and Time",
     smallText: "Learn the tricks and tips for tax filing that can help you.",
     text: "text",
-    photo: "/assets/blog/1.jpg",
+    photo: "/assets/blog/1.webp",
     date: "2023-10-05",
     blog: false,
     type: "News",
@@ -72,7 +72,7 @@ export const singlePostEn = [
     smallText:
       "Learn the principles of financial planning and take the first steps toward financial stability and well-being.",
     text: "text",
-    photo: "/assets/blog/2.jpg",
+    photo: "/assets/blog/2.webp",
     date: "2000-01-22",
     blog: true,
     type: "Blog",
@@ -85,7 +85,7 @@ export const singlePostEn = [
     smallText:
       "Discover the most common accounting mistakes and learn how to avoid them.",
     text: "text",
-    photo: "/assets/blog/3.jpg",
+    photo: "/assets/blog/3.webp",
     date: "2000-01-22",
     blog: true,
     type: "Blog",
@@ -98,7 +98,7 @@ export const singlePostEn = [
     smallText:
       "Learn why financial health is important and how to manage your finances well.",
     text: "text",
-    photo: "/assets/blog/2.jpg",
+    photo: "/assets/blog/2.webp",
     date: "2000-01-22",
     blog: true,
     type: "Blog",

@@ -9,7 +9,7 @@ const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
 import Team from "@/components/Team/Team";
 
-import photo1 from "../../../public/assets/team/team.jpg";
+import photo1 from "../../../public/assets/team/team.webp";
 import NumberUp from "@/components/UI/NumberUp/NumberUp";
 import WhyUs from "@/components/WhyUs/WhyUs";
 

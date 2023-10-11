@@ -6,7 +6,7 @@ import { IBM_Plex_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 import Button from "../UI/Buttons/Button";
 
-import photo1 from "../../../public/assets/sections/services_1.jpg";
+import photo1 from "../../../public/assets/sections/services_1.webp";
 import logo from "../../../public/assets/logo/logo2.png";
 
 const Services = () => {
