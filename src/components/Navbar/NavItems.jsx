@@ -31,11 +31,6 @@ const items = [
     name: "Hírek & Blog",
     url: "/blog",
   },
-  {
-    id: 5,
-    name: "Kapcsolat",
-    url: "/kapcsolat",
-  },
 ];
 
 const itemsEng = [
@@ -64,11 +59,6 @@ const itemsEng = [
     id: 5,
     name: "News & Blogs",
     url: "/en/news-blogs",
-  },
-  {
-    id: 6,
-    name: "Contact",
-    url: "/en/contact",
   },
 ];
 

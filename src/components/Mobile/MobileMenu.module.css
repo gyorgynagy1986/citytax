@@ -3,21 +3,40 @@
     display: flex;
     align-items: flex-start;
     top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
-    overflow-y: auto;
-    z-index: 1;
+    overflow: hidden;
+    z-index: 999999;
+    background-color: #000000b5;
+    backdrop-filter: blur(10px);
 }
 
 .mobileMenuContainer {
-    width: 100%;
+    width: 80vw;;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;  
-    padding-top: 25vh; 
+    align-items: start;  
+    gap: 4rem;
+    padding-top: 5vh; 
     padding-bottom: 10vh; 
-    background-color: var(--mobileMenuColor);
+    background-color: rgb(255, 255, 255);
+    z-index: 11112;
+    padding-left: 5rem;
+    padding-top: 5rem;
+}
+
+.clsoeContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5rem;
+}
+
+.mobileClose {
+    width: 35px;
+    height: 35px;
 }
 
 .navigation {
@@ -30,7 +49,8 @@
 .mobileMenuUl {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+   
 }
 
 .mobileMenu a li {
@@ -39,14 +59,14 @@
     font-size: 20px;
     line-height: 23px;
     text-align: center;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 
 
 .mobileMenuSocialContainer {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 4rem;
    margin-bottom: 4rem;
 }
@@ -78,7 +98,7 @@
 }
 
 .active {
-    color: var(--titleColor) !important;
+    color: var(--btnColor) !important;
     font-size: 20rem;
 }
 

@@ -5,62 +5,62 @@ import { usePathname } from 'next/navigation';
 
 
 const items = [
-    
   {
-      id:1,
-      name: 'Főoldal', 
-      url: '/'
-  }, 
+    id: 1,
+    name: "Főoldal",
+    url: "/",
+  },
   {
-      id:2,
-      name: 'Galéria', 
-      url: '/galeria'
-  }, 
+    id: 3,
+    name: "Szolgáltatások",
+    url: "/szolgaltatasok",
+  },
   {
-      id:3,
-      name: 'Étlap',  
-      url: '/etlap'
-  }, 
+    id: 2,
+    name: "Árak",
+    url: "/arak",
+  },
   {
-      id:4,
-      name: 'Kapcsolat', 
-      url: '/kapcsolat',
-  }, 
+    id: 6,
+    name: "Rólunk",
+    url: "/rolunk",
+  },
+
   {
-    id:5,
-    name: 'Nyitvatartás', 
-    url: '/#opening',
-}, 
-]
+    id: 4,
+    name: "Hírek & Blog",
+    url: "/blog",
+  },
+];
 
 const itemsEng = [
-    
   {
-      id:1,
-      name: 'Home', 
-      url: '/en'
-  }, 
+    id: 1,
+    name: "Home",
+    url: "/en",
+  },
   {
-      id:2,
-      name: 'Gallery', 
-      url: '/en/gallery'
-  }, 
+    id: 2,
+    name: "Services",
+    url: "/en/services",
+  },
   {
-      id:3,
-      name: 'Menu',  
-      url: '/en/menu'
-  }, 
+    id: 3,
+    name: "Prices",
+    url: "/en/Prices",
+  },
   {
-      id:4,
-      name: 'Contact', 
-      url: '/en/contact',
-  }, 
+    id: 4,
+    name: "About",
+    url: "/en/about",
+  },
+
   {
-    id:5,
-    name: 'Opening Hours', 
-    url: 'en/#opening',
-}, 
-]
+    id: 5,
+    name: "News & Blogs",
+    url: "/en/news-blogs",
+  },
+];
   
 
 const MobileMenuItem = ({mobileClose}) => {

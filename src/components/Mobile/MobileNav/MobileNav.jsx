@@ -1,17 +1,32 @@
-import React from 'react'
+"use client"
+import React, { useState, useEffect } from 'react'
 import style from '@/components/Mobile/MobileNav/MobileNav.module.css'
 import Image from 'next/image'
-import logo from "../../../../public/assets/logo/logo.png";
-import { meta } from "@/data/data";
+import Logo from '@/components/UI/Logo/Logo';
+import MobileMenu from '@/components/Mobile/MobileMenu'
+import { RxHamburgerMenu } from "react-icons/rx";
+
 
 const MobileNav = () => {
+
+  const [mobileMenuHandler, setMobileMenuHandler ] = useState(true)
+
+  const mobileMenuOpen = () => {
+    setMobileMenuHandler(false)
+  }
+
+  const mobileClose = () => {
+    setMobileMenuHandler(true)
+  }
+
+
   return (
     <navbar className={style.navbar}>
       <div className={style.container}>
-        <Image priority alt={meta.logoAlt} className={style.logo} src={logo} />
-        <div className="flex justify-center items-center gap-10">
-        </div>
+        <Logo className={style.logo} />
+        <RxHamburgerMenu onClick={mobileMenuOpen} className={style.mobileOpen} />
       </div>
+      {!mobileMenuHandler && <MobileMenu mobileClose={mobileClose} />}
     </navbar>
   )
 }
