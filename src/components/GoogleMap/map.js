@@ -1,51 +1,41 @@
-import React from "react";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 
-const containerStyle = {
-  width: "100%",
-  height: "100%",
-  minHeight:'40rem',
-  padding:"2rem"
-};
+import React, { useState, useEffect } from "react";
+import GoogleMapReact from 'google-map-react';
 
-const center = {
-  lat: -3.745,
-  lng: -38.523,
-};
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-const Map = () =>  {
-  
-  const [map, setMap] = React.useState(null);
-  
-  
-  const { isLoaded } = useJsApiLoader({
-    id: process.env.GOOGLE_API_ID,
-    googleMapsApiKey: process.env.GOOGLE_API_KEY,
-  });
+export default function SimpleMap() {
+  const [apiKey, setApiKey] = useState(null);
 
+  console.log(apiKey)
 
+  useEffect(() => {
+    // Fetch the API key from your environment variables or any other source.
+    const apiKeyFromEnv = process.env.GOOGLE_API_KEY;
 
-  const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
-
-    setMap(map);
+    if (apiKeyFromEnv) {
+      setApiKey(apiKeyFromEnv);
+    }
   }, []);
 
+  if (apiKey === null) {
+    // You can display a loading indicator here
+    return <div>Loading...</div>;
+  }
 
-  return isLoaded ? (
-    <GoogleMap
-      mapContainerStyle={containerStyle}
-      center={center}
-      zoom={11}
-      onLoad={onLoad}
-    >
-      {/* Child components, such as markers, info windows, etc. */}
-      <></>
-    </GoogleMap>
-  ) : (
-    <></>
+  return (
+    <div style={{ height: '100vh', width: '100%' }}>
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: apiKey }}
+        defaultCenter={{ lat: 10.99835602, lng: 77.01502627 }}
+        defaultZoom={11}
+      >
+        <AnyReactComponent
+          lat={59.955413}
+          lng={30.337844}
+          text="My Marker"
+        />
+      </GoogleMapReact>
+    </div>
   );
 }
-
-export default Map;
