@@ -8,7 +8,7 @@ import phone from "../../../public/assets/icons/contanct/3.png";
 import emailicon from "../../../public/assets/icons/contanct/2.png";
 import direction from "../../../public/assets/icons/contanct/1.png";
 import { MdPhoneAndroid, MdAlternateEmail, MdOutlineMap } from "react-icons/md";
-import Map from "@/components/GoogleMap/Map";
+import Map from "@/components/GoogleMap/map";
 
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
@@ -120,7 +120,7 @@ const Page = () => {
         </div>
       </div>
       <div className={style.mapContainer}>
-        <Map />
+        <Map address="1600 Amphitheatre Parkway, Mountain View, CA" />
       </div>
     </>
   );
