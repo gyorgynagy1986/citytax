@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import style from "@/components/WhyUs/WhyUs.module.css";
 import Image from "next/image";
 import { whyUs } from "@/data/data";
@@ -14,16 +14,18 @@ import "aos/dist/aos.css";
 import Aos from "aos";
 
 const WhyUs = ({ rolunk }) => {
-
   useEffect(() => {
     Aos.init({
       duration: 1000,
+      easing: 'ease-in-out-quad',
     });
   }, []);
 
   return (
     <>
-      <section className={`${style.container} ${rolunk && style.rolunkContainer} `}>
+      <section
+        className={`${style.container} ${rolunk && style.rolunkContainer} `}
+      >
         <div className={style.contentContainer}>
           <div className={style.textContainer}>
             <div className={style.titleContainer}>
@@ -34,10 +36,10 @@ const WhyUs = ({ rolunk }) => {
               <h2>{whyUs.title2}</h2>
             </div>
 
-            <div className={style.listContainer}>
+            <div data-aos="fade" className={style.listContainer}>
               <ul className={style.listContainerUl}>
                 {whyUs.list.map((items, index) => (
-                  <li data-aos="fade-left"  className={rolunk && style.rolunkLi} key={index}>
+                  <li className={rolunk && style.rolunkLi} key={index}>
                     {" "}
                     <span>
                       {" "}
@@ -49,7 +51,7 @@ const WhyUs = ({ rolunk }) => {
               </ul>
               <ul className={style.listContainerUl}>
                 {whyUs.list2.map((items, index) => (
-                  <li data-aos="fade-left"  className={rolunk && style.rolunkLi} key={index + 1}>
+                  <li className={rolunk && style.rolunkLi} key={index + 1}>
                     {" "}
                     <span>
                       {" "}

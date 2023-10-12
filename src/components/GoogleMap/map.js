@@ -18,6 +18,7 @@ const Map =  () => {
   );
 
   const { isLoaded } = useLoadScript({
+    id: "d7f9212f7c13ae23",
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY,
     libraries: libraries,
   });
@@ -30,9 +31,8 @@ const Map =  () => {
     <div>
       <GoogleMap
         options={mapOptions}
-        zoom={16}
+        zoom={18}
         center={mapCenter}
-        mapTypeId={google.maps.MapTypeId.ROADMAP}
         mapContainerStyle={{ width: "100%", height: "800px" }}
         onLoad={(map) => console.log("Map Loaded")}
       >
