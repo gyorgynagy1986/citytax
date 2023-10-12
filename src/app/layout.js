@@ -1,4 +1,6 @@
 import "./globals.css";
+import "aos/dist/aos.css";
+
 import { Nunito_Sans } from "next/font/google";
 import NavTop from "@/components/NavTop/NavTop";
 import Nav from '@/components/Navbar/NavCenter/Navbar'

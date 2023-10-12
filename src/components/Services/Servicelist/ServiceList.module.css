@@ -15,11 +15,20 @@
 }
 
 
+.contentContainer:not(:first-child) {
+  padding-top: 15rem;
+}
+
+
+.contentContainer:last-child {
+  padding-bottom: var(--sectionPaddingTopMd)
+}
+
+
 .contentContainer {
   max-width: var(--maxWidth);
   display: flex;
   margin: 0 auto;
-  padding-bottom: 15rem;
 }
 
 .leftBoxes {
@@ -117,6 +126,10 @@
   display: none !important;
  }
  
+ .contentContainer:not(:first-child) {
+  padding-top: 5rem;
+}
+
  .circle {
   display: none;
  }

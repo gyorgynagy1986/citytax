@@ -146,7 +146,7 @@ export const team = {
 };
 
 export const servicesMainPage = {
-  title: "Services",
+  title: "Szolgáltatások",
   title2: "További szolgáltatásaink ügyfeleink részére",
 };
 
@@ -160,13 +160,13 @@ export const footerData = {
   address2: "Szegedei Iroda",
   contact: "Kapcsolat",
   services: [
-    { name: "Online könyvelés" },
-    { name: "Adótanácsadás" },
-    { name: "Hitelkérelem, Széchenyi-kártya ügyintézés" },
-    { name: "Cégalapítás" },
-    { name: "Bérszámfejtés" },
-    { name: "Könyvvizsgálat" },
-    { name: "Ügyfélkör átvétel" },
+    { name: "Online könyvelés", link:'/#online' },
+    { name: "Adótanácsadás", link:'/#adotanacs' },
+    { name: "Hitelkérelem, Széchenyi-kártya ügyintézés", link:'/#hitelkerelem' },
+    { name: "Cégalapítás", link:'/#cegalapitas'  },
+    { name: "Bérszámfejtés", link:'/#berszam' },
+    { name: "Könyvvizsgálat" , link:'/#könyvvizsgalat'},
+    { name: "Ügyfélkör átvétel", link:'/#ügyfelkor' },
   ],
 };
 

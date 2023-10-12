@@ -58,6 +58,7 @@ const WhyUs = ({ rolunk }) => {
 
           <div className={style.imageContainer}>
             <Image
+              priority
               className={`${style.img1} ${style.images}`}
               alt="1"
               src={photo1}

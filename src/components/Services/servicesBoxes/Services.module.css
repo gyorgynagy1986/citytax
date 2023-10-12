@@ -190,6 +190,15 @@
   }
 
   .boxContainerItems {
-    max-width: 514px;
+    max-width: 500px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  
+
+  .boxContainerItems {
+    max-width: 300px;
   }
 }

@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import arrow from "../../../public/assets/svg/arrow.svg";
 import cover from "../../../public/assets/sections/finance.jpg";
+import {footerData } from '@/data/data'
 import { BsArrowRightCircle } from "react-icons/bs";
 
 const data = [
@@ -45,15 +46,15 @@ const SliderR = () => {
   return (
     <div className={style.container}>
       <Slider {...settings}>
-        {data.map((name, index) => (
+        {footerData.services.map((name, index) => (
           <div key={index} className={style.sliderBox}>
             <div className={style.sliderBoxItem}>
               {" "}
               <Image alt="services" src={cover} />{" "}
-              <div className={style.sliderBoxItemTitleContainer}>
-                <p className={style.sliderBoxItemTitle}>{name.name}</p>
-                <Image className={style.arrow} src={arrow} alt="arrow" />
-              </div>
+              <a href={`/szolgaltatasok/${name.link}`}> <div className={style.sliderBoxItemTitleContainer}>
+                <p className={style.sliderBoxItemTitle}> {name.name}</p>
+                <Image className={style.arrow} src={arrow} alt="arrow" /> 
+              </div> </a>
             </div>
           </div>
         ))}

@@ -6,12 +6,12 @@ import style from "../../Services/Servicelist/ServiceList.module.css";
 const ServiceList = () => {
   return (
     <div className={style.mainContainer}>
-      <div className={style.contentContainer}>
+      <div id="online" className={style.contentContainer}>
         <div className={`${style.leftBoxes} ${style.displayNone}`}>
           <h2 className={style.h2}>Online könyvelés</h2>
           <div className={style.circle}></div>
         </div>
-        <div className={style.rightBoxes}>
+        <div  className={style.rightBoxes}>
           <h3 className={style.h3}>Online könyvelés</h3>
           <p className={style.p}>
             Az online könyvelés során legyen Ön és vállalkozása az ország
@@ -41,7 +41,7 @@ const ServiceList = () => {
         </div>
       </div>
 
-      <div className={style.contentContainer}>
+      <div id="adotanacs" className={style.contentContainer}>
       <div className={style.leftBoxes2 }>
           <div className={style.circle}></div>
           <h3 className={style.h3}>Adótanácsadás</h3>
@@ -77,7 +77,7 @@ const ServiceList = () => {
         </div>
       </div>
 
-      <div className={style.contentContainer}>
+      <div id="cegalapitas" className={style.contentContainer}>
       <div className={`${style.leftBoxes} ${style.displayNone}`}>
           <h2 className={style.h2}>Cégalapítás</h2>
           <div className={style.circle}></div>
@@ -113,7 +113,7 @@ const ServiceList = () => {
         </div>
       </div>
 
-      <div className={style.contentContainer}>
+      <div id="berszam" className={style.contentContainer}>
       <div className={style.leftBoxes2}>
           <div className={style.circle}></div>
           <h3 className={style.h3}>Bérszámfejtés</h3>
@@ -148,7 +148,7 @@ const ServiceList = () => {
         </div>
       </div>
 
-      <div className={style.contentContainer}>
+      <div  id="könyvvizsgalat" className={style.contentContainer}>
       <div className={`${style.leftBoxes} ${style.displayNone}`}>
           <h2 className={style.h2}>Könyvvizsgálat</h2>
           <div className={style.circle}></div>
@@ -178,7 +178,7 @@ const ServiceList = () => {
         </div>
       </div>
 
-      <div className={style.contentContainer}>
+      <div id="hitelkerelem" className={style.contentContainer}>
       <div className={style.leftBoxes2}>
           <div className={style.circle}></div>
           <h3 className={`${style.h3} ${style.txtRight}`}>
@@ -215,7 +215,7 @@ const ServiceList = () => {
         </div>
       </div>
 
-      <div className={style.contentContainer}>
+      <div id="ügyfelkor" className={style.contentContainer}>
       <div className={`${style.leftBoxes} ${style.displayNone}`}>
           <h2 className={style.h2}>Ügyfélkör átvétel</h2>
           <div className={style.circle}></div>

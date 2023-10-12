@@ -10,8 +10,18 @@ import { heroContent, heroContentEn } from "@/data/data";
 import { IBM_Plex_Sans } from "next/font/google";
 import {linksButtonsHu} from '@/data/data'
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "300" });
+import "aos/dist/aos.css";
+
+import Aos from "aos";
 
 const Hero = ({ langEn }) => {
+
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
  
   const lang = langEn;
 
@@ -50,7 +60,7 @@ const Hero = ({ langEn }) => {
         />
         <div className={style.textContainer}>
           <p className={imb.className}>{!lang ? heroContent.title : heroContentEn.title}</p>
-          <h1>{!lang ? heroContent.h1 : heroContentEn.h1}</h1>
+          <h1 data-aos="fade-right" >{!lang ? heroContent.h1 : heroContentEn.h1}</h1>
           <div className={style.btnContainer}>
             <Button
               heroColor={true}

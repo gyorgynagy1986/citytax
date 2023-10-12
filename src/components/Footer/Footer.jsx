@@ -17,7 +17,7 @@ const Footer = () => (
         <p>{footerData.text}</p>
         <div className={style.socialIcons}>
           <ul className="flex gap-4 ">
-            <Link href="/szolgaltatasok">
+            <Link href='/'>
               {" "}
               <FaFacebookF />
             </Link>
@@ -29,7 +29,7 @@ const Footer = () => (
         <ul>
           {footerData.services.map((item, index) => (
             <li key={index}>
-              <Link href="/szolgaltatasok">{item.name}</Link>
+              <Link href={`/szolgaltatasok/${item.link}`}>{item.name}</Link>
             </li>
           ))}
         </ul>
