@@ -1,0 +1,25 @@
+.activeLi {
+
+}
+.active {
+    color: aquamarine;
+    font-weight: 500;
+    color: var(--btnColor);
+    cursor:auto;
+}
+.active {
+    position: relative !important;
+}
+
+
+
+.active:hover::after {
+  width: 0% !important;
+  background-color:transparent;
+
+}
+
+.active-hover-none:hover::after {
+  color: #ffaa0000 !important;
+  width: 0% !important;
+}

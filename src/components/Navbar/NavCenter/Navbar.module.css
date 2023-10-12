@@ -43,6 +43,33 @@
   color: var(--navTextColor);
 }
 
+.ul li a {
+  position: relative;
+}
+
+.ul li a:hover {
+  color: var(--btnColor);
+}
+
+.ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 1px;
+  width: 0%;
+  background-color: var(--btnColor);
+
+  transition: all 160ms ease-in-out;
+}
+
+
+
+.ul li a:hover::after {
+  width: 100%;
+  color: ( var(--btnColor));
+}
+
 
 @media screen and (max-width: 960px) {
   .ul {

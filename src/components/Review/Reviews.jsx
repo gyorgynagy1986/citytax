@@ -1,5 +1,6 @@
 "use client";
 
+import React, {useEffect} from "react";
 import Slider from "react-slick";
 import style from "@/components/Review/Reviews.module.css";
 import "slick-carousel/slick/slick.css";
@@ -7,6 +8,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { BsStarFill } from "react-icons/bs";
 import { IBM_Plex_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const data = [
   {
@@ -46,6 +49,13 @@ function SamplePrevArrow(props) {
 }
 
 const SliderR = () => {
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -73,13 +83,13 @@ const SliderR = () => {
     ],
   };
   return (
-    <div className={style.container}>
-      <div className={style.contentContainer}>
+    <div data-aos="fade-up" className={style.container}>
+      <div data-aos="fade-up" className={style.contentContainer}>
         <div className={style.titleContainer}>
           <h1 className={imb.className}>ügyfélvélemények</h1>
           <h2>Ügyfelenik rólunk</h2>
         </div>
-        <Slider {...settings}>
+        <Slider   {...settings}>
           {data.map((items, index) => (
             <div key={index} className={style.sliderBox}>
               <div className={style.sliderBoxItem}>

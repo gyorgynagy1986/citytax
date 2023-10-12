@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import style from "./page.module.css";
 import { IBM_Plex_Sans } from "next/font/google";
 import Image from "next/image";
@@ -9,10 +9,19 @@ import emailicon from "../../../public/assets/icons/contanct/2.png";
 import direction from "../../../public/assets/icons/contanct/1.png";
 import { MdPhoneAndroid, MdAlternateEmail, MdOutlineMap } from "react-icons/md";
 import Map from "@/components/GoogleMap/map";
+import Aos from "aos";
 
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
 const Page = () => {
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
+
+
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -44,7 +53,7 @@ const Page = () => {
             <div className={style.btnContainer}></div>
           </div>
 
-          <div className={style.iconContainer}>
+          <div data-aos="fade" className={style.iconContainer}>
             <div className={style.iconBoxes}>
               {" "}
               <Image className={style.image} alt="phone" src={emailicon} />

@@ -2,8 +2,17 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import style from "@/components/UI/NumberUp/NumberUp.module.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const NumberUp = ({ rolunk }) => {
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
+
   const [numbers, setNumbers] = useState([0, 0, 0, 0]);
   const numberRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
   const countingStartedRefs = [
@@ -53,6 +62,8 @@ const NumberUp = ({ rolunk }) => {
     }
   };
 
+
+
   useEffect(() => {
     const options = {
       root: null,
@@ -79,7 +90,7 @@ const NumberUp = ({ rolunk }) => {
 
   return (
     <>
-      <div
+      <div data-aos="fade-up" 
         className={`${style.counterContainer} ${
           rolunk && style.roulunkCounterContainer
         }`}

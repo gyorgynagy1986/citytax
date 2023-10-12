@@ -1,4 +1,7 @@
-import React from "react";
+
+"use client"
+
+import React, {useEffect} from "react";
 import style from "./page.module.css";
 import Button from "@/components/UI/Buttons/Button";
 import { IBM_Plex_Sans } from "next/font/google";
@@ -6,10 +9,21 @@ import Image from "next/image";
 import Pricelist from "@/components/Pricelist/Pricelist";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 import photo1 from "../../../public/assets/team/team.webp";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
-const page = () => {
+
+const Page = () => {
+
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
-    <div className={style.container}>
+    <div data-aos="fade" className={style.container}>
       <div className={style.contentContainer}>
         <div className={style.titleContainer}>
           <p className={imb.className}>Árak</p>
@@ -55,4 +69,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -33,7 +33,7 @@ export const heroContent = {
   title: "CITY TAX KÖNYVELŐIRODA",
   h1: "Megbízható könyvelés, közérthetően",
   btn: "Kapcsolat",
-  btn2: "szolgáltatások",
+  btn2: "Szolgáltatások",
   url: "/kapcsolat",
 };
 

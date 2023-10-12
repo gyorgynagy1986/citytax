@@ -11,7 +11,6 @@ import { IBM_Plex_Sans } from "next/font/google";
 import {linksButtonsHu} from '@/data/data'
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "300" });
 import "aos/dist/aos.css";
-
 import Aos from "aos";
 
 const Hero = ({ langEn }) => {

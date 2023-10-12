@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./Pricelist.module.css";
 import { IBM_Plex_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
+import "aos/dist/aos.css";
+import Aos from "aos";
+
 const Pricelist = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <div className={style.container}>
       <div className={style.contentContainer}>
@@ -15,7 +24,7 @@ const Pricelist = () => {
         </div>
 
         <div className={style.priceListcontainer}>
-          <div className={style.priceItemContainer}>
+          <div data-aos="fade-right" className={style.priceItemContainer}>
             <div className={`${style.type} ${style.lin1}`}>
               <p>Basic</p>
             </div>
@@ -34,7 +43,7 @@ const Pricelist = () => {
             </div>
           </div>
 
-          <div className={style.priceItemContainer}>
+          <div data-aos="fade-left" className={style.priceItemContainer}>
             <div className={`${style.type} ${style.lin2}`}>
               <p>Standard </p>
             </div>
@@ -52,12 +61,12 @@ const Pricelist = () => {
             </div>
           </div>
 
-          <div className={style.priceItemContainer}>
+          <div data-aos="fade-right" className={style.priceItemContainer}>
             <div className={`${style.type} ${style.lin3}`}>
               <p>Special </p>
             </div>
 
-            <div className={style.priceContainer}>
+            <div  className={style.priceContainer}>
               <p className={style.price}>20.000 - Ft + ÁFA / hótól (alapdíj)</p>
             </div>
 
@@ -70,7 +79,7 @@ const Pricelist = () => {
             </div>
           </div>
 
-          <div className={style.priceItemContainer}>
+          <div data-aos="fade-left" className={style.priceItemContainer}>
             <div className={`${style.type} ${style.lin4}`}>
               <p>Prémium </p>
             </div>

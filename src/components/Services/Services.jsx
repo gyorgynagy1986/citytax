@@ -1,4 +1,6 @@
-import React from "react";
+"use client"
+
+import React,  {useEffect} from "react";
 import style from "@/components/Services/Services.module.css";
 import Image from "next/image";
 import { mainServices } from "@/data/data";
@@ -9,11 +11,21 @@ import { linksButtonsHu } from "@/data/data";
 import { buttons } from "@/data/data";
 import photo1 from "../../../public/assets/sections/services_1.webp";
 import logo from "../../../public/assets/logo/logo2.png";
+import "aos/dist/aos.css";
+import Aos from "aos";
+
 
 const Services = () => {
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <>
-      <section className={style.container}>
+      <section data-aos="fade" className={style.container}>
         <div className={style.contentContainer}>
           <div className={style.imageContainer}>
             <Image
