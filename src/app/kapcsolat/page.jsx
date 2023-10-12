@@ -65,7 +65,17 @@ const Page = () => {
             </div>
           </div>
 
+          <div className={style.titleContainer2}>
+            <h3 className={imb.className}>Kapcsolatfelvételi űrlap</h3>
+            <p>
+              Miután elküldte az üzenetét, 1 munkanapon belül felvesszük önnel a
+              kapcsolatot!
+            </p>{" "}
+            <div className={style.btnContainer}></div>
+          </div>
+
           <div className={style.formContainer} data-aos="fade-up">
+
             <form
               className={style.form}
               method="post"

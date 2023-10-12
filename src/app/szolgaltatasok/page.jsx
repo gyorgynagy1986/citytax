@@ -41,6 +41,7 @@ const page = () => {
 
             <div className={style.listContainer}>
               <ul className={style.listContainerUl}>
+                <h2 className={style.h2}>Könyvelési szolgáltatásaink további elemei</h2>
                 {additionalService.list.map((items, index) => (
                   <li  key={index}>
                     {" "}

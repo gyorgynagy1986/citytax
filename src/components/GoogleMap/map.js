@@ -40,7 +40,7 @@ const Map = () => {
         <MarkerF
           position={mapCenter}
           onLoad={() => console.log("Marker Loaded")}
-          icon="https://citytax.vercel.app/logo.png"
+          icon="https://citytax.vercel.app/marker.svg"
         />
       </GoogleMap>
     </div>

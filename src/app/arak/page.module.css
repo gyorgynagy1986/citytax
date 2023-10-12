@@ -128,6 +128,20 @@
 }
 
 @media screen and (max-width: 986px) {
+
+  .textContainer:after {
+    content: "";
+    width: 0;
+    top: 0;
+    height: 0;
+  
+   
+  }
+
+  .aboutTitleContainer h1 {
+   text-align: center;
+  }
+
   .textContainer {
     width: 100%;
   }
@@ -145,4 +159,10 @@
   .imageContainer {
     width: 100%;
   }
+
+
+  .aboutContainer {
+    flex-direction: column;
+  }
+
 }

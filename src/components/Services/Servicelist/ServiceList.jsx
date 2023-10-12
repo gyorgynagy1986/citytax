@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import photo1 from "../../../../public/assets/sections/services_1.jpg";
+import photo1 from "../../../../public/assets/sections/services_1.webp";
 import style from "../../Services/Servicelist/ServiceList.module.css";
 
 const ServiceList = () => {

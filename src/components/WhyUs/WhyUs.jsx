@@ -12,7 +12,7 @@ import { linksButtonsHu } from "@/data/data";
 const WhyUs = ({ rolunk }) => {
   return (
     <>
-      <section className={style.container}>
+      <section className={`${style.container} ${rolunk && style.rolunkContainer} `}>
         <div className={style.contentContainer}>
           <div className={style.textContainer}>
             <div className={style.titleContainer}>

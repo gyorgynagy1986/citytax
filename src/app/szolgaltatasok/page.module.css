@@ -65,10 +65,25 @@
 
 .img1 {
   min-width: auto;
-  max-height: 450px;
   object-fit: cover;
   border-radius: 5px;
 }
+
+.h2 {
+  font-size: var(--sectionSmTitle);
+  color: var(--titleColor2);
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
+.h2:before {
+  display: inline-block;
+  content: "\00BB";
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+
 
 .textContainer {
   width: 50%;
@@ -118,12 +133,9 @@
 }
 
 .listContainer {
-  display: flex;
-  padding-bottom: 5rem;
 }
 
 .listContainerUl {
-  padding-top: 2rem;
   width: 100%;
 }
 
@@ -154,7 +166,7 @@
 
   .textContainer p {
     font-size: 16px;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     line-height: 160%;
   }
 

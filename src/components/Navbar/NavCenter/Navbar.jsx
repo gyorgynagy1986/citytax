@@ -5,6 +5,7 @@ import Button from "@/components/UI/Buttons/Button";
 import Logo from "@/components/UI/Logo/Logo";
 import style from "@/components/Navbar/NavCenter/Navbar.module.css";
 import { meta } from "@/data/data";
+import { linksButtonsHu } from "@/data/data";
 
 import { usePathname } from "next/navigation";
 
@@ -37,7 +38,7 @@ const Navbar = () => {
           <ul className={style.ul}>
             <NavItems />
           </ul>
-          <Button url={"/"} name={btnEngLogic} />
+          <Button url={linksButtonsHu.contact} name={btnEngLogic} />
         </div>
       </div>
     </nav>

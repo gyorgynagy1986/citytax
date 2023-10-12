@@ -68,7 +68,7 @@ p {
 
 @media screen and (max-width: 600px) {
   :root {
-    --sectionMdTitle: 26px;
+    --sectionMdTitle: 22px;
     --sectionPaddingTop: 10rem;
     --textContainerP: 16px;
     --footeritemsWidth: 100%;

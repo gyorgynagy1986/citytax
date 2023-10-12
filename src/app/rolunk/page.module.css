@@ -61,7 +61,7 @@
   position: relative;
   display: flex;
   clip-path: polygon(10% 0, 100% 0%, 100% 100%, 9% 100%, 0% 50%);
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .img1 {
@@ -119,8 +119,14 @@
 }
 
 @media screen and (max-width: 986px) {
+ 
+  .aboutContainer {
+    flex-direction: column;
+   }
+ 
   .textContainer {
     width: 100%;
+    order: 1;
   }
 
   .textContainer p {
@@ -137,9 +143,9 @@
 
   .imageContainer {
     width: 100%;
+    order: 0;
+    clip-path: none;
   }
 
-  .aboutContainer {
-   flex-direction: column;
-  }
+ 
 }

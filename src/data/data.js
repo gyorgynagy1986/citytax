@@ -85,20 +85,18 @@ export const servicesEn = {
 
 export const additionalService = {
   list: [
-    { title: "Online könyvelés" },
-    { title: "Adótanácsadás" },
-    { title: "Cégalapítás" },
-    { title: "Ügyfélkör átvétel:" },
-
+    { title: "Banki hitel ügyintézés" },
+    { title: "Pályázati segédanyagok összekészítése" },
+    { title: "Beruházási, befektetési tanácsok véleményezése vállalkozása " },
   ],
 
   list2: [
     {
-      title: "Bérszámfejtés",
+      title: "Más könyvelő általi hibák javítása, adott esetben újrakönyvelése",
     },
-    { title: "Könyvvizsgálat:" },
+    { title: "Igény szerint szabályzatok készítése" },
     {
-      title: "Hitelkérelem, Széchenyi-kártya ügyintézés",
+      title: "Szinte bármely programból adatot importálunk saját programunkba",
     },
   ],
 };

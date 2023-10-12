@@ -42,3 +42,11 @@
   font-weight: 600;
   color: var(--navTextColor);
 }
+
+
+@media screen and (max-width: 960px) {
+  .ul {
+    gap: 2rem;
+
+  }
+} 

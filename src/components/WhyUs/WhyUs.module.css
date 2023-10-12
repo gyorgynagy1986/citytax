@@ -148,3 +148,10 @@
 .rolunkP {
   color: var(--btnColor) !important;
 }
+
+
+@media screen and (max-width: 1200px) {
+ .rolunkContainer {
+  padding-top: 5rem !important;
+ }
+}

@@ -31,6 +31,7 @@ const MobileMenu = ({ mobileClose }) => {
             <MobileMenuItem mobileClose={mobileClose} />
           </ul>
           <Button
+            mobileClose={mobileClose}
             url={linksButtonsHu.contact}
             name={
               pathname.includes("/en")
