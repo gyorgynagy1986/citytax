@@ -18,7 +18,6 @@ const Map = () => {
   );
 
   const { isLoaded } = useLoadScript({
-    id: process.env.GOOGLE_MAP_ID,
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY,
     libraries: libraries,
   });
