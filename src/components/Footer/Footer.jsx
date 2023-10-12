@@ -7,7 +7,7 @@ import { HiMiniDevicePhoneMobile } from "react-icons/hi2";
 import { footerData } from "../../data/data";
 import { contactData } from "../../data/data";
 
-import Logo from "@/components/UI/Logo/LogoStanding";
+import Logo from "@/components/UI/Logo/LogoWhite";
 
 const Footer = () => (
   <footer className={style.container}>
@@ -17,7 +17,7 @@ const Footer = () => (
         <p>{footerData.text}</p>
         <div className={style.socialIcons}>
           <ul className="flex gap-4 ">
-            <Link href="/">
+            <Link href="/szolgaltatasok">
               {" "}
               <FaFacebookF />
             </Link>
@@ -29,7 +29,7 @@ const Footer = () => (
         <ul>
           {footerData.services.map((item, index) => (
             <li key={index}>
-              <Link href="/">{item.name}</Link>
+              <Link href="/szolgaltatasok">{item.name}</Link>
             </li>
           ))}
         </ul>
@@ -40,14 +40,14 @@ const Footer = () => (
           <h4>{footerData.address}</h4>
           <div className={style.addressAndIconContainer}>
             <PiMapPinLine />
-            <p>Szeged xy utca</p>
+            <p>6900 Makó, Hold utca 26</p>
           </div>
         </div>
         <div className={style.address1}>
           <h4>{footerData.address2}</h4>
           <div className={style.addressAndIconContainer}>
             <PiMapPinLine />
-            <p>Makó xy utca</p>
+            <p>-</p>
           </div>
         </div>
         <div className={style.address1}>
@@ -65,8 +65,8 @@ const Footer = () => (
     </div>
     <div className={style.footerBottom}>
       <p>
-       All rights reserved © citytax.hu | 2023 Designed and developed by Studio
-        Bromo 
+       All rights reserved © citytax.hu | 2023 <b>Designed and developed by <a href="https://studiobromo.hu/">Studio Bromo</a></b>
+         
       </p>
     </div>
   </footer>

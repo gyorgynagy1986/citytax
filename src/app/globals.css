@@ -35,9 +35,13 @@
   --sectionSmTitle: 20px;
   --sectionMdTitle: 32px;
   --sectionPaddingTopSm: 5rem;
+  --sectionPaddingTopMd: 10rem;
   --sectionPaddingTop: 15rem;
   --sectionPaddingTopBig: 20rem;
   --paddingTitleContainer: 4rem;
+
+  --sectionPaddingTopOnlyHero:7rem;
+
 
   --textContainerP: 18px;
 
@@ -81,7 +85,7 @@ p {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #f4730ab2;
+  background-color: #00a9b4;
   height: 300px;
   border-radius: 50px;
 }

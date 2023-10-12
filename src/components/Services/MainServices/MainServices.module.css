@@ -27,8 +27,8 @@
   min-height: 15rem;
   background-color: #222933;
   position: relative;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: var(--sectionPaddingTopMd);
+  padding-bottom: var(--sectionPaddingTopMd);
 }
 
 .spinnerContainer::before {

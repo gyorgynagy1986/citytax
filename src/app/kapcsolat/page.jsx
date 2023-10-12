@@ -40,7 +40,7 @@ const Page = () => {
         <div className={style.contentContainer}>
           <div className={style.titleContainer}>
             <h1 className={imb.className}>Kapcsolat</h1>
-            <h2>Lépj Velünk Kapcsolatba</h2>{" "}
+            <h2>Lépjen Velünk kapcsolatba</h2>{" "}
             <div className={style.btnContainer}></div>
           </div>
 
@@ -68,7 +68,7 @@ const Page = () => {
           <div className={style.titleContainer2}>
             <h3 className={imb.className}>Kapcsolatfelvételi űrlap</h3>
             <p>
-              Miután elküldte az üzenetét, 1 munkanapon belül felvesszük önnel a
+              Miután elküldte az üzenetét, 1 munkanapon belül felvesszük Önnel a
               kapcsolatot!
             </p>{" "}
             <div className={style.btnContainer}></div>

@@ -1,7 +1,7 @@
 import { useLoadScript, GoogleMap, MarkerF } from "@react-google-maps/api";
 import { useMemo } from "react";
 
-const Map = () => {
+const Map =  () => {
   const libraries = useMemo(() => ["places"], []);
   const mapCenter = useMemo(
     () => ({ lat: 46.209660, lng: 20.471570 }),

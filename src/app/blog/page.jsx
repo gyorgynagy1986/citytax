@@ -34,10 +34,16 @@ const Blog = () => {
     <>
       <section className={style.container}>
         <div className={style.titleContainer}>
-          <h1 className={imb.className}>Hírek & Blogok</h1>
+          <h1 className={imb.className}>Hírek & Blog</h1>
           <h2>Legfrisseb híreink és blogbejegyzések</h2>
         </div>
         <div className={style.buttonContainer}>
+          <button
+            className={`${style.button} ${active === "3" && style.active}`}
+            onClick={filterAll}
+          >
+            összes{" "}
+          </button>{" "}
           <button
             className={`${style.button} ${active === "1" && style.active}`}
             onClick={filterBlogoHandeler}
@@ -49,12 +55,6 @@ const Blog = () => {
             onClick={filterNewshandler}
           >
             hírek{" "}
-          </button>{" "}
-          <button
-            className={`${style.button} ${active === "3" && style.active}`}
-            onClick={filterAll}
-          >
-            All{" "}
           </button>{" "}
         </div>
 

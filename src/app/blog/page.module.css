@@ -113,8 +113,9 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 3rem;
-  padding: 2rem 0rem 4rem 0rem;
+  padding: 0rem 0rem 4rem 0rem;
 }
 
 .button {
