@@ -26,6 +26,10 @@
   margin-right: 10px;
 }
 
+.titleContainer {
+  padding: var(--paddingTitleContainer);
+}
+
 .titleContainer h1:after {
   display: inline-block;
   content: " \00AB";
@@ -132,21 +136,19 @@
     line-height: 120%;
   }
 
-  .circle  {
-    height:auto;
+  .circle {
+    height: auto;
     width: auto;
-   
   }
 
   .circle span {
     height: 40px;
     width: 40px;
-   
   }
 
   .boxContainerItems {
     width: 100%;
-    padding: 2rem 1rem 1rem 2rem;
+    padding: 2rem 1rem 2rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,12 +156,9 @@
     gap: 2rem;
   }
 
-  
-.boxContainer {
-  
-  gap: 1rem;
-
-}
+  .boxContainer {
+    gap: 3rem;
+  }
 
   .promo {
     font-size: 22px;

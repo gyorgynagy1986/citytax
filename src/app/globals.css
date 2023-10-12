@@ -35,8 +35,9 @@
   --sectionSmTitle: 20px;
   --sectionMdTitle: 32px;
   --sectionPaddingTopSm: 5rem;
-  --sectionPaddingTop: 10rem;
+  --sectionPaddingTop: 15rem;
   --sectionPaddingTopBig: 20rem;
+  --paddingTitleContainer: 4rem;
 
   --textContainerP: 18px;
 
@@ -67,8 +68,8 @@ p {
 
 @media screen and (max-width: 600px) {
   :root {
-    --sectionMdTitle: 24px;
-    --sectionPaddingTop: 5rem;
+    --sectionMdTitle: 26px;
+    --sectionPaddingTop: 10rem;
     --textContainerP: 16px;
     --footeritemsWidth: 100%;
   }

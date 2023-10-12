@@ -5,9 +5,10 @@ import MobileMenuItem from "./MobileMenuItem";
 import Button from "../UI/Buttons/Button";
 import { usePathname } from "next/navigation";
 import { IoCloseSharp } from "react-icons/io5";
+import { linksButtonsHu } from "@/data/data";
 
 const textContentHu = {
-  btnName: "Kapcsoalt",
+  btnName: "kapcsolat",
 };
 
 const textContentEng = {
@@ -20,7 +21,7 @@ const MobileMenu = ({ mobileClose }) => {
   return (
     <>
       <div className={style.mobileMenu}>
-        <div className={style.mobileMenuContainer}>
+        <div className={`${style.mobileMenuContainer} ${style.slidefwdleft}`}>
           <div className={style.clsoeContainer}>
             {" "}
             <IoCloseSharp onClick={mobileClose} className={style.mobileClose} />
@@ -30,7 +31,7 @@ const MobileMenu = ({ mobileClose }) => {
             <MobileMenuItem mobileClose={mobileClose} />
           </ul>
           <Button
-            url={"/"}
+            url={linksButtonsHu.contact}
             name={
               pathname.includes("/en")
                 ? textContentEng.btnName

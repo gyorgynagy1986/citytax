@@ -62,7 +62,12 @@ const Footer = () => (
           </div>
         </div>
       </div>
-      <div></div>
+    </div>
+    <div className={style.footerBottom}>
+      <p>
+       All rights reserved © citytax.hu | 2023 Designed and developed by Studio
+        Bromo 
+      </p>
     </div>
   </footer>
 );

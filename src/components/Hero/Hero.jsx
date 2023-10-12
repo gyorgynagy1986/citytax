@@ -8,6 +8,7 @@ import Image from "next/image";
 import hero from "../../../public/assets/hero/hero.webp";
 import { heroContent, heroContentEn } from "@/data/data";
 import { IBM_Plex_Sans } from "next/font/google";
+import {linksButtonsHu} from '@/data/data'
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "300" });
 
 const Hero = ({ langEn }) => {
@@ -54,13 +55,13 @@ const Hero = ({ langEn }) => {
             <Button
               heroColor={true}
               engColorPrefix={lang ? true : false}
-              url={"/"}
+              url={linksButtonsHu.contact}
               name={!lang ? heroContent.btn : heroContentEn.btn}
             />
             <Button
               heroColor2={true}
               engColorPrefix={lang ? true : false}
-              url={"/"}
+              url={linksButtonsHu.services}
               name={!lang ? heroContent.btn2 : heroContentEn.btn2}
             />
           </div>

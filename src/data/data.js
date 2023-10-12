@@ -15,6 +15,11 @@ export const buttons = {
   contanctEn: "contanct",
 };
 
+export const linksButtonsHu = {
+  contact: '/kapcsolat',
+  services: '/szolgaltatasok'
+};
+
 export const meta = {
   logoAlt: "City Tax könyvelőiroda logója ",
 };

@@ -5,6 +5,7 @@ import { mainServices } from "@/data/data";
 import { IBM_Plex_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 import Button from "../UI/Buttons/Button";
+import { linksButtonsHu } from "@/data/data";
 
 import photo1 from "../../../public/assets/sections/services_1.webp";
 import logo from "../../../public/assets/logo/logo2.png";
@@ -38,11 +39,7 @@ const Services = () => {
               <h2>{mainServices.title2}</h2>
             </div>
             <p className="mb-20">{mainServices.text}</p>
-            <Button
-              typeBlack={true}
-              name={"Visszahívást kérek"}
-              url={"/"}
-            />
+            <Button typeBlack={true} name={"Visszahívást kérek"} url={linksButtonsHu.contact} />
           </div>
         </div>
       </section>

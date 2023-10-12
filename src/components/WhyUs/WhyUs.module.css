@@ -2,7 +2,6 @@
   width: 100%;
   height: 100%;
   padding-top: var(--sectionPaddingTop);
-  padding-bottom: var(--sectionPaddingTop);
   padding-left: var(--plpr);
   padding-right: var(--plpr);
   overflow: hidden;
@@ -67,7 +66,7 @@
   font-size: var(--sectionMdTitle);
   font-weight: var(--titleFontW);
   margin-bottom: 2rem;
-  line-height: 110%;
+  line-height: 130%;
 }
 
 .listContainer {
@@ -121,9 +120,22 @@
   .textContainer p {
     font-weight: normal;
     font-style: normal;
-    color: #74787c;
     font-size: var(--textContainerP);
     line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .listContainer {
+    flex-direction: column;
+  }
+
+  .listContainerUl {
+    padding-top: 0;
+  }
+
+  .listContainerUl li {
+  gap: 1rem;
   }
 }
 

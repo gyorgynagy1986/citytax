@@ -11,7 +11,7 @@ const Logo = ({onClick, mobileClose}) => {
   
   return (
     <>
-    <Link onClick={onClick} className={style.logoMain} href='/'><Image onClick={mobileClose} priority alt='city tax könyvelőiroda logója' src={logo}/></Link> 
+    <Link onClick={onClick} className={style.logoMainStanding} href='/'><Image onClick={mobileClose} priority alt='city tax könyvelőiroda logója' src={logo}/></Link> 
     </>
   )
 }
