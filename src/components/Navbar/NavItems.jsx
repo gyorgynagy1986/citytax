@@ -47,7 +47,7 @@ const itemsEng = [
   {
     id: 3,
     name: "Prices",
-    url: "/en/Prices",
+    url: "/en/prices",
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ const itemsEng = [
   {
     id: 5,
     name: "News & Blogs",
-    url: "/en/news-blogs",
+    url: "/en/blog",
   },
 ];
 
@@ -66,7 +66,12 @@ const NavItems = () => {
   const pathname = usePathname();
   return (
     <>
-      {pathname.includes("/en")
+      {pathname == "/en" ||
+      pathname == "/en/services" ||
+      pathname == "/en/about" ||
+      pathname == "/en/prices" ||
+      pathname == "/en/contact" ||
+      pathname == "/en/blog"
         ? itemsEng.map((item) => (
             <li
               className={` ${nunito.className} ${

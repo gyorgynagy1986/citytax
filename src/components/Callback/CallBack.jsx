@@ -4,9 +4,9 @@ import React from "react";
 import Button from "@/components/UI/Buttons/Button";
 import style from "./Callback.module.css";
 import { usePathname } from "next/navigation";
-import { buttons } from "@/data/data";
+import { buttons, buttonsEn } from "@/data/data";
 //{<Image className={style.bcgImage} alt="callback" src={bcg} /> }
-import { linksButtonsHu } from "@/data/data";
+import { useLocalContent } from "@/app/hooks/languageHandler"; 
 
 const textHu = (
   <h2>
@@ -24,17 +24,16 @@ const textEn = (
 
 const CallBack = () => {
   const pathname = usePathname();
+  const { text } = useLocalContent(buttons, buttonsEn);
+
+
+  console.log(text)
 
   return (
     <div className={style.callbackContainer}>
       <div className={style.btnContainer}>
         {pathname.includes("/en") ? textEn : textHu}
-        <Button
-          url={linksButtonsHu.contact}
-          name={
-            pathname.includes("/en") ? buttons.callbackEn : buttons.callbackHu
-          }
-        />
+        <Button url={text.contactLink} name={text.callback} />
       </div>
     </div>
   );

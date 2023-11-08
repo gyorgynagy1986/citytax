@@ -26,6 +26,7 @@
 .img1 {
   min-width: auto;
   min-height: 600px;
+  max-height: 700px;
   object-fit: cover;
 }
 

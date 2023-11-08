@@ -7,9 +7,9 @@ import Image from "next/image";
 import phone from "../../../public/assets/icons/contanct/3.png";
 import emailicon from "../../../public/assets/icons/contanct/2.png";
 import direction from "../../../public/assets/icons/contanct/1.png";
-import { MdPhoneAndroid, MdAlternateEmail, MdOutlineMap } from "react-icons/md";
-import Map from "@/components/GoogleMap/map";
 import Aos from "aos";
+import MapembedApi from '@/components/GoogleMap/EmbedApi/EmbedApi'
+import {contactData} from '@/data/data'
 
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
@@ -21,23 +21,30 @@ const Page = () => {
     });
   }, []);
 
-
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const [button, setButton] = useState("Küldés");
+
+  const str = 'just a normal string for test!';
 
   const handleSendEmail = async (event) => {
     event.preventDefault();
-
+    setButton('Küldés folyamaban')
     try {
-      await fetch("api/mail", {
+      await fetch("https://formsubmit.co/ajax/gyurzi@gmail.com", {
         method: "post",
-        body: JSON.stringify({ name, email, message }),
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({ name, email, message, str, }),
       });
 
       setEmail("");
       setName("");
       setMessage("");
+      setButton('ELKÜLDVE')
     } catch (error) {
       console.error("Error sending email:", error);
     }
@@ -58,19 +65,19 @@ const Page = () => {
               {" "}
               <Image className={style.image} alt="phone" src={emailicon} />
               <p>
-                <a href="mailto: abc@example.com">email@email.com</a>
+                <a href="mailto: info@citytax.hu">{contactData.email}</a>
               </p>
             </div>
 
             <div className={style.iconBoxes}>
               {" "}
               <Image className={style.image} alt="phone" src={direction} />
-              <p>6900 Makó, Hold utca 26</p>
+              <p>{contactData.address}</p>
             </div>
 
             <div className={style.iconBoxes}>
               <Image className={style.image} alt="phone" src={phone} />
-              <p>06 30 000 00 00</p>
+              <p>{contactData.phone}</p>
             </div>
           </div>
 
@@ -132,14 +139,15 @@ const Page = () => {
               {/* End .col-12 */}
 
               <div className="w-full">
-                <button className={style.btn}>küldés</button>
+                <button className={style.btn}>{button}</button>
               </div>
             </form>
           </div>
         </div>
       </div>
       <div className={style.mapContainer}>
-        <Map address="1600 Amphitheatre Parkway, Mountain View, CA" />
+      <MapembedApi />
+       
       </div>
     </>
   );

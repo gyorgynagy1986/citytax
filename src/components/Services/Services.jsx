@@ -1,21 +1,37 @@
-"use client"
+"use client";
 
-import React,  {useEffect} from "react";
 import style from "@/components/Services/Services.module.css";
-import Image from "next/image";
-import { mainServices } from "@/data/data";
+import React, { useEffect, useState } from "react";
+import { mainServices, mainServicesEn, buttons, buttonsEn } from "@/data/data";
 import { IBM_Plex_Sans } from "next/font/google";
-const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
-import Button from "../UI/Buttons/Button";
-import { linksButtonsHu } from "@/data/data";
-import { buttons } from "@/data/data";
-import photo1 from "../../../public/assets/sections/services_1.webp";
+import { usePathname } from "next/navigation";
+
 import logo from "../../../public/assets/logo/logo2.png";
-import "aos/dist/aos.css";
+import photo1 from "../../../public/assets/sections/services.webp";
+import Image from "next/image";
+import Button from "../UI/Buttons/Button";
 import Aos from "aos";
 
+import "aos/dist/aos.css";
+const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
 const Services = () => {
+  const [text, setText] = useState(mainServices);
+  const [buttontext, setButtontext] = useState(buttons);
+
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (pathname.includes("/en")) {
+      setText(mainServicesEn);
+      setButtontext(buttonsEn);
+
+    } else {
+      setText(mainServices);
+      setButtontext(buttons);
+
+    }
+  }, [pathname]);
 
   useEffect(() => {
     Aos.init({
@@ -47,14 +63,14 @@ const Services = () => {
           <div className={style.textContainer}>
             <div className={style.titleContainer}>
               {" "}
-              <h1 className={imb.className}>{mainServices.title}</h1>
-              <h2>{mainServices.title2}</h2>
+              <h1 className={imb.className}>{text.title}</h1>
+              <h2>{text.title2}</h2>
             </div>
-            <p className="mb-20">{mainServices.text}</p>
+            <p className="mb-20">{text.text}</p>
             <Button
               typeBlack={true}
-              name={buttons.callbackHu}
-              url={linksButtonsHu.contact}
+              name={buttontext.callback}
+              url={buttontext.contactLink}
             />
           </div>
         </div>

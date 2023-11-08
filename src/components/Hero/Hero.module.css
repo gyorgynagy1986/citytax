@@ -37,6 +37,7 @@
   top: 0;
   left: 0;
   object-fit: cover;
+  object-position: top;
 }
 
 .paddingZero {
@@ -63,23 +64,24 @@
   display: flex;
   margin: 0 auto;
   padding-top: 5%;
+  justify-content: end;
 }
 
 @media screen and (max-width: 1662px) {
   .imageContainer {
-    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
 @media screen and (max-width: 1400px) {
   .imageContainer {
-    padding-left: 7%;
+    padding-right: 7%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .imageContainer {
-    padding-left: 2%;
+    padding-right: 2%;
   }
 }
 
@@ -88,6 +90,7 @@
   min-height: 600px;
   display: flex;
   justify-content: center;
+  align-items: end;
   position: relative;
   flex-direction: column;
   z-index: 1;
@@ -95,8 +98,8 @@
 
 .textContainer:before {
   content: "";
-  left: -90px;
   width: 20%;
+  right: -90px;
   min-width: 230px;
   height: 80%;
   background: rgb(0, 169, 180);
@@ -116,6 +119,7 @@
   letter-spacing: 0.02em;
   font-weight: 800;
   width: 80%;
+  text-align: right;
   margin-bottom: 2rem;
 }
 
@@ -142,5 +146,21 @@
 @media screen and (max-width: 600px) {
   .btnContainer {
     flex-direction: column;
+  }
+
+  .textContainer {
+    align-items: unset;
+  }
+
+  .textContainer:before {
+    left: -90px;
+  }
+
+  .textContainer h1 {
+    text-align: left;
+  }
+
+  .iamgeHero {
+    object-position: left;
   }
 }

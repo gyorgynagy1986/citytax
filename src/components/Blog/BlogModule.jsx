@@ -1,11 +1,9 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
 import style from "@/components/Blog/BlogItems.module.css";
-import { singlePost } from "@/data/blog";
-import { singlePostEn } from "@/data/blog";
-
+import { singlePost, singlePostEn, blogSection, blogSectionEn } from "@/data/blog";
 import { IBM_Plex_Sans } from "next/font/google";
+import { useLocalContent } from "@/app/hooks/languageHandler"; 
 import BlogItems from "@/components/Blog/BlogItems";
 import { usePathname } from "next/navigation";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
@@ -17,23 +15,17 @@ const BlogModule = () => {
 
   const language = pathname.includes("/en") ?  filteredPostsEn : filteredPostsHu ;
 
- // const [filteredPosts, SetFilteredPosts] = useState(filteredPostsHu);
-//
-//
- // useEffect(() => {
- //   if (pathname.includes("/en")) {
- //     SetFilteredPosts(filteredPostsEn);
- //   } else {
- //     SetFilteredPosts(filteredPostsHu);
- //   }
- // }, []);
+  const { text } = useLocalContent(
+    blogSection, blogSectionEn 
+  );
+
 
   return (
     <>
       <section className={style.container}>
         <div className={style.titleContainer}>
-          <h1 className={imb.className}>Hírek & Blogok</h1>
-          <h2>Legfrisseb híreink és blogbejegyzések</h2>
+          <h1 className={imb.className}>{text.h1}</h1>
+          <h2>{text.h2}</h2>
         </div>
         <div className={style.contentContainer}>
           <BlogItems filteredItems={ language } />

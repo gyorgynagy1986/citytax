@@ -1,18 +1,20 @@
-"use client"
+"use client";
 
-import React, {useEffect} from "react";
-import { servicesMainPage } from "@/data/data";
+import React, { useEffect, useState } from "react";
+import { servicesMainPage, servicesMainPageEn } from "@/data/data";
+import { useLocalContent } from "@/app/hooks/languageHandler"; // make sure to replace with the actual path
 import style from "./MainServices.module.css";
 import Slider from "@/components/Slider/Slider";
 import Image from "next/image";
 import shape from "../../../../public/assets/shapes/shape.svg";
-import NumberUp from '@/components/UI/NumberUp/NumberUp'
+import NumberUp from "@/components/UI/NumberUp/NumberUp";
 import Aos from "aos";
 
 import { IBM_Plex_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
 const Spinner = () => {
+  const { text } = useLocalContent(servicesMainPage, servicesMainPageEn);
 
   useEffect(() => {
     Aos.init({
@@ -27,8 +29,8 @@ const Spinner = () => {
         <div className={style.spinnerContainer}>
           <div className={style.titleContainer}>
             {" "}
-            <h1 className={imb.className}>{servicesMainPage.title}</h1>
-            <h2>{servicesMainPage.title2}</h2>
+            <h1 className={imb.className}>{text.title}</h1>
+            <h2>{text.title2}</h2>
           </div>
           <div className={style.slider}>
             {" "}

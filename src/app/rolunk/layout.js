@@ -3,7 +3,7 @@ import React from 'react'
 
 export const metadata = {
   title: "Rólunk - City Tax Könyvelőiroda",
-  description: "",
+  description: "Az eredményeinknek köszönhetően 180 ügyfél számára nyújtunk szolgáltatásokat egy 9 fős szakértő csapattal, akik közgazdászok, mérlegképes könyvelők és adótanácsadók.",
 };
 
 

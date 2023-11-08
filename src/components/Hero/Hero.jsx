@@ -5,26 +5,28 @@ import style from "./Hero.module.css";
 import StickyNav from "../StickyNav/StickyNav";
 import Button from "../UI/Buttons/Button";
 import Image from "next/image";
-import hero from "../../../public/assets/hero/hero.webp";
-import { heroContent, heroContentEn } from "@/data/data";
+import hero from "./../../../public/assets/hero/hero.jpg";
+import { useLocalContent } from "@/app/hooks/languageHandler"; 
+
+import { heroContent, heroContentEn, buttons, buttonsEn } from "@/data/data";
 import { IBM_Plex_Sans } from "next/font/google";
-import {linksButtonsHu} from '@/data/data'
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "300" });
 import "aos/dist/aos.css";
 import Aos from "aos";
 
-const Hero = ({ langEn }) => {
-
-
+const Hero = ({ lang }) => {
+  const [stickyNav, setStickyNav] = useState(false);
+  const { text, buttontext } = useLocalContent(
+    heroContent,
+    heroContentEn,
+    buttons,
+    buttonsEn
+  );
   useEffect(() => {
     Aos.init({
       duration: 1000,
     });
   }, []);
- 
-  const lang = langEn;
-
-  const [stickyNav, setStickyNav] = useState(false);
 
   const menuRef = useRef(null);
 
@@ -58,20 +60,20 @@ const Hero = ({ langEn }) => {
           alt="main photo of citytax"
         />
         <div className={style.textContainer}>
-          <p className={imb.className}>{!lang ? heroContent.title : heroContentEn.title}</p>
-          <h1 data-aos="fade-right" >{!lang ? heroContent.h1 : heroContentEn.h1}</h1>
+          <p className={imb.className}>{text.title}</p>
+          <h1 data-aos="fade-right">{text.h1}</h1>
           <div className={style.btnContainer}>
             <Button
               heroColor={true}
               engColorPrefix={lang ? true : false}
-              url={linksButtonsHu.contact}
-              name={!lang ? heroContent.btn : heroContentEn.btn}
+              url={buttontext.contactLink}
+              name={buttontext.contact}
             />
             <Button
               heroColor2={true}
               engColorPrefix={lang ? true : false}
-              url={linksButtonsHu.services}
-              name={!lang ? heroContent.btn2 : heroContentEn.btn2}
+              url={buttontext.servicesLink}
+              name={buttontext.services}
             />
           </div>
         </div>

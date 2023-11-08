@@ -10,7 +10,7 @@ import Blog from "@/components/Blog/BlogModule";
 export default function Home() {
   return (
     <main>
-      <Hero langEn={true}/>
+      <Hero langEn={true} />
       <AdditionalServices />
       <Services />
       <MainServices />

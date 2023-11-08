@@ -1,3 +1,20 @@
+export const blogSection = {
+  h1: 'Hírek & Blogok',
+  h2: 'Legfrisseb híreink és blogbejegyzések'
+}
+
+export const blogSectionEn = {
+  h1: 'News & Blogs',
+  h2: 'Our latest news and blog posts'
+}
+
+
+export const blogSectionDe = {
+  h1: 'Nachrichten & Blogs',
+  h2: 'Unsere neuesten Nachrichten und Blogbeiträge'
+}
+
+
 export const singlePost = [
   {
     id: 1,
@@ -104,5 +121,59 @@ export const singlePostEn = [
     type: "Blog",
     featured: true,
     readmore: "Read More",
+  },
+];
+
+export const singlePostDe = [
+  {
+    id: 1,
+    title: "Wie man Geld und Zeit spart",
+    smallText: "Lernen Sie die Tricks und Tipps zur Steuererklärung, die Ihnen helfen können.",
+    text: "Es ist eine lange etablierte Tatsache, dass ein Leser durch den lesbaren Inhalt einer Seite abgelenkt wird, wenn er ihr Layout betrachtet. Der Sinn des Gebrauchs von Lorem Ipsum ist, dass es eine mehr oder weniger normale Verteilung von Buchstaben hat, im Gegensatz zur Verwendung von 'Inhalt hier, Inhalt hier', was es wie lesbares Englisch erscheinen lässt. Viele Desktop-Publishing-Pakete und Webseiten-Editoren verwenden jetzt Lorem Ipsum als ihren Standard-Modeltext, und eine Suche nach 'lorem ipsum' wird viele Webseiten noch in ihrer Kindheit entdecken. Verschiedene Versionen haben sich im Laufe der Jahre entwickelt, manchmal durch Zufall, manchmal absichtlich (eingespritzter Humor und dergleichen).",
+    photo: "/assets/blog/1.webp",
+    date: "2023-10-05",
+    blog: false,
+    type: "Nachrichten",
+    featured: true,
+    readmore: "Mehr lesen",
+  },
+  {
+    id: 2,
+    title: "Finanzplanung: Ein Leitfaden für eine erfolgreiche Zukunft",
+    smallText:
+      "Erlernen Sie die Prinzipien der Finanzplanung und machen Sie die ersten Schritte in Richtung finanzieller Stabilität und Wohlbefinden.",
+    text: "Es ist eine lange etablierte Tatsache, dass ein Leser durch den lesbaren Inhalt einer Seite abgelenkt wird, wenn er ihr Layout betrachtet. Der Sinn des Gebrauchs von Lorem Ipsum ist, dass es eine mehr oder weniger normale Verteilung von Buchstaben hat, im Gegensatz zur Verwendung von 'Inhalt hier, Inhalt hier', was es wie lesbares Englisch erscheinen lässt. Viele Desktop-Publishing-Pakete und Webseiten-Editoren verwenden jetzt Lorem Ipsum als ihren Standard-Modeltext, und eine Suche nach 'lorem ipsum' wird viele Webseiten noch in ihrer Kindheit entdecken. Verschiedene Versionen haben sich im Laufe der Jahre entwickelt, manchmal durch Zufall, manchmal absichtlich (eingespritzter Humor und dergleichen).",
+    photo: "/assets/blog/2.webp",
+    date: "2000-01-22",
+    blog: true,
+    type: "Blog",
+    featured: false,
+    readmore: "Mehr lesen",
+  },
+  {
+    id: 3,
+    title: "Wichtige Tipps für finanzielle Sicherheit",
+    smallText:
+      "Entdecken Sie die häufigsten Buchhaltungsfehler und lernen Sie, wie Sie sie vermeiden können.",
+    text: "Es ist eine lange etablierte Tatsache, dass ein Leser durch den lesbaren Inhalt einer Seite abgelenkt wird, wenn er ihr Layout betrachtet. Der Sinn des Gebrauchs von Lorem Ipsum ist, dass es eine mehr oder weniger normale Verteilung von Buchstaben hat, im Gegensatz zur Verwendung von 'Inhalt hier, Inhalt hier', was es wie lesbares Englisch erscheinen lässt. Viele Desktop-Publishing-Pakete und Webseiten-Editoren verwenden jetzt Lorem Ipsum als ihren Standard-Modeltext, und eine Suche nach 'lorem ipsum' wird viele Webseiten noch in ihrer Kindheit entdecken. Verschiedene Versionen haben sich im Laufe der Jahre entwickelt, manchmal durch Zufall, manchmal absichtlich (eingespritzter Humor und dergleichen).",
+    photo: "/assets/blog/3.webp",
+    date: "2000-01-22",
+    blog: true,
+    type: "Blog",
+    featured: true,
+    readmore: "Mehr lesen",
+  },
+  {
+    id: 4,
+    title: "Wie Sie Ihre Finanzen gut verwalten",
+    smallText:
+      "Erfahren Sie, warum finanzielle Gesundheit wichtig ist und wie Sie Ihre Finanzen gut verwalten können.",
+    text: "Es ist eine lange etablierte Tatsache, dass ein Leser durch den lesbaren Inhalt einer Seite abgelenkt wird, wenn er ihr Layout betrachtet. Der Sinn des Gebrauchs von Lorem Ipsum ist, dass es eine mehr oder weniger normale Verteilung von Buchstaben hat, im Gegensatz zur Verwendung von 'Inhalt hier, Inhalt hier', was es wie lesbares Englisch erscheinen lässt. Viele Desktop-Publishing-Pakete und Webseiten-Editoren verwenden jetzt Lorem Ipsum als ihren Standard-Modeltext, und eine Suche nach 'lorem ipsum' wird viele Webseiten noch in ihrer Kindheit entdecken. Verschiedene Versionen haben sich im Laufe der Jahre entwickelt, manchmal durch Zufall, manchmal absichtlich (eingespritzter Humor und dergleichen).",
+    photo: "/assets/blog/2.webp",
+    date: "2000-01-22",
+    blog: true,
+    type: "Blog",
+    featured: true,
+    readmore: "Mehr lesen",
   },
 ];

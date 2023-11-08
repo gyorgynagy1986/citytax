@@ -2,10 +2,26 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import style from "@/components/UI/NumberUp/NumberUp.module.css";
+import { usePathname } from "next/navigation";
+import { numberUp, numberUpEn, numberUpDe } from "@/data/data";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 const NumberUp = ({ rolunk }) => {
+  const pathname = usePathname();
+
+  const [text, setText] = useState(numberUp);
+
+  useEffect(() => {
+    if (pathname.includes("/en")) {
+      setText(numberUpEn);
+    } else if (pathname.includes("/de")) {
+      setText(numberUpDe);
+    } else {
+      setText(numberUp);
+    }
+  }, [pathname]);
 
   useEffect(() => {
     Aos.init({
@@ -62,8 +78,6 @@ const NumberUp = ({ rolunk }) => {
     }
   };
 
-
-
   useEffect(() => {
     const options = {
       root: null,
@@ -90,7 +104,8 @@ const NumberUp = ({ rolunk }) => {
 
   return (
     <>
-      <div data-aos="fade-up" 
+      <div
+        data-aos="fade-up"
         className={`${style.counterContainer} ${
           rolunk && style.roulunkCounterContainer
         }`}
@@ -102,7 +117,7 @@ const NumberUp = ({ rolunk }) => {
           }`}
         >
           <span>{numbers[0]} &nbsp;</span>
-          <p>Munkatársak száma</p>
+          <p>{text.text}</p>
         </div>
         <div
           ref={numberRefs[1]}
@@ -111,7 +126,7 @@ const NumberUp = ({ rolunk }) => {
           }`}
         >
           <span>{numbers[1]} +</span>
-          <p>Ügyfelek száma</p>
+          <p>{text.text2}</p>
         </div>
         <div
           ref={numberRefs[2]}
@@ -120,7 +135,7 @@ const NumberUp = ({ rolunk }) => {
           }`}
         >
           <span>{numbers[2]} +</span>
-          <p>Lezajlott adóellenőrzések </p>
+          <p>{text.text3}</p>
         </div>
         <div
           ref={numberRefs[3]}
@@ -129,7 +144,7 @@ const NumberUp = ({ rolunk }) => {
           }`}
         >
           <span>{numbers[3]} +</span>
-          <p>NAV ellenőrzések száma</p>
+          <p>{text.text4}</p>
         </div>
       </div>
     </>
