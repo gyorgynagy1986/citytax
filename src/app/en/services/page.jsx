@@ -8,7 +8,7 @@ import ServiceList from "@/components/Services/Servicelist/ServiceList";
 
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
-import photo1 from "../../../../public/assets/sections/services_1.webp";
+import photo1 from "../../../../public/assets/sections/services1.webp";
 
 const page = () => {
   return (
