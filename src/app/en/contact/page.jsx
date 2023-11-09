@@ -29,7 +29,7 @@ const Page = () => {
     event.preventDefault();
     setButton("Sending in progress");
     try {
-      await fetch("https://formsubmit.co/ajax/gyurzi@gmail.com", {
+      await fetch("https://formsubmit.co/ajax/gy.nagy86@gmail.com", {
         method: "post",
         headers: {
           "Content-Type": "application/json",
