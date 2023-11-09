@@ -8,7 +8,7 @@ import { useLocalContent } from "@/app/hooks/languageHandler";
 import { IBM_Plex_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 import { FiCheckCircle } from "react-icons/fi";
-import photo1 from "../../../public/assets/sections/services_whyus.webp";
+import photo1 from "../../../public/assets/sections/services2.webp";
 import Button from "../UI/Buttons/Button";
 import "aos/dist/aos.css";
 import Aos from "aos";
@@ -78,7 +78,6 @@ const WhyUs = ({ rolunk }) => {
 
           <div data-aos="fade" className={style.imageContainer}>
             <Image
-              priority
               className={`${style.img1} ${style.images}`}
               alt="1"
               src={photo1}

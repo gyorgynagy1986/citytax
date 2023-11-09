@@ -5,7 +5,7 @@ import style from "./Hero.module.css";
 import StickyNav from "../StickyNav/StickyNav";
 import Button from "../UI/Buttons/Button";
 import Image from "next/image";
-import hero from "./../../../public/assets/hero/hero.jpg";
+import hero from "./../../../public/assets/hero/hero.webp";
 import { useLocalContent } from "@/app/hooks/languageHandler"; 
 
 import { heroContent, heroContentEn, buttons, buttonsEn } from "@/data/data";
