@@ -8,12 +8,12 @@ import { useLocalContent } from "../../app/hooks/languageHandler";
 
 import { MdAlternateEmail } from "react-icons/md";
 import { HiMiniDevicePhoneMobile } from "react-icons/hi2";
-import { footerData, footerDataEn, contactData } from "../../data/data";
+import { footerData, footerDataEn, footerDataDe, contactData } from "../../data/data";
 
 import Logo from "@/components/UI/Logo/LogoWhite";
 
 const Footer = () => {
-  const { text } = useLocalContent(footerData, footerDataEn);
+  const { text } = useLocalContent(footerData, footerDataEn,footerDataDe);
 
   return (
     <footer className={style.container}>

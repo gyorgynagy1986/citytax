@@ -3,36 +3,14 @@
 import React, { useState, useEffect } from "react";
 import style from "@/components/NavTop/NavTop.module.css";
 import { RiFacebookCircleFill } from "react-icons/ri";
-import { RiTwitterFill } from "react-icons/ri";
 import { RiMailLine } from "react-icons/ri";
 import { PiClockBold } from "react-icons/pi";
-import { useRouter } from "next/navigation";
-import { usePathname } from "next/navigation";
-import { socialIcons } from "@/data/data";
+import useLanguagePathHandler from "../../app/hooks/languageHandler";
 import { contactData } from "@/data/data";
 import Link from "next/link";
 
-
 const NavTop = () => {
-  const pathname = usePathname();
-  const [dropdown, setdropdown] = useState(true);
-
-  useEffect(() => {
-    if (pathname.includes("/en")) {
-      setdropdown(false);
-    }
-  }, [pathname]);
-
-  const router = useRouter();
-
-  const languageHandler = (e) => {
-    if (e.target.value === "1") {
-      router.push("/");
-    } else {
-      router.push("/en");
-      setdropdown(false);
-    }
-  };
+  const { langHandlerEn, langHandlerHu, langHandlerDe } = useLanguagePathHandler();
 
   const mailTo = `mailto:${contactData.email}`;
 
@@ -60,32 +38,21 @@ const NavTop = () => {
         <div className="flex text-2xl	 justify-center gap-10">
           <ul className="flex justify-center items-center text-[#244f7a] gap-4">
             <li>
-              <Link href={socialIcons.facebook} className={style.socialIcon}>
+              <Link href={langHandlerHu} className={style.socialIcon}>
                 <RiFacebookCircleFill />
               </Link>
             </li>
             <li>
-              <Link className={style.socialIcon} href={socialIcons.instagram}>
-                <RiTwitterFill />
+              <Link href={langHandlerDe} className={style.socialIcon}>
+                <RiFacebookCircleFill />
+              </Link>
+            </li>
+            <li>
+              <Link href={langHandlerEn} className={style.socialIcon}>
+                <RiFacebookCircleFill />
               </Link>
             </li>
           </ul>
-          <div className="lang-dropdown">
-            <select className={style.select} onChange={languageHandler}>
-              {!dropdown && (
-                <>
-                  <option className={style.selectItem} value={2}>English</option>
-                  <option value={1}>Magyar</option>
-                </>
-              )}
-              {dropdown && (
-                <>
-                  <option value={1}>Magyar</option>
-                  <option value={2}>English</option>
-                </>
-              )}
-            </select>
-          </div>
         </div>
       </div>
     </section>

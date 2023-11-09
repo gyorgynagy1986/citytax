@@ -1,3 +1,7 @@
+export const path = {
+  path: 'http://localhost:3000'
+}
+
 export const socialIcons = {
   facebook: "/",
   instagram: "/",
@@ -25,6 +29,14 @@ export const buttonsEn = {
   servicesLink: "en/services",
 };
 
+export const buttonsDe = {
+  callback: "Rückruf benötigt",
+  contact: "Kontakt aufnehmen",
+  services: "Dienstleistungen",
+  contactLink: "de/kontakt",
+  servicesLink: "de/dienstleistungen",
+};
+
 export const linksButtonsHu = {
   contact: "/kapcsolat",
   services: "/szolgaltatasok",
@@ -33,6 +45,11 @@ export const linksButtonsHu = {
 export const linksButtonsEn = {
   contactlink: "en/contact",
   servicesLink: "en/services",
+};
+
+export const linksButtonsDe = {
+  contactLink: "de/kontakt",
+  servicesLink: "de/dienstleistungen",
 };
 
 export const meta = {
@@ -53,9 +70,10 @@ export const heroContentEn = {
   h1: "Reliable accounting, in an understandable way",
 };
 
-/* HERO*/
-
-/* SERVICES*/
+export const heroContentDe = {
+  title: "STADT STEUERBUCHHALTUNG",
+  h1: "Zuverlässige Buchhaltung, verständlich gemacht",
+};
 
 export const servicesText = {
   title: "Szolgáltatások",
@@ -88,6 +106,24 @@ export const servicesEn = {
     { title: "Creation of regulations as needed" },
     {
       title: "We can import data from almost any program into our own program",
+    },
+  ],
+};
+
+export const servicesDe = {
+  title: "Dienstleistungen",
+  title2: "Umfassende Dienstleistungen",
+  text: [
+    { title: "Abwicklung von Bankkrediten" },
+    { title: "Erstellung von Antragsunterlagen für Fördermittel" },
+    { title: "Überprüfung von Investitions- und Finanzberatung für Ihr Unternehmen" },
+    {
+      title:
+        "Korrektur von Fehlern anderer Buchhalter und falls notwendig, Umbuchungen",
+    },
+    { title: "Erstellung von Regelungen nach Bedarf" },
+    {
+      title: "Wir können Daten aus fast jedem Programm in unser eigenes Programm importieren",
     },
   ],
 };
@@ -129,9 +165,24 @@ export const additionalServiceEn = {
   ],
 };
 
-/* SERVICES*/
+export const additionalServiceDe = {
+  list: [
+    { title: "Verwaltung von Bankdarlehen" },
+    { title: "Erstellung von Unterstützungsmaterialien für Anträge" },
+    { title: "Überprüfung von Anlageberatungen für Ihr Geschäft" },
+  ],
 
-/*  MAIN SERVICES*/
+  list2: [
+    {
+      title:
+        "Korrektur von Fehlern anderer Buchhalter und falls notwendig, Neuverbuchung",
+    },
+    { title: "Erstellung von Richtlinien nach Bedarf" },
+    {
+      title: "Wir importieren Daten aus nahezu jedem Programm in unser eigenes Programm",
+    },
+  ],
+};
 
 export const mainServices = {
   title: "Miért a City Tax ? ",
@@ -145,9 +196,11 @@ export const mainServicesEn = {
   text: "The relationship between an entrepreneur and an accountant is based on trust and is generally a long-term commitment. Clients choose an expert accountant for the long run, typically based on recommendations or thorough research and information gathering. We strive to continuously enhance the quality of our work by regularly monitoring, reviewing, and improving or developing our processes. With years of experience, we have expertise in accounting for both micro and small businesses, whether it's tax optimization, representing clients to the tax authorities, handling audits, or assessing the tax implications of specific transactions.",
 };
 
-/*  MAIN SERVICES*/
-
-/*  WHY US SECTION */
+export const mainServicesDe = {
+  title: "Warum City Tax?",
+  title2: "Was macht uns anders und warum sollten Sie uns wählen?",
+  text: "Die Beziehung zwischen einem Unternehmer und einem Buchhalter basiert auf Vertrauen und ist in der Regel eine langfristige Verpflichtung. Kunden wählen einen Fachbuchhalter für die Langstrecke, typischerweise basierend auf Empfehlungen oder gründlicher Recherche und Informationssammlung. Wir bemühen uns, die Qualität unserer Arbeit kontinuierlich zu verbessern, indem wir unsere Prozesse regelmäßig überwachen, überprüfen und verbessern oder entwickeln. Mit jahrelanger Erfahrung haben wir Expertise in der Buchhaltung für Mikro- und Kleinunternehmen, sei es Steueroptimierung, Vertretung von Mandanten gegenüber den Finanzbehörden, Umgang mit Prüfungen oder Bewertung der steuerlichen Auswirkungen spezifischer Transaktionen.",
+};
 
 export const whyUs = {
   title: "Miért a City Tax ? ",
@@ -191,7 +244,26 @@ export const whyUsEn = {
   ],
 };
 
-/*  WHY US SECTION */
+export const whyUsDe = {
+  title: "Warum City Tax?",
+  title2: "Warum sollten Sie sich für die Buchhaltung von City Tax entscheiden?",
+  text: "",
+  list: [
+    { title: "Ständige Verfügbarkeit" },
+    { title: "Fester Arbeitsumfang" },
+    { title: "Engagierte Kollegen" },
+    { title: "Verfügbarkeit von Fachkontakten" },
+    { title: "Buchführung, Lohnabrechnung, Steuerberatung" },
+  ],
+
+  list2: [
+    { title: "Wir haben einen Anwalt" },
+    { title: "Wir haben einen Wirtschaftsprüfer" },
+    { title: "Wir haben einen Buchhalter" },
+    { title: "Breite Erfahrung in einer Vielzahl von Geschäftsbereichen" },
+    { title: "Aktuelle Buchhaltung" },
+  ],
+};
 
 export const team = {
   title: "Munkatársaink",
@@ -222,8 +294,6 @@ export const servicesMainPageDe = {
   title: "Dienstleistungen",
   title2: "Zusatzleistungen für unsere Kunden",
 };
-
-/*  FOOTER*/
 
 export const footerData = {
   text: "Az üzleti siker titka a könyvelői bizalom és tapasztalatban rejlik. Mia partnereinkre építünk, és hosszú távú kapcsolatokat alakítunk ki. Minőségi munkánkhoz elkötelezetten törekszünk, és folyamatosan fejlesztjük szolgáltatásainkat. Bízzon bennünk a könyvelés terén, legyen szó adóoptimalizálásról, NAV képviseletről vagy egyéb adózási kérdésekről. Számíthat ránk!",
@@ -535,6 +605,43 @@ export const priceOptionsEn = [
     price: "25,000 HUF + VAT / month (base fee)",
     description:
       "A complex service package that includes all the services our office provides. Unlimited personal or online consultation, loan and grant applications, tax authority representation, audit preparations, complete business management.",
+    animation: "fade-left",
+  },
+];
+
+export const priceOptionsDe = [
+  {
+    title:
+      "Wirtschaftsverbände, Einzelunternehmer und Primärproduzenten können aus den folgenden Paketen wählen.",
+    info: "Hinweis: Ein spezifischer Preis kann erst nach einer Angebotsanfrage bestimmt werden.",
+  },
+
+  {
+    type: "Basis",
+    price: "10.000 HUF + MwSt. / Monat (Grundgebühr)",
+    description:
+      "Empfohlen für Unternehmen, die eine kostengünstige Lösung suchen, mit einer minimalen Anzahl von Rechnungen und ohne Bedarf an persönlicher oder Online-Beratung.",
+    animation: "fade-right",
+  },
+  {
+    type: "Standard",
+    price: "15.000 HUF + MwSt. / Monat (Grundgebühr)",
+    description:
+      "Vorgeschlagen für Unternehmen, die über die einfache Grundbuchhaltung hinaus auch persönliche oder Online-Beratung benötigen.",
+    animation: "fade-left",
+  },
+  {
+    type: "Spezial",
+    price: "20.000 HUF + MwSt. / Monat (Grundgebühr)",
+    description:
+      "Empfohlen für Unternehmen, die Fördermöglichkeiten nutzen, Darlehen aufnehmen und deren Zusammenstellung ebenfalls benötigen.",
+    animation: "fade-right",
+  },
+  {
+    type: "Premium",
+    price: "25.000 HUF + MwSt. / Monat (Grundgebühr)",
+    description:
+      "Ein komplexes Servicepaket, das alle Dienstleistungen unseres Büros umfasst. Unbegrenzte persönliche oder Online-Beratung, Darlehens- und Förderanträge, Vertretung bei Finanzbehörden, Vorbereitung auf Prüfungen, vollständige Unternehmensführung.",
     animation: "fade-left",
   },
 ];

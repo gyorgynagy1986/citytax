@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import style from "@/components/WhyUs/WhyUs.module.css";
 import Image from "next/image";
-import { whyUs, whyUsEn, buttons, buttonsEn } from "@/data/data";
+import { whyUs, whyUsEn, buttons, buttonsEn, buttonsDe  } from "@/data/data";
 import { useLocalContent } from "@/app/hooks/languageHandler"; 
 import { IBM_Plex_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
@@ -18,7 +18,8 @@ const WhyUs = ({ rolunk }) => {
     whyUs,
     whyUsEn,
     buttons,
-    buttonsEn
+    buttonsEn,
+    buttonsDe
   );
 
   useEffect(() => {

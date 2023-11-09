@@ -4,7 +4,7 @@ import React from "react";
 import Button from "@/components/UI/Buttons/Button";
 import style from "./Callback.module.css";
 import { usePathname } from "next/navigation";
-import { buttons, buttonsEn } from "@/data/data";
+import { buttons, buttonsEn, buttonsDe } from "@/data/data";
 //{<Image className={style.bcgImage} alt="callback" src={bcg} /> }
 import { useLocalContent } from "@/app/hooks/languageHandler"; 
 
@@ -24,10 +24,9 @@ const textEn = (
 
 const CallBack = () => {
   const pathname = usePathname();
-  const { text } = useLocalContent(buttons, buttonsEn);
+  const { text } = useLocalContent(buttons, buttonsEn,buttonsDe);
 
 
-  console.log(text)
 
   return (
     <div className={style.callbackContainer}>
