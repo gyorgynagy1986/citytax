@@ -25,16 +25,16 @@ export const buttonsEn = {
   callback: "Need callback",
   contact: "Get in Touch",
   services: "services",
-  contactLink: "en/contact",
-  servicesLink: "en/services",
+  contactLink: "/en/contact",
+  servicesLink: "/en/services",
 };
 
 export const buttonsDe = {
   callback: "Rückruf benötigt",
   contact: "Kontakt aufnehmen",
   services: "Dienstleistungen",
-  contactLink: "de/kontakt",
-  servicesLink: "de/dienstleistungen",
+  contactLink: "/de/kontakt",
+  servicesLink: "/de/dienstleistungen",
 };
 
 export const linksButtonsHu = {

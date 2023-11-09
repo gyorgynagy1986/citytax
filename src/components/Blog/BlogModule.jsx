@@ -14,6 +14,8 @@ const BlogModule = () => {
   const filteredPostsEn = singlePostEn.filter((item) => item.featured === true);
 
   const language = pathname.includes("/en") ?  filteredPostsEn : filteredPostsHu ;
+  
+  console.log(language)
 
   const { text } = useLocalContent(
     blogSection, blogSectionEn 

@@ -9,11 +9,11 @@ import { IBM_Plex_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
 const Blog = () => {
-  const [filteredPosts, SetFilteredPosts] = useState(singlePost);
+  const [filteredPosts, SetFilteredPosts] = useState(singlePostEn);
   const [active, setActive] = useState("3");
 
-  const filterBlog = singlePost.filter((item) => item.blog === true);
-  const filterNews = singlePost.filter((item) => item.blog === false);
+  const filterBlog = singlePostEn.filter((item) => item.blog === true);
+  const filterNews = singlePostEn.filter((item) => item.blog === false);
 
   const handleFilterBlog = () => {
     SetFilteredPosts(filterBlog);
@@ -26,7 +26,7 @@ const Blog = () => {
   };
 
   const handleFilterAll = () => {
-    SetFilteredPosts(singlePost);
+    SetFilteredPosts(singlePostEn);
     setActive("3");
   };
 

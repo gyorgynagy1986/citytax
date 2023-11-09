@@ -5,7 +5,7 @@ import style from "./page.module.css";
 import Image from "next/image";
 
 const singleBlog = ({ params }) => {
-  const postId = Number(params.id);
+  const postId = params.id;
   const post = singlePostEn.find((post) => post.id === postId);
 
   if (post === undefined) {
