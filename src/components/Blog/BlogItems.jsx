@@ -10,6 +10,7 @@ import { path } from "@/data/data";
 const BlogItems = ({ filteredItems }) => {
   const pathname = usePathname();
 
+
   return (
     <>
       {filteredItems?.map((item) => (
@@ -35,7 +36,7 @@ const BlogItems = ({ filteredItems }) => {
           <div className={style.blogItemTextContainer}>
             <p className={style.blogItemTitle}>{item.title}</p>
             <p className={style.blogItemText}>{item.smallText}</p>
-            <Link className={style.blogLink} href={`${path.path}${pathname}/blog/${item.id}`}>
+            <Link className={style.blogLink} href={pathname.includes('/blog') ? `${path.path}${pathname}/${item.id}` : `${path.path}${pathname}/blog/${item.id}`}>
               {item.readmore}
             </Link>
           </div>

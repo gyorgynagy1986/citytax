@@ -105,7 +105,7 @@ const useLanguagePathHandler = () => {
       case "/rolunk":
         setLangHandlerEn("/en/about");
         setLangHandlerHu("/rolunk");
-        setLangHandlerDe("/de/uber-uns");
+        setLangHandlerDe("/de/uberuns");
         break;
       case "/arak":
         setLangHandlerEn("/en/prices");
@@ -122,6 +122,11 @@ const useLanguagePathHandler = () => {
         setLangHandlerHu("/szolgaltatasok");
         setLangHandlerDe("/de/dienstleistungen");
         break;
+        case "/blog":
+          setLangHandlerEn("/en/blog");
+          setLangHandlerHu("/blog");
+          setLangHandlerDe("/de/blog");
+          break;
       // Add German path cases
       case "/de":
         setLangHandlerEn("/en");
