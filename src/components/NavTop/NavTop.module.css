@@ -58,3 +58,10 @@
   justify-content: center;
   gap: 4rem;
 }
+
+
+.imgIcon {
+  width: auto;
+  max-width: 25px;
+  height: auto;
+}

@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
 import style from "@/components/NavTop/NavTop.module.css";
-import { RiFacebookCircleFill } from "react-icons/ri";
 import { RiMailLine } from "react-icons/ri";
 import { PiClockBold } from "react-icons/pi";
 import useLanguagePathHandler from "../../app/hooks/languageHandler";
 import { contactData } from "@/data/data";
-import Link from "next/link";
+
+import LangugaModule from "./LangugaModule";
+
 
 const NavTop = () => {
   const { langHandlerEn, langHandlerHu, langHandlerDe } = useLanguagePathHandler();
@@ -37,21 +37,7 @@ const NavTop = () => {
 
         <div className="flex text-2xl	 justify-center gap-10">
           <ul className="flex justify-center items-center text-[#244f7a] gap-4">
-            <li>
-              <Link href={langHandlerHu} className={style.socialIcon}>
-                <RiFacebookCircleFill />
-              </Link>
-            </li>
-            <li>
-              <Link href={langHandlerDe} className={style.socialIcon}>
-                <RiFacebookCircleFill />
-              </Link>
-            </li>
-            <li>
-              <Link href={langHandlerEn} className={style.socialIcon}>
-                <RiFacebookCircleFill />
-              </Link>
-            </li>
+           <LangugaModule langHandlerEn={langHandlerEn} langHandlerHu={langHandlerHu} langHandlerDe={langHandlerDe} />
           </ul>
         </div>
       </div>
