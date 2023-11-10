@@ -1,5 +1,5 @@
 export const path = {
-  path: ''
+  path: '/'
 }
 
 export const socialIcons = {
