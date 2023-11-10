@@ -50,6 +50,7 @@ const page = () => {
                 className={`${style.img1} ${style.images}`}
                 alt="1"
                 src={photo1}
+                priority
               />
             </div>
           </div>

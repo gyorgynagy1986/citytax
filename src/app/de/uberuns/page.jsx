@@ -24,22 +24,24 @@ const page = () => {
               <p>
                 Unser Unternehmen wurde 1993 auf familiärer Basis gegründet.
                 Seitdem hat es zahlreiche Veränderungen durchlaufen, dank
-                kontinuierlicher gesetzlicher, zeitlicher und technischer Entwicklungen. 
-                Im Hinblick auf persönliche Prozesse nutzen wir jede Gelegenheit zur
-                Weiterentwicklung durch obligatorische Weiterbildung und nehmen
-                an so vielen organisierten Konferenzen und Schulungen teil wie möglich,
-                die die maximale Qualität unserer Arbeit fördern. Dank kontinuierlicher
-                und beharrlicher Anstrengung sind wir heute in der Lage, 180 Kunden zu
-                betreuen, ermöglicht durch ein Kollektiv von 9 Personen. Was unsere
-                Qualifikationen betrifft, so sind wir Ökonomen, zertifizierte Buchhalter und
-                Steuerberater. Unsere Arbeit ist gekennzeichnet durch maximale Präzision,
-                Professionalität, Kundenorientierung und zeitliche Effizienz.
+                kontinuierlicher gesetzlicher, zeitlicher und technischer
+                Entwicklungen. Im Hinblick auf persönliche Prozesse nutzen wir
+                jede Gelegenheit zur Weiterentwicklung durch obligatorische
+                Weiterbildung und nehmen an so vielen organisierten Konferenzen
+                und Schulungen teil wie möglich, die die maximale Qualität
+                unserer Arbeit fördern. Dank kontinuierlicher und beharrlicher
+                Anstrengung sind wir heute in der Lage, 180 Kunden zu betreuen,
+                ermöglicht durch ein Kollektiv von 9 Personen. Was unsere
+                Qualifikationen betrifft, so sind wir Ökonomen, zertifizierte
+                Buchhalter und Steuerberater. Unsere Arbeit ist gekennzeichnet
+                durch maximale Präzision, Professionalität, Kundenorientierung
+                und zeitliche Effizienz.
               </p>
               <Button
                 typeBlack={true}
                 rolunk={true}
                 name={"Ich bitte um Rückruf"}
-                url={'/de/kontakt'}
+                url={"/de/kontakt"}
               />
             </div>
             <div className={style.imageContainer}>
@@ -47,6 +49,7 @@ const page = () => {
                 className={`${style.img1} ${style.images}`}
                 alt="1"
                 src={photo1}
+                priority
               />
             </div>
           </div>

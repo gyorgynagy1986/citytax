@@ -46,6 +46,7 @@ const page = () => {
               <Image
                 className={`${style.img1} ${style.images}`}
                 alt="1"
+                priority
                 src={photo1}
               />
             </div>
