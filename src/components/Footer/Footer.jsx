@@ -75,7 +75,7 @@ const Footer = () => {
         <p>
           All rights reserved © citytax.hu | 2023{" "}
           <b>
-            Webodlalt készítette{" "}
+            Weboldalt készítette{" "}
             <a href="https://studiobromo.hu/">Studio Bromo</a>
           </b>
         </p>

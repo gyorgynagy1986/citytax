@@ -42,7 +42,7 @@ export const singlePost = [
   },
 
   {
-    id: "Fontos-tanacsok-a-penzugyi-biztonsagert",
+    id: "fontos-tanacsok-a-penzugyi-biztonsagert",
     title: "Fontos tanácsok a pénzügyi biztonságért",
     smallText:
       "Ismerje meg a leggyakoribb könyvelési hibákat, és tanulja meg, hogyan kerülheti el őket. ",
