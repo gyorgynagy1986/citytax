@@ -288,17 +288,36 @@ export const whyUsDe = {
 export const team = {
   title: "Munkatársaink",
   title2: "Csapatunk",
+  maria: "Hajduné Kiss Mária",
+  mariajob: "Mérlegképes könyvelő",
+  jozsef: "Hajdu József",
+  jozsefjob: "Közgazdász, mérlegképes könyvelő, adótanácsadó",
+  szilvia:  "Vetróné Hajdu Szilvia",
+  szilviajob: "Közgazdász, mérlegképes könyvelő, adótanácsadó",
 };
 
 export const teamEn = {
   title: "Our Team Members",
   title2: "Our Team",
+  maria: "Maria Hajduné Kiss",
+  mariajob: "Certified Accountant",
+  jozsef: "József Hajdu",
+  jozsefjob: "Economist, Certified Accountant, Tax Advisor",
+  szilvia: "Szilvia Vetróné Hajdu",
+  szilviajob: "Economist, Certified Accountant, Tax Advisor",
 };
 
 export const teamDe = {
   title: "Unsere Teammitglieder",
   title2: "Unser Team",
+  maria: "Maria Hajduné Kiss",
+  mariajob: "Bilanzbuchhalterin",
+  jozsef: "József Hajdu",
+  jozsefjob: "Ökonom, Bilanzbuchhalter, Steuerberater",
+  szilvia: "Szilvia Vetróné Hajdu",
+  szilviajob: "Ökonomin, Bilanzbuchhalterin, Steuerberaterin",
 };
+
 
 export const servicesMainPage = {
   title: "Szolgáltatások",
@@ -316,7 +335,7 @@ export const servicesMainPageDe = {
 };
 
 export const footerData = {
-  text: "Az üzleti siker titka a könyvelői bizalom és tapasztalatban rejlik. Mia partnereinkre építünk, és hosszú távú kapcsolatokat alakítunk ki. Minőségi munkánkhoz elkötelezetten törekszünk, és folyamatosan fejlesztjük szolgáltatásainkat. Bízzon bennünk a könyvelés terén, legyen szó adóoptimalizálásról, NAV képviseletről vagy egyéb adózási kérdésekről. Számíthat ránk!",
+  text: "Az üzleti siker titka a könyvelői bizalom és tapasztalatban rejlik. Mi a partnereinkre építünk, és hosszú távú kapcsolatokat alakítunk ki. Minőségi munkánkhoz elkötelezetten törekszünk, és folyamatosan fejlesztjük szolgáltatásainkat. Bízzon bennünk a könyvelés terén, legyen szó adóoptimalizálásról, NAV képviseletről vagy egyéb adózási kérdésekről. Számíthat ránk!",
   servicesName: "Szolgáltatások",
   serviceLink: "szolgaltatasok",
   servicesName2: "Elérhetőség",

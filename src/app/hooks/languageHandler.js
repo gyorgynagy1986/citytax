@@ -67,7 +67,7 @@ const useLanguagePathHandler = () => {
       case "/en/about":
         setLangHandlerEn("/en/about");
         setLangHandlerHu("/rolunk");
-        setLangHandlerDe("/de/uber-uns");
+        setLangHandlerDe("/de/uberuns");
         break;
       case "/en/prices":
         setLangHandlerEn("/en/prices");
@@ -120,10 +120,10 @@ const useLanguagePathHandler = () => {
         setLangHandlerHu("/");
         setLangHandlerDe("/de");
         break;
-      case "/de/uber-uns":
+      case "/de/uberuns":
         setLangHandlerEn("/en/about");
         setLangHandlerHu("/rolunk");
-        setLangHandlerDe("/de/uber-uns");
+        setLangHandlerDe("/de/uberuns");
         break;
       case "/de/preise":
         setLangHandlerEn("/en/prices");

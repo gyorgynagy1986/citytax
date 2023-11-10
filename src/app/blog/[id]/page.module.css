@@ -174,3 +174,11 @@
     padding-top: 5rem !important;
    }
   }
+
+  .textContainerContent h3 {
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      font-weight: bold;
+  }

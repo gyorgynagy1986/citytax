@@ -6,7 +6,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import arrow from "../../../public/assets/svg/arrow.svg";
-import cover from "../../../public/assets/sections/finance.jpg";
+
+import photo from '../../../public/assets/sections/services/0.webp'
+import photo0 from '../../../public/assets/sections/services/0.webp'
+import photo1 from '../../../public/assets/sections/services/1.webp'
+import photo2 from '../../../public/assets/sections/services/2.webp'
+import photo3 from '../../../public/assets/sections/services/3.webp'
+import photo4 from '../../../public/assets/sections/services/4.webp'
+import photo5 from '../../../public/assets/sections/services/5.webp'
+import photo6 from '../../../public/assets/sections/services/6.webp'
+
+
 import { footerData, footerDataEn,footerDataDe  } from "@/data/data";
 import { useLocalContent } from "@/app/hooks/languageHandler"; // make sure to replace with the actual path
 
@@ -43,7 +53,7 @@ const SliderR = () => {
           <div key={index} className={style.sliderBox}>
             <div className={style.sliderBoxItem}>
               {" "}
-              <Image alt="services" src={cover} />{" "}
+              <Image width={600} height={600} alt="services" src={`/${index}.webp`} />{" "}
               <a href={`/${text.serviceLink}${name.link}`}>
                 {" "}
                 <div className={style.sliderBoxItemTitleContainer}>
@@ -52,7 +62,9 @@ const SliderR = () => {
                 </div>{" "}
               </a>
             </div>
+         
           </div>
+          
         ))}
       </Slider>
     </div>

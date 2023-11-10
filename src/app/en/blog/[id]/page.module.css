@@ -25,6 +25,14 @@
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   }
   
+  .textContainerContent h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    font-weight: bold;
+}
+
   .imageContainer {
     width: 100%;
     display: flex;

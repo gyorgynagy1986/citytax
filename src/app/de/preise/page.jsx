@@ -8,7 +8,7 @@ import { IBM_Plex_Sans } from "next/font/google";
 import Image from "next/image";
 import Pricelist from "@/components/Pricelist/Pricelist";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
-import photo1 from "../../../../public/assets/team/team.webp";
+import photo1 from "../../../../public/assets/sections/prices.webp";
 import "aos/dist/aos.css";
 import Aos from "aos";
 

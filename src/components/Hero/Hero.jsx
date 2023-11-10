@@ -6,14 +6,21 @@ import StickyNav from "../StickyNav/StickyNav";
 import Button from "../UI/Buttons/Button";
 import Image from "next/image";
 import hero from "./../../../public/assets/hero/hero.webp";
-import { useLocalContent } from "@/app/hooks/languageHandler"; 
-import { heroContent, heroContentEn, heroContentDe, buttons, buttonsEn, buttonsDe } from "@/data/data";
+import { useLocalContent } from "@/app/hooks/languageHandler";
+import {
+  heroContent,
+  heroContentEn,
+  heroContentDe,
+  buttons,
+  buttonsEn,
+  buttonsDe,
+} from "@/data/data";
 import { IBM_Plex_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "300" });
-import "aos/dist/aos.css";
-import Aos from "aos";
+import useAos from "../../app/hooks/aos";
 
 const Hero = ({ lang }) => {
+  useAos({ duration: 1000 });
   const [stickyNav, setStickyNav] = useState(false);
   const { text, buttontext } = useLocalContent(
     heroContent,
@@ -23,12 +30,6 @@ const Hero = ({ lang }) => {
     buttonsEn,
     buttonsDe
   );
-
-  useEffect(() => {
-    Aos.init({
-      duration: 1000,
-    });
-  }, []);
 
   const menuRef = useRef(null);
 

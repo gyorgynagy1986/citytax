@@ -12,6 +12,10 @@ const singleBlog = ({ params }) => {
     return notFound();
   }
 
+  const createMarkup = (htmlContent) => {
+    return {__html: htmlContent};
+  };
+
   return (
     <>
       <section className={style.container}>
@@ -25,12 +29,13 @@ const singleBlog = ({ params }) => {
               width={600}
               height={600}
               className={`${style.img1} ${style.images}`}
-              alt="1"
+              alt="Blog post image"
               src={post.photo}
             />
           </div>
           <div className={style.textContainer}>
-            <p>{post.text}</p>
+            {/* Render HTML content */}
+            <div className={style.textContainerContent} dangerouslySetInnerHTML={createMarkup(post.text)} />
           </div>
         </div>
       </section>
