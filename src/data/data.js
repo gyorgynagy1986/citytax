@@ -1,5 +1,5 @@
 export const path = {
-  path: 'https://citytax.vercel.app'
+  path: 'https://citytax.vercel.app/'
 }
 
 export const socialIcons = {
