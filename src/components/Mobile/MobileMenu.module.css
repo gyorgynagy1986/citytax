@@ -72,6 +72,14 @@
    margin-bottom: 4rem;
 }
 
+.languageChangeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+}
+
 
 .mobileMenuUl a:not(:last-child) {
    margin-bottom: 3rem;

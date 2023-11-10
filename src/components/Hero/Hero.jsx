@@ -7,7 +7,7 @@ import Button from "../UI/Buttons/Button";
 import Image from "next/image";
 import hero from "./../../../public/assets/hero/hero.webp";
 import { useLocalContent } from "@/app/hooks/languageHandler"; 
-import { heroContent, heroContentEn, buttons, buttonsEn, buttonsDe } from "@/data/data";
+import { heroContent, heroContentEn, heroContentDe, buttons, buttonsEn, buttonsDe } from "@/data/data";
 import { IBM_Plex_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "300" });
 import "aos/dist/aos.css";
@@ -18,6 +18,7 @@ const Hero = ({ lang }) => {
   const { text, buttontext } = useLocalContent(
     heroContent,
     heroContentEn,
+    heroContentDe,
     buttons,
     buttonsEn,
     buttonsDe

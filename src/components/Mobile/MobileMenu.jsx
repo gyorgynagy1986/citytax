@@ -5,25 +5,29 @@ import MobileMenuItem from "./MobileMenuItem";
 import Button from "../UI/Buttons/Button";
 import { usePathname } from "next/navigation";
 import { IoCloseSharp } from "react-icons/io5";
-import { linksButtonsHu } from "@/data/data";
-
-const textContentHu = {
-  btnName: "kapcsolat",
-};
-
-const textContentEng = {
-  btnName: "Contact",
-};
+import useLanguagePathHandler from "../../app/hooks/languageHandler";
+import LangugaModule from "../NavTop/LangugaModule";
+import { useLocalContent } from "@/app/hooks/languageHandler";
+import { buttons, buttonsEn, buttonsDe } from "@/data/data";
 
 const MobileMenu = ({ mobileClose }) => {
-  const pathname = usePathname();
+  const { langHandlerEn, langHandlerHu, langHandlerDe } =
+    useLanguagePathHandler();
 
+  const { text } = useLocalContent(buttons, buttonsEn, buttonsDe);
   return (
     <>
       <div className={style.mobileMenu}>
         <div className={`${style.mobileMenuContainer} ${style.slidefwdleft}`}>
           <div className={style.clsoeContainer}>
-            {" "}
+            <div className={style.languageChangeContainer}>
+              {" "}
+              <LangugaModule
+                langHandlerEn={langHandlerEn}
+                langHandlerHu={langHandlerHu}
+                langHandlerDe={langHandlerDe}
+              />
+            </div>{" "}
             <IoCloseSharp onClick={mobileClose} className={style.mobileClose} />
           </div>
           <Logo mobileClose={mobileClose} />
@@ -32,12 +36,8 @@ const MobileMenu = ({ mobileClose }) => {
           </ul>
           <Button
             mobileClose={mobileClose}
-            url={linksButtonsHu.contact}
-            name={
-              pathname.includes("/en")
-                ? textContentEng.btnName
-                : textContentHu.btnName
-            }
+            url={text.contactLink}
+            name={text.contact}
           />
         </div>
       </div>

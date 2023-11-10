@@ -7,12 +7,12 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import arrow from "../../../public/assets/svg/arrow.svg";
 import cover from "../../../public/assets/sections/finance.jpg";
-import { footerData, footerDataEn } from "@/data/data";
+import { footerData, footerDataEn,footerDataDe  } from "@/data/data";
 import { useLocalContent } from "@/app/hooks/languageHandler"; // make sure to replace with the actual path
 
 const SliderR = () => {
 
- const { text } = useLocalContent(footerData, footerDataEn);
+ const { text } = useLocalContent(footerData, footerDataEn, footerDataDe);
 
   const settings = {
     dots: true,

@@ -1,0 +1,157 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding-top: 5rem;
+  padding-bottom: var(--sectionPaddingTop);
+  padding-left: var(--plpr);
+  padding-right: var(--plpr);
+  overflow: hidden;
+}
+
+.mainBlogPage {
+  background: white;
+}
+
+.contentContainer {
+  margin: 0 auto;
+  max-width: var(--maxWidth);
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.titleContainer {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem;
+}
+
+.titleContainer h1 {
+  font-size: var(--sectionSmTitle);
+  color: var(--titleColor2);
+}
+
+.titleContainer h1:before {
+  display: inline-block;
+  content: "\00BB";
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.titleContainer h2 {
+  font-size: var(--sectionMdTitle);
+  font-weight: var(--titleFontW);
+  margin-bottom: 2rem;
+  line-height: 110%;
+  text-align: center;
+}
+
+.blogItem {
+  display: flex;
+  flex-direction: column;
+  max-width: 35rem;
+  background-color: white;
+  box-shadow: 0px 10px 60px 0px rgba(109, 109, 109, 0.1);
+}
+
+.photoContainer {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+}
+
+.image {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.blogItemTextContainer {
+  width: 100%;
+  height: 55%;
+  padding: 2.5rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.blogItemTitle {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.blogItemText {
+  font-size: 15px;
+  line-height: 160%;
+  color: var(--texColor);
+}
+
+.blogLink {
+  color: var(--iconColor);
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.blogLink:before {
+  display: inline-block;
+  content: "\00BB";
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 0rem 0rem 4rem 0rem;
+}
+
+.button {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 3.5px 28px;
+  background: transparent;
+  background-color: #fff;
+  border: 1px solid #424242;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: capitalize;
+  border-radius: 5px;
+  color: var(--mainTextColor);
+  line-height: 25px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.button:hover {
+  border: 1px solid rgb(255, 167, 4);
+  color: black;
+}
+
+.active {
+  border: 1px solid rgb(255, 167, 4);
+  color: black;
+  background-color: rgb(255, 167, 4);
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .buttonContainer {
+    gap: 2rem;
+  }
+  
+}

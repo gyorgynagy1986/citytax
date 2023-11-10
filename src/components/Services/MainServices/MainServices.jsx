@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { servicesMainPage, servicesMainPageEn } from "@/data/data";
+import { servicesMainPage, servicesMainPageEn, servicesMainPageDe } from "@/data/data";
 import { useLocalContent } from "@/app/hooks/languageHandler"; // make sure to replace with the actual path
 import style from "./MainServices.module.css";
 import Slider from "@/components/Slider/Slider";
@@ -14,7 +14,7 @@ import { IBM_Plex_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
 const Spinner = () => {
-  const { text } = useLocalContent(servicesMainPage, servicesMainPageEn);
+  const { text } = useLocalContent(servicesMainPage, servicesMainPageEn, servicesMainPageDe);
 
   useEffect(() => {
     Aos.init({

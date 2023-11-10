@@ -27,12 +27,12 @@
   gap: 1rem;
 }
 
-.titleContainer h1 {
+.titleContainer p {
   font-size: 16px;
   color: var(--titleColor2);
 }
 
-.titleContainer h1:before {
+.titleContainer p:before {
   display: inline-block;
   content: "\00BB";
   font-weight: 400;

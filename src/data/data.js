@@ -1,5 +1,5 @@
 export const path = {
-  path: 'http://localhost:3000'
+  path: ''
 }
 
 export const socialIcons = {
@@ -13,12 +13,28 @@ export const contactData = {
   address: "6900 Makó, Hold utca 26",
 };
 
+export const navTopdata = {
+  email: 'Email cím',
+  opening: 'Hétfő - Péntek:'
+}
+
+export const navTopdataEn = {
+  email: 'Email address',
+  opening: 'Monday - Friday:'
+}
+
+export const navTopdataDe = {
+  email: 'E-Mail adresse',
+  opening: 'Montag - Freitag:'
+}
+
 export const buttons = {
   callback: "Visszahívást kérek",
   contact: "Kapcsolat",
   services: "Szolgáltatások",
   contactLink: "/kapcsolat",
   servicesLink: "/szolgaltatasok",
+  mainpage: "/"
 };
 
 export const buttonsEn = {
@@ -27,6 +43,8 @@ export const buttonsEn = {
   services: "services",
   contactLink: "/en/contact",
   servicesLink: "/en/services",
+  mainpage: "/en"
+
 };
 
 export const buttonsDe = {
@@ -35,6 +53,8 @@ export const buttonsDe = {
   services: "Dienstleistungen",
   contactLink: "/de/kontakt",
   servicesLink: "/de/dienstleistungen",
+  mainpage: "/de"
+
 };
 
 export const linksButtonsHu = {
@@ -48,8 +68,8 @@ export const linksButtonsEn = {
 };
 
 export const linksButtonsDe = {
-  contactLink: "de/kontakt",
-  servicesLink: "de/dienstleistungen",
+  contactLink: "/de/kontakt",
+  servicesLink: "/de/dienstleistungen",
 };
 
 export const meta = {

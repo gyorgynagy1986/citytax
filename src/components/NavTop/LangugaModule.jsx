@@ -8,7 +8,7 @@ import en from '../../../public/assets/icons/en.png'
 
 const LangugaModule = ({langHandlerEn , langHandlerDe, langHandlerHu }) => {
   return (
-    <><li>
+    <><li >
     <Link href={langHandlerEn} className={style.socialIcon}>
     <Image className={style.imgIcon} alt='flag english' src={en} /></Link>
   </li>

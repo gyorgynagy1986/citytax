@@ -50,7 +50,7 @@ export const items = [
     },
     {
       id: 4,
-      name: "Nachrichten & Blog",
+      name: "Blog",
       url: "/de/blog",
     },
   ];

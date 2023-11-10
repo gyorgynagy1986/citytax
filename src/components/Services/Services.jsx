@@ -1,11 +1,17 @@
 "use client";
 
 import style from "@/components/Services/Services.module.css";
-import React, { useEffect, useState } from "react";
-import { mainServices, mainServicesEn, buttons, buttonsEn } from "@/data/data";
+import React, { useEffect } from "react";
+import {
+  mainServices,
+  mainServicesEn,
+  mainServicesDe,
+  buttons,
+  buttonsEn,
+  buttonsDe,
+} from "@/data/data";
 import { IBM_Plex_Sans } from "next/font/google";
-import { usePathname } from "next/navigation";
-
+import { useLocalContent } from "@/app/hooks/languageHandler";
 import logo from "../../../public/assets/logo/logo2.png";
 import photo1 from "../../../public/assets/sections/services.webp";
 import Image from "next/image";
@@ -16,22 +22,14 @@ import "aos/dist/aos.css";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
 const Services = () => {
-  const [text, setText] = useState(mainServices);
-  const [buttontext, setButtontext] = useState(buttons);
-
-  const pathname = usePathname();
-
-  useEffect(() => {
-    if (pathname.includes("/en")) {
-      setText(mainServicesEn);
-      setButtontext(buttonsEn);
-
-    } else {
-      setText(mainServices);
-      setButtontext(buttons);
-
-    }
-  }, [pathname]);
+  const { text, buttontext } = useLocalContent(
+    mainServices,
+    mainServicesEn,
+    mainServicesDe,
+    buttons,
+    buttonsEn,
+    buttonsDe
+  );
 
   useEffect(() => {
     Aos.init({

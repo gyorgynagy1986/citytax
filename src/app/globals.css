@@ -21,7 +21,7 @@
   --btnColor: #00a9b4;
   --iconColor: #00a9b4;
 
-  --h1Size: max(42px, min(4vw, 68px));
+  --h1Size: max(38px, min(4vw, 60px));
   --titleFontW: 800;
   --SectionFontSize: max(20px, min(4vw, 42px));
 
@@ -39,6 +39,7 @@
   --sectionPaddingTop: 15rem;
   --sectionPaddingTopBig: 20rem;
   --paddingTitleContainer: 4rem;
+  --servicesPhotoMaxheight: 700px;
 
   --sectionPaddingTopOnlyHero:7rem;
 
@@ -81,6 +82,7 @@ p {
     --sectionPaddingTop: 10rem;
     --textContainerP: 16px;
     --footeritemsWidth: 100%;
+    --h1Size: max(28px, min(4vw, 60px));
   }
 }
 

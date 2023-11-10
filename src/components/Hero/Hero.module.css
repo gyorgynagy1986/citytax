@@ -160,6 +160,8 @@
 
   .textContainer h1 {
     text-align: left;
+    margin-bottom: 5rem;
+    width: auto;
   }
 
   .iamgeHero {

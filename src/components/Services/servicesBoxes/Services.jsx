@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import style from "@/components/Services/servicesBoxes/Services.module.css";
 import { IBM_Plex_Sans } from "next/font/google";
-import { servicesText, servicesEn } from "@/data/data";
+import { servicesText, servicesEn, servicesDe } from "@/data/data";
 import { FaArrowRight } from "react-icons/fa";
 import "aos/dist/aos.css";
 
@@ -20,7 +20,7 @@ import img6 from "../../../../public/assets/svg/06.svg";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
 const Services = () => {
-  const { text } = useLocalContent(servicesText, servicesEn);
+  const { text } = useLocalContent(servicesText, servicesEn, servicesDe);
 
   useEffect(() => {
     Aos.init({

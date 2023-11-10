@@ -11,7 +11,7 @@ const ServiceList = () => {
     <div className={style.mainContainer}>
       <div id="online" className={style.contentContainer}>
         <div className={`${style.leftBoxes} ${style.displayNone}`}>
-          <h2 className={style.h2}>Online könyvelés</h2>
+          <h2 className={style.h2}>{text[0].name}</h2>
           <div className={style.circle}></div>
         </div>
         <div className={style.rightBoxes}>
