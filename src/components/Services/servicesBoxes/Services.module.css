@@ -90,7 +90,8 @@
 }
 
 .icon img {
-  max-width: none;
+  height: 100%;
+  width: 100%;
   color: var(--iconColor);
 }
 

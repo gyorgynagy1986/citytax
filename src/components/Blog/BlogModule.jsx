@@ -2,9 +2,12 @@
 
 import style from "@/components/Blog/BlogItems.module.css";
 import {
+  blogSection,
+  blogSectionEn,
+  blogSectionDe,
   singlePost,
   singlePostEn,
-  singlePostDe,
+  singlePostDe
 } from "@/data/blog";
 import { IBM_Plex_Sans } from "next/font/google";
 import { useLocalContent } from "@/app/hooks/languageHandler";
@@ -31,9 +34,9 @@ const BlogModule = () => {
 
 
   const { text } = useLocalContent(
-    singlePost,
-    singlePostEn,
-    singlePostDe,
+    blogSection,
+    blogSectionEn,
+    blogSectionDe,
   );
 
   return (
