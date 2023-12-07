@@ -8,13 +8,12 @@ import phone from "../../../public/assets/icons/contanct/3.png";
 import emailicon from "../../../public/assets/icons/contanct/2.png";
 import direction from "../../../public/assets/icons/contanct/1.png";
 import Aos from "aos";
-import MapembedApi from '@/components/GoogleMap/EmbedApi/EmbedApi'
-import {contactData} from '@/data/data'
+import MapembedApi from "@/components/GoogleMap/EmbedApi/EmbedApi";
+import { contactData } from "@/data/data";
 
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
 const Page = () => {
-
   useEffect(() => {
     Aos.init({
       duration: 1000,
@@ -26,11 +25,11 @@ const Page = () => {
   const [message, setMessage] = useState("");
   const [button, setButton] = useState("Küldés");
 
-  const str = 'just a normal string for test!';
+  const str = "just a normal string for test!";
 
   const handleSendEmail = async (event) => {
     event.preventDefault();
-    setButton('Küldés folyamaban')
+    setButton("Küldés folyamaban");
     try {
       await fetch("https://formsubmit.co/ajax/gy.nagy86@gmail.com", {
         method: "post",
@@ -38,13 +37,13 @@ const Page = () => {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify({ name, email, message, str, }),
+        body: JSON.stringify({ name, email, message, str }),
       });
 
       setEmail("");
       setName("");
       setMessage("");
-      setButton('ELKÜLDVE')
+      setButton("ELKÜLDVE");
     } catch (error) {
       console.error("Error sending email:", error);
     }
@@ -65,19 +64,22 @@ const Page = () => {
               {" "}
               <Image className={style.image} alt="phone" src={emailicon} />
               <p>
-                <a href="mailto: info@citytax.hu">{contactData.email}</a>
+                <a href="mailto:info@citytax.hu">{contactData.email}</a>
               </p>
             </div>
 
             <div className={style.iconBoxes}>
-              {" "}
-              <Image className={style.image} alt="phone" src={direction} />
-              <p>{contactData.address}</p>
+                {" "}
+                <Image className={style.image} alt="phone" src={direction} />
+                <p>{contactData.address}</p>
             </div>
 
             <div className={style.iconBoxes}>
-              <Image className={style.image} alt="phone" src={phone} />
-              <p>{contactData.phone}</p>
+                <Image className={style.image} alt="phone" src={phone} />
+                <div className={style.phone}>
+                  <a href="tel:+36307993615">{contactData.phone}</a>
+                  <a href="tel:+36302436942">{contactData.phone2}</a>
+                </div>
             </div>
           </div>
 
@@ -91,7 +93,6 @@ const Page = () => {
           </div>
 
           <div className={style.formContainer} data-aos="fade-up">
-
             <form
               className={style.form}
               method="post"
@@ -146,8 +147,7 @@ const Page = () => {
         </div>
       </div>
       <div className={style.mapContainer}>
-      <MapembedApi />
-       
+        <MapembedApi />
       </div>
     </>
   );

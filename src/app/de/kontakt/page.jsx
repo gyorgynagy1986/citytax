@@ -74,7 +74,10 @@ const Page = () => {
 
             <div className={style.iconBoxes}>
               <Image className={style.image} alt="phone" src={phone} />
-              <p>{contactData.phone}</p>
+              <div className={style.phone}>
+                <a href="tel:+36307993615">{contactData.phone}</a>
+                <a href="tel:+36302436942">{contactData.phone2}</a>
+              </div>{" "}
             </div>
           </div>
 

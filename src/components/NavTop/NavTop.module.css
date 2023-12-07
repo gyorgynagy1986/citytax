@@ -22,7 +22,7 @@
   padding: 1rem;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1024px) {
   .navTop {
     display: none;
   }
@@ -38,7 +38,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 0 9px;
-  max-width: var(--maxWidth)
+  max-width: var(--maxWidth);
 }
 
 .emailContainer {
@@ -50,7 +50,14 @@
 }
 
 .emailContainer svg {
-  color:var(--iconColor)
+  color: var(--iconColor);
+}
+
+.openingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .textContainer {
@@ -58,7 +65,6 @@
   justify-content: center;
   gap: 4rem;
 }
-
 
 .imgIcon {
   width: auto;

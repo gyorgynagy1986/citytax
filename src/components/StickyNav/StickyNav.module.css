@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1024px) {
   .stickynavContainer {
     padding-left: 2vw;
     padding-right: 2vw;

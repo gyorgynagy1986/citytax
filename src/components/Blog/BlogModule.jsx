@@ -30,9 +30,6 @@ const BlogModule = () => {
     language = filteredPostsHu;
   }
 
-  console.log(language)
-
-
   const { text } = useLocalContent(
     blogSection,
     blogSectionEn,

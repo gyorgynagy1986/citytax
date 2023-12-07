@@ -74,14 +74,18 @@ const Page = () => {
 
             <div className={style.iconBoxes}>
               <Image className={style.image} alt="phone" src={phone} />
-              <p>{contactData.phone}</p>
+              <div className={style.phone}>
+                <a href="tel:+36307993615">{contactData.phone}</a>
+                <a href="tel:+36302436942">{contactData.phone2}</a>
+              </div>{" "}
             </div>
           </div>
 
           <div className={style.titleContainer2}>
             <h3 className={imb.className}>Contact form</h3>
             <p>
-            Once we receive your message, we will be in touch within one business day.
+              Once we receive your message, we will be in touch within one
+              business day.
             </p>{" "}
             <div className={style.btnContainer}></div>
           </div>

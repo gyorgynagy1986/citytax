@@ -33,9 +33,20 @@ const NavTop = () => {
             <a href={mailTo}>{contactData.email}</a>
           </div>
           <div className={style.emailContainer}>
-            <PiClockBold />{" "}
-            <span className="font-semibold text-[#4b4b4b]">{text.opening}</span>{" "}
-            08:00 - 14:00
+            <div className={style.openingContainer}>
+              <PiClockBold />{" "}
+              <span className="font-semibold text-[#4b4b4b]">
+                {text.opening}
+              </span>{" "}
+              07:30 - 16:30
+            </div>
+            <div className={style.openingContainer}>
+              <PiClockBold />{" "}
+              <span className="font-semibold text-[#4b4b4b]">
+                {text.opening2}
+              </span>{" "}
+              07:30-14.00
+            </div>
           </div>
         </div>
 

@@ -11,7 +11,7 @@ const ServiceList = () => {
     <div className={style.mainContainer}>
       <div id="online" className={style.contentContainer}>
         <div className={`${style.leftBoxes} ${style.displayNone}`}>
-          <h2 className={style.h2}>{text[0].name}</h2>
+          <span className={style.span}>{text[0].name}</span>
           <div className={style.circle}></div>
         </div>
         <div className={style.rightBoxes}>
@@ -31,13 +31,13 @@ const ServiceList = () => {
           <p className={style.p2}>{text[0].desc2}</p>
         </div>
         <div className={`${style.rightBoxes2} ${style.displayNone}`}>
-          <h2 className={style.h2}>{text[1].name}</h2>
+          <span className={style.span}>{text[1].name}</span>
         </div>
       </div>
 
       <div id="cegalapitas" className={style.contentContainer}>
         <div className={`${style.leftBoxes} ${style.displayNone}`}>
-          <h2 className={style.h2}>{text[2].name}</h2>
+          <span className={style.span}>{text[2].name}</span>
           <div className={style.circle}></div>
         </div>
         <div className={style.rightBoxes}>
@@ -57,13 +57,13 @@ const ServiceList = () => {
           <p className={style.p2}>{text[3].desc2}</p>
         </div>
         <div className={`${style.rightBoxes2} ${style.displayNone}`}>
-          <h2 className={style.h2}>{text[3].name}</h2>
+          <span className={style.span}>{text[3].name}</span>
         </div>
       </div>
 
       <div id="könyvvizsgalat" className={style.contentContainer}>
         <div className={`${style.leftBoxes} ${style.displayNone}`}>
-          <h2 className={style.h2}>{text[4].name}</h2>
+          <span className={style.span}>{text[4].name}</span>
           <div className={style.circle}></div>
         </div>
         <div className={style.rightBoxes}>
@@ -81,15 +81,15 @@ const ServiceList = () => {
           <p className={style.p2}>{text[5].desc1}</p>
         </div>
         <div className={`${style.rightBoxes2} ${style.displayNone}`}>
-          <h2 className={`${style.h2} ${style.textAlignEnd}`}>
+          <span className={`${style.span} ${style.textAlignEnd}`}>
             {text[5].name}
-          </h2>
+          </span>
         </div>
       </div>
 
       <div id="ügyfelkor" className={style.contentContainer}>
         <div className={`${style.leftBoxes} ${style.displayNone}`}>
-          <h2 className={style.h2}> {text[6].name}</h2>
+          <span className={style.span}> {text[6].name}</span>
           <div className={style.circle}></div>
         </div>
         <div className={style.rightBoxes}>

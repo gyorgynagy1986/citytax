@@ -59,7 +59,7 @@
 }
 
 .textContainer {
-  width: 50%;
+  width: 100%;
   display: flex;
   gap: 2rem;
   position: relative;
@@ -73,6 +73,7 @@
   top: 8px;
   height: 90%;
   left: -40px;
+  display: none;
   opacity: .2;
   background-color:var(--btnColor);
   position: absolute;
@@ -113,6 +114,7 @@
   position: relative;
   display: flex;
   overflow: hidden;
+  display: none;
 }
 .img1 {
   min-width: auto;

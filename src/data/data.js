@@ -1,6 +1,6 @@
 export const path = {
-  path: 'https://citytax.vercel.app/'
-}
+  path: "https://citytax.vercel.app/",
+};
 
 export const socialIcons = {
   facebook: "/",
@@ -9,24 +9,32 @@ export const socialIcons = {
 
 export const contactData = {
   email: "info@citytax.hu",
-  phone: "+36 30 215 1585",
+  phone: "06-30/799-3615",
+  phone2: "06-30/243-6942",
   address: "6900 Makó, Hold utca 26",
+  address2: "6720 Szeged Horváth Mihály u. 8",
 };
 
 export const navTopdata = {
-  email: 'Email cím',
-  opening: 'Hétfő - Péntek:'
-}
+  email: "Email cím",
+  opening: "Hétfő - Csütörtök:",
+  opening2: "Péntek:",
+  hours: "Nyitvatartás",
+};
 
 export const navTopdataEn = {
-  email: 'Email address',
-  opening: 'Monday - Friday:'
-}
+  email: "Email address",
+  opening: "Monday - Thursday :",
+  opening2: "Friday :",
+  hours: "Opening Hours",
+};
 
 export const navTopdataDe = {
-  email: 'E-Mail adresse',
-  opening: 'Montag - Freitag:'
-}
+  email: "E-Mail adresse",
+  opening: "Montag - Donnerstag:",
+  opening2: "Freitag:",
+  hours: "Nyitvatartás",
+};
 
 export const buttons = {
   callback: "Visszahívást kérek",
@@ -34,7 +42,7 @@ export const buttons = {
   services: "Szolgáltatások",
   contactLink: "/kapcsolat",
   servicesLink: "/szolgaltatasok",
-  mainpage: "/"
+  mainpage: "/",
 };
 
 export const buttonsEn = {
@@ -43,8 +51,7 @@ export const buttonsEn = {
   services: "services",
   contactLink: "/en/contact",
   servicesLink: "/en/services",
-  mainpage: "/en"
-
+  mainpage: "/en",
 };
 
 export const buttonsDe = {
@@ -53,8 +60,7 @@ export const buttonsDe = {
   services: "Dienstleistungen",
   contactLink: "/de/kontakt",
   servicesLink: "/de/dienstleistungen",
-  mainpage: "/de"
-
+  mainpage: "/de",
 };
 
 export const linksButtonsHu = {
@@ -136,14 +142,18 @@ export const servicesDe = {
   text: [
     { title: "Abwicklung von Bankkrediten" },
     { title: "Erstellung von Antragsunterlagen für Fördermittel" },
-    { title: "Überprüfung von Investitions- und Finanzberatung für Ihr Unternehmen" },
+    {
+      title:
+        "Überprüfung von Investitions- und Finanzberatung für Ihr Unternehmen",
+    },
     {
       title:
         "Korrektur von Fehlern anderer Buchhalter und falls notwendig, Umbuchungen",
     },
     { title: "Erstellung von Regelungen nach Bedarf" },
     {
-      title: "Wir können Daten aus fast jedem Programm in unser eigenes Programm importieren",
+      title:
+        "Wir können Daten aus fast jedem Programm in unser eigenes Programm importieren",
     },
   ],
 };
@@ -152,7 +162,10 @@ export const additionalService = {
   list: [
     { title: "Banki hitel ügyintézés" },
     { title: "Pályázati segédanyagok összekészítése" },
-    { title: "Beruházási, befektetési tanácsok véleményezése vállalkozása " },
+    {
+      title:
+        "Beruházási, befektetési tanácsok véleményezése vállálkozását érintően ",
+    },
   ],
 
   list2: [
@@ -170,7 +183,10 @@ export const additionalServiceEn = {
   list: [
     { title: "Bank loan administration" },
     { title: "Preparation of application support materials" },
-    { title: "Review of investment advice for your business" },
+    {
+      title:
+        "Reviewing investment and financial advice concerning your busines",
+    },
   ],
 
   list2: [
@@ -189,7 +205,10 @@ export const additionalServiceDe = {
   list: [
     { title: "Verwaltung von Bankdarlehen" },
     { title: "Erstellung von Unterstützungsmaterialien für Anträge" },
-    { title: "Überprüfung von Anlageberatungen für Ihr Geschäft" },
+    {
+      title:
+        "Überprüfung von Investitions- und Finanzberatung im Zusammenhang mit Ihrem Unternehmen",
+    },
   ],
 
   list2: [
@@ -199,7 +218,8 @@ export const additionalServiceDe = {
     },
     { title: "Erstellung von Richtlinien nach Bedarf" },
     {
-      title: "Wir importieren Daten aus nahezu jedem Programm in unser eigenes Programm",
+      title:
+        "Wir importieren Daten aus nahezu jedem Programm in unser eigenes Programm",
     },
   ],
 };
@@ -266,7 +286,8 @@ export const whyUsEn = {
 
 export const whyUsDe = {
   title: "Warum City Tax?",
-  title2: "Warum sollten Sie sich für die Buchhaltung von City Tax entscheiden?",
+  title2:
+    "Warum sollten Sie sich für die Buchhaltung von City Tax entscheiden?",
   text: "",
   list: [
     { title: "Ständige Verfügbarkeit" },
@@ -292,7 +313,7 @@ export const team = {
   mariajob: "Mérlegképes könyvelő",
   jozsef: "Hajdu József",
   jozsefjob: "Közgazdász, mérlegképes könyvelő, adótanácsadó",
-  szilvia:  "Vetróné Hajdu Szilvia",
+  szilvia: "Vetróné Hajdu Szilvia",
   szilviajob: "Közgazdász, mérlegképes könyvelő, adótanácsadó",
 };
 
@@ -318,7 +339,6 @@ export const teamDe = {
   szilviajob: "Ökonomin, Bilanzbuchhalterin, Steuerberaterin",
 };
 
-
 export const servicesMainPage = {
   title: "Szolgáltatások",
   title2: "További szolgáltatásaink ügyfeleink részére",
@@ -335,12 +355,15 @@ export const servicesMainPageDe = {
 };
 
 export const footerData = {
-  text: "Az üzleti siker titka a könyvelői bizalom és tapasztalatban rejlik. Mi a partnereinkre építünk, és hosszú távú kapcsolatokat alakítunk ki. Minőségi munkánkhoz elkötelezetten törekszünk, és folyamatosan fejlesztjük szolgáltatásainkat. Bízzon bennünk a könyvelés terén, legyen szó adóoptimalizálásról, NAV képviseletről vagy egyéb adózási kérdésekről. Számíthat ránk!",
+  text: "Az üzleti siker titka a könyvelői bizalomban és tapasztalatban rejlik. Mi a partnereinkre építünk, és hosszú távú kapcsolatokat alakítunk ki. Minőségi munkára elkötelezetten törekszünk, és folyamatosan fejlesztjük szolgáltatásainkat. Bízzon bennünk a könyvelés terén, legyen szó adóoptimalizálásról, NAV képviseletről vagy egyéb adózási kérdésekről. Számíthat ránk!",
   servicesName: "Szolgáltatások",
   serviceLink: "szolgaltatasok",
   servicesName2: "Elérhetőség",
+  opening: "Hétfő - Csütörtök",
+  opening2: "Péntek",
+  hours: "Nyitvatartás",
   address: "Makói Iroda",
-  address2: "Szegedei Iroda",
+  address2: "Szegedi Iroda",
   contact: "Kapcsolat",
   services: [
     { name: "Online könyvelés", link: "/#online" },
@@ -357,11 +380,13 @@ export const footerData = {
 };
 
 export const footerDataEn = {
-  text: "The secret to business success lies in the trust and experience of the accountant. We build on our partners and establish long-term relationships. We are committed to providing quality work and continuously improving our services. Trust us with accounting, whether it's tax optimization, representation at the tax authority (NAV), or other tax-related issues. You can rely on us!",
+  text: "The secret to business success lies in the trust and experience of the accountant. We build on our partners and establish long-term relationships. We are dedicated to delivering quality work and continually improving our services. Trust us in the field of accounting, whether it's about tax optimization, representing you with the tax authority (NAV), or addressing other tax-related issues. You can rely on us!",
   servicesName: "Services",
   servicesName2: "Contact",
   serviceLink: "en/services",
-
+  opening: "Monday - Thursday",
+  opening2: "Friday",
+  hours: "Opening Hours",
   address: "Office Makó",
   address2: "Office Szeged",
   contact: "Contact",
@@ -380,11 +405,13 @@ export const footerDataEn = {
 };
 
 export const footerDataDe = {
-  text: "Das Geheimnis des Geschäftserfolgs liegt im Vertrauen und in der Erfahrung des Buchhalters. Wir bauen auf unsere Partner und etablieren langfristige Beziehungen. Wir verpflichten uns zu qualitativ hochwertiger Arbeit und kontinuierlicher Verbesserung unserer Dienstleistungen. Vertrauen Sie uns mit der Buchhaltung, sei es Steueroptimierung, Vertretung bei der Finanzbehörde (NAV) oder andere steuerbezogene Angelegenheiten. Auf uns können Sie sich verlassen!",
+  text: "Das Geheimnis des geschäftlichen Erfolgs liegt im Vertrauen und in der Erfahrung des Buchhalters. Wir bauen auf unsere Partner und pflegen langfristige Beziehungen. Wir streben engagiert nach qualitativ hochwertiger Arbeit und verbessern kontinuierlich unsere Dienstleistungen. Vertrauen Sie uns im Bereich der Buchführung, sei es bei der Steueroptimierung, der Vertretung vor der Steuerbehörde (NAV) oder bei anderen steuerlichen Fragen. Sie können sich auf uns verlassen!",
   servicesName: "Dienstleistungen",
   servicesName2: "Kontakt",
   serviceLink: "de/dienstleistungen",
-
+  opening: "Montag - Donnerstag",
+  opening2: "Freitag",
+  hours: "Öffnungszeiten",
   address: "Büro Makó",
   address2: "Büro Szeged",
   contact: "Kontakt",
@@ -457,9 +484,7 @@ export const serviceList = [
   },
   {
     name: "Könyvvizsgálat",
-    desc: "Amennyiben éves beszámolója alapján vállalkozása könyvvizsgálatot igényel, vagy egyéb okok miatt auditra van szüksége, ebben is segítünk.",
-    desc1:
-      "A könyvvizsgálatra kötelezettséget a számviteli törvény szabályozza. Amennyiben a megelőző két üzleti év átlagában a vállalkozás nettó árbevétele meghaladta a 300 millió forintot és a megelőző két üzleti évben a vállalkozás átlagos foglalkoztatottainak létszáma meghaladta az 50 főt, a törvény előírja a könyvvizsgálati kötelezettséget.",
+    desc: " A számviteli törvény szerint nem kötelező a könyvvizsgálat, ha az alábbi két feltétel együttesen teljesül: a.: az üzleti évet megelőző két üzleti év átlagában a vállalkozó éves (éves szintre átszámított) nettó árbevétele nem haladta meg a 300 millió forintot, és b.: az üzleti évet megelőző két üzleti év átlagában a vállalkozó által átlagosan foglalkoztatottak száma nem haladta meg az 50 fő.",
   },
   {
     name: "Hitelkérelem, Széchenyi-kártya ügyintézés",
@@ -508,9 +533,7 @@ export const serviceListEn = [
   },
   {
     name: "Auditing",
-    desc: "If your business requires an audit based on its annual financial statements, or if you need an audit for other reasons, we can assist with that as well.",
-    desc1:
-      "The obligation to audit is regulated by accounting law. If in the average of the previous two business years the company's net revenue exceeded 300 million HUF and the average number of employees exceeded 50, the law prescribes an audit obligation.",
+    desc: "According to the accounting law, an audit is not mandatory if the following two conditions are met together: a. the annual (converted to an annual basis) net revenue of the entrepreneur did not exceed 300 million Hungarian forints on average over the two business years preceding the business year, and b. the average number of employees employed by the entrepreneur did not exceed 50 on average over the two business years preceding the business year.",
   },
   {
     name: "Loan Application, Széchenyi Card Administration",
@@ -526,52 +549,50 @@ export const serviceListEn = [
 
 export const serviceListDe = [
   {
-    name: "Online-Buchhaltung",
-    desc: "Mit der Online-Buchhaltung kann Ihr Unternehmen überall im Land oder sogar über die Grenzen hinaus reibungslos arbeiten. Dank der von der Nationalen Steuer- und Zollverwaltung (NAV) bereitgestellten Online-Rechnungsschnittstelle haben wir kontinuierlichen Zugang zu Rechnungsdaten. Unsere Buchhaltungssoftware ist in der Lage, Daten von überall zu importieren, was sie mit dem NAV-System kompatibel macht. Darüber hinaus bieten wir die Möglichkeit, Rechnungen und Belege auch online zu versenden.",
+    name: "Online Buchführung",
+    desc: "Bei der Online-Buchführung können Sie und Ihr Unternehmen an jedem Ort im Land, sogar über die Grenzen hinweg, kontinuierlich arbeiten. Dank der von der NAV bereitgestellten Online-Rechnungsschnittstelle haben wir kontinuierlichen Zugriff auf die Rechnungsdaten. Das von uns verwendete Buchhaltungsprogramm ermöglicht das Importieren von Daten von überall her und ist somit mit dem NAV-System kompatibel. Darüber hinaus bieten wir die Möglichkeit, Rechnungen und Belege auch online zu übermitteln.",
     desc1:
-      "Die Buchhaltung funktioniert reibungslos ohne physischen Kontakt, und Beratungen können auf jeder Online-Plattform stattfinden.",
+      "Die Buchführung und Beratung funktionieren reibungslos ohne physischen Kontakt, der auf jeder Online-Plattform stattfinden kann.",
     desc2:
-      "Wir haben zahlreiche Partner, mit denen die Online-Buchhaltung perfekt ohne die Notwendigkeit eines spezifischen physischen Kontakts funktioniert.",
+      "Die Online-Buchführung funktioniert problemlos mit vielen unserer Partner, ohne physischen Kontakt.",
   },
   {
     name: "Steuerberatung",
-    desc: "Die Mission eines qualifizierten Steuerberaters ist es, die günstigsten und kostengünstigsten Steuermöglichkeiten für ihre Klienten zu finden. Ihre Aufgabe ist es, die günstigste Lösung für das aktuelle Unternehmen aus den komplexen Zeilen des Gesetzes zu lesen. Ein guter Steuerberater denkt langfristig und optimiert. Unsere Mitarbeiter helfen ohne Ausnahme, Ihre Probleme zu lösen und so schnell wie möglich eine Lösung im Vergleich zur Situation anzubieten.",
+    desc: "Die Aufgabe eines qualifizierten Steuerberaters besteht darin, die kostengünstigsten Steuermöglichkeiten für den Kunden zu finden. Es ist seine Aufgabe, aus den komplizierten Zeilen der Gesetze immer die für das jeweilige Unternehmen günstigste Lösung herauszulesen. Ein guter Steuerberater denkt langfristig und optimiert. Unsere Mitarbeiter im Büro helfen ohne Ausnahme, Probleme zu lösen und so schnell wie möglich Lösungen anzubieten, die zur Situation passen.",
     desc1:
-      "Wir beantworten gerne jede Frage, also lassen Sie keine Fragen offen, und wir versuchen, unsere Antworten so verständlich wie möglich zu formulieren.",
+      "Wir beantworten gerne alle Fragen und versuchen, unsere Antworten so verständlich wie möglich zu formulieren.",
     desc2:
-      "Vereinbaren Sie einen Termin für eine Steuerberatung, deren Kosten (wenn Sie uns auch für die Buchhaltung Ihres Unternehmens wählen) vom ersten Monatsservice abgezogen werden.",
+      "Vereinbaren Sie einen Termin für eine Steuerberatung, deren Gebühr (wenn Sie uns für die Buchführung Ihres Unternehmens auswählen) mit der ersten monatlichen Servicegebühr verrechnet wird.",
   },
   {
-    name: "Unternehmensgründung",
-    desc: "Die gewählte Geschäftsform bestimmt grundlegend die Zukunft und Möglichkeiten des Unternehmens. Es ist daher unerlässlich, unsere Entscheidungen über die Gründung unseres Unternehmens sorgfältig zu überlegen, damit wir genau wissen, welche Anforderungen und Steuerpflichten die gewählte Geschäftsform hat, sowie die Möglichkeiten, die sie bietet. Während einer vorläufigen Beratung definieren wir die Richtung gemeinsam.",
+    name: "Firmengründung",
+    desc: "Die gewählte Unternehmensform bestimmt grundlegend die Zukunft und Möglichkeiten des Unternehmens. Es ist daher unerlässlich, unsere Entscheidungen zur Gründung unseres Unternehmens sorgfältig zu überdenken, um genau zu verstehen, welche Anforderungen und Steuerpflichten für die gewählte Unternehmensform gelten und welche Möglichkeiten darin liegen. Bei einer vorherigen Beratung legen wir gemeinsam die Richtung fest.",
     desc1:
-      "Wenn nötig, können unsere Anwälte die notwendigen Dokumente für die Gründung innerhalb eines Tages vorbereiten, die Sie nur bei einem vorab vereinbarten Termin unterzeichnen müssen. Nach der Unterschrift wird die Firmenregistrierung nicht wochenlang verzögert; wir leiten sie sofort an das Registergericht weiter.",
+      "Wenn nötig, erstellen unsere Anwälte die für die Gründung erforderlichen Dokumente möglicherweise in nur einem Tag, die Sie dann nur noch zu einem vereinbarten Termin unterzeichnen müssen. Nach der Unterzeichnung der Unternehmensregistrierung bleibt diese nicht wochenlang ungenutzt, sondern wird sofort an das Handelsgericht weitergeleitet.",
     desc2:
-      "Wir nehmen unseren Kunden die Last ab, wodurch Sie Zeit sparen, die Sie in andere Bereiche Ihres Geschäfts investieren können.",
+      "Wir nehmen unseren Kunden die Last ab und sparen ihnen so Zeit, die sie in anderen Bereichen ihres Unternehmens nutzen können.",
   },
   {
     name: "Lohnabrechnung",
-    desc: "Unser Büro ist führend in Fragen der Arbeit und Lohnabrechnung. Wir übernehmen auch die Lohnabrechnungsarbeiten für Unternehmen, die diesen Bereich mit ihrem eigenen Buchhalter abdecken, aber die monatliche Lohnabrechnung und Lohnangelegenheiten nicht mehr intern lösen können und daher auslagern.",
+    desc: "Unser Büro ist führend in Fragen zu Arbeits- und Gehaltsfragen. Wir übernehmen auch die Lohnabrechnung von Unternehmen, die diese Aufgaben mit ihrem eigenen Buchhalter erledigen, jedoch die monatliche Lohnabrechnung und die Aufgaben im Personalbereich nicht intern lösen können und diese daher auslagern.",
     desc1:
-      "Die Lohnabrechnung birgt hohe Risiken, da sie eine spezielle Fachausbildung erfordert. Eine schlecht beurteilte, unprofessionelle Entscheidung kann ernsthafte Konsequenzen nach sich ziehen, die für das Unternehmen teuer werden können. Ein durchschnittlicher Lohnbuchhalter ist möglicherweise nicht umfassend informiert, da dieser Beruf kontinuierliches Lernen und Entwicklung erfordert.",
+      "Die Lohnabrechnung birgt aufgrund ihrer spezialisierten Ausbildung ein hohes Risiko. In bestimmten Fällen kann eine falsche, fachlich nicht fundierte Entscheidung ernsthafte Konsequenzen nach sich ziehen, die das Unternehmen teuer zu stehen kommen können. Ein durchschnittlicher Lohnbuchhalter ist möglicherweise nicht umfassend informiert, diese Branche erfordert kontinuierliches Lernen und Entwicklung.",
     desc2:
-      "Eine präzise und detaillierte Untersuchung geht jedem Arbeitsprozess voraus!",
+      "Jeder Arbeitsablauf wird durch eine präzise und detaillierte Prüfung vorab überprüft!",
   },
   {
-    name: "Abschlussprüfung",
-    desc: "Wenn Ihr Unternehmen aufgrund seines Jahresabschlusses eine Abschlussprüfung benötigt oder aus anderen Gründen eine Prüfung erforderlich ist, können wir auch dabei helfen.",
+    name: "Buchprüfung",
+    desc: "Gemäß dem Rechnungswesen ist eine Buchprüfung nicht verpflichtend, wenn die folgenden beiden Bedingungen gemeinsam erfüllt sind: a. Der durchschnittliche (auf Jahresbasis umgerechnete) Nettoumsatz des Unternehmers hat in den beiden Geschäftsjahren vor dem Geschäftsjahr durchschnittlich 300 Millionen Forint nicht überschritten, und b. Die durchschnittliche Anzahl der vom Unternehmer beschäftigten Mitarbeiter hat in den beiden Geschäftsjahren vor dem Geschäftsjahr durchschnittlich 50 nicht überschritten.",
+  },
+  {
+    name: "Kreditantrag, Abwicklung der Széchenyi-Karte",
+    desc: "Die Zusammenstellung eines Kreditantragspakets und die Möglichkeiten zur Einreichung erfordern umfangreiche Erfahrung und Untersuchung. Unsere Mitarbeiter verfügen über langjährige Routine in der Erstellung dieser Dokumentationen und deren Erfolg. Um einen positiven Bescheid für einen bestimmten Kreditantrag eines Unternehmens zu erhalten, sind eine gründliche Voruntersuchung und ausreichende Fachkenntnisse erforderlich.",
     desc1:
-      "Die Verpflichtung zur Abschlussprüfung wird durch das Buchführungsgesetz geregelt. Wenn im Durchschnitt der letzten zwei Geschäftsjahre der Nettoumsatz des Unternehmens 300 Millionen HUF überschritten hat und die durchschnittliche Anzahl der Beschäftigten in den letzten zwei Geschäftsjahren mehr als 50 betrug, schreibt das Gesetz eine Prüfungspflicht vor.",
+      "Basierend auf den letzten Jahren haben wir das erforderliche Wissen, um sicherzustellen, dass diese Anträge vollständig und mit allen erforderlichen zusätzlichen Informationen versehen und angehängt an den Kreditbearbeiter weitergeleitet werden, was für eine positive Bewertung unerlässlich ist.",
   },
   {
-    name: "Kreditantrag, Széchenyi-Kartenverwaltung",
-    desc: "Das Zusammenstellen eines Kreditantragspakets und die Prüfung der Einreichungsmöglichkeiten erfordern umfangreiche Erfahrung und Untersuchung. Unsere Mitarbeiter verfügen über langjährige Routine in der Erstellung dieser Unterlagen und in ihrem Erfolg. Um eine positive Beurteilung eines bestimmten Kreditantrags eines Unternehmens zu erhalten, ist eine gründliche vorherige Überprüfung und ausreichende Fachkenntnis erforderlich.",
-    desc1:
-      "Basierend auf den Erfahrungen der letzten Jahre haben wir das notwendige Wissen, um sicherzustellen, dass diese Anträge vollständig und mit allen zusätzlichen Informationen versehen eingereicht werden, was für eine positive Bewertung unerlässlich ist.",
-  },
-  {
-    name: "Kundenstamm-Übernahme",
-    desc: "Wenn Sie derzeit als Eigentümer eines Buchhaltungsbüros über einen Rückzug, einen Berufswechsel nachdenken oder einfach weniger arbeiten möchten, bieten wir eine Lösung an, indem wir Ihre Kunden übernehmen. Wir tun dies gemäß den im Vertrag festgelegten Bedingungen, die wir gemeinsam erarbeiten.",
+    name: "Übernahme des Kundenstamms",
+    desc: "Wenn Sie derzeit als Büroeigentümer von einem Buchführungsbüro in den Ruhestand treten, einen Jobwechsel in Betracht ziehen oder einfach weniger arbeiten möchten, bieten wir eine Lösung, indem Sie Ihre Kunden an unser Unternehmen übergeben. Wir tun dies gemäß den vereinbarten Vertragsbedingungen, die wir gemeinsam erarbeiten.",
   },
 ];
 

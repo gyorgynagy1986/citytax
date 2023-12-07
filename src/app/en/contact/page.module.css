@@ -49,7 +49,7 @@
   font-weight: var(--titleFontW);
 }
 
-.titleContainer2  {
+.titleContainer2 {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -64,7 +64,6 @@
   font-weight: var(--titleFontW);
   margin-bottom: 4rem;
 }
-
 
 .titleContainer2 h3 {
   font-size: var(--sectionSmTitle);
@@ -86,12 +85,11 @@
   margin-left: 10px;
 }
 
-
 .formContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: var(--sectionPaddingTopSm) ;
+  padding-bottom: var(--sectionPaddingTopSm);
 }
 
 .inputContainer {
@@ -161,9 +159,9 @@
 }
 .iconBoxes {
   display: flex;
-  min-height: 12rem;
+  min-height: 15rem;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 2rem 3rem 2rem 3rem;
   border: 1px solid rgba(83, 83, 83, 0.221);
@@ -174,10 +172,22 @@
   font-weight: 600;
 }
 
+.iconBoxes a {
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .image {
-  width: 25%;
-  height: 25%;
+  width: 50px;
+  height: auto;
   color: var(--secColor);
+  margin-bottom: 1rem;
+}
+
+
+.phone {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 860px) {
@@ -196,11 +206,9 @@
 
   .titleContainer2 p {
     font-size: 18px;
-    
   }
 
   .formContainer {
     padding-bottom: 10rem;
   }
 }
-

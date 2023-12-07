@@ -6,7 +6,7 @@
   padding-right: var(--plpr);
   display: flex;
   position: relative;
-  background-image: linear-gradient(#1e2939f2, #111a25ed), url('');
+  background-image: linear-gradient(#1e2939f2, #111a25ed);
   background-attachment: fixed;
   background-position: center;
   background-size: 100%;

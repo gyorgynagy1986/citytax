@@ -68,7 +68,7 @@
   font-weight: 800;
 }
 
-.h2 {
+.span {
   font-size: 22px;
   font-weight: 800;
   color: var(--secColor);
@@ -119,7 +119,7 @@
 
   .contentContainer {
   
-    padding-bottom: 10rem;
+    padding-bottom:5rem;
   }
  
   .displayNone {
@@ -136,7 +136,7 @@
  
   .leftBoxes {
     width: 100%;
-    padding-right: 0%;
+    padding-right: 0% !important;
     display: flex;
     justify-content:center;
     position: relative;
@@ -144,7 +144,7 @@
   
   .leftBoxes2 {
     width: 100%;
-    padding-right: 0%;
+    padding-right: 0% !important ;
     display: flex;
     justify-content:center;
     position: relative;
@@ -152,7 +152,8 @@
   
   .rightBoxes {
     width: 100%;
-    padding-right: 0%;
+    padding-right: 0% !important;
+    padding-left: 0%;
     display: flex;
     justify-content:center;
     position: relative;
@@ -160,7 +161,8 @@
   
   .rightBoxes2 {
     width: 100%;
-    padding-right: 0%;
+    padding-right: 0% !important;
+    padding-left: 0%;
     display: flex;
     justify-content:center;
     position: relative;

@@ -7,7 +7,7 @@
   padding-right: var(--plpr);
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1024px) {
   .navbar {
     display: none !important;
   }
@@ -63,17 +63,13 @@
   transition: all 160ms ease-in-out;
 }
 
-
-
 .ul li a:hover::after {
   width: 100%;
-  color: ( var(--btnColor));
+  color: (var(--btnColor));
 }
-
 
 @media screen and (max-width: 960px) {
   .ul {
     gap: 2rem;
-
   }
-} 
+}

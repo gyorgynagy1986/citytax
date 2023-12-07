@@ -16,11 +16,24 @@ import img3 from "../../../../public/assets/svg/03.svg";
 import img4 from "../../../../public/assets/svg/04.svg";
 import img5 from "../../../../public/assets/svg/05.svg";
 import img6 from "../../../../public/assets/svg/06.svg";
+import { usePathname } from "next/navigation";
 
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
 
 const Services = () => {
   const { text } = useLocalContent(servicesText, servicesEn, servicesDe);
+
+  const [pathTo, setPathTo] = useState("/szolgaltatasok");
+
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (pathname.startsWith("/en")) {
+      setPathTo("en/services");
+    } else if (pathname.startsWith("/de")) {
+      setPathTo("de/dienstleistungen");
+    }
+  }, [pathname]);
 
   useEffect(() => {
     Aos.init({
@@ -52,7 +65,7 @@ const Services = () => {
               </div>
             </div>
             <div className={style.circle}>
-              <a href="/szolgaltatasok">
+              <a href={`${pathTo}`}>
                 <span>
                   {" "}
                   <FaArrowRight />{" "}
@@ -71,7 +84,7 @@ const Services = () => {
               <div className={style.promo}>{text.text[1].title}</div>
             </div>
             <div className={style.circle}>
-              <a href="/szolgaltatasok">
+              <a href={`${pathTo}`}>
                 <span>
                   {" "}
                   <FaArrowRight />{" "}
@@ -90,7 +103,7 @@ const Services = () => {
               <div className={style.promo}>{text.text[2].title}</div>
             </div>
             <div className={style.circle}>
-              <a href="/szolgaltatasok">
+              <a href={`${pathTo}`}>
                 <span>
                   {" "}
                   <FaArrowRight />{" "}
@@ -109,7 +122,7 @@ const Services = () => {
               <div className={style.promo}>{text.text[3].title}</div>
             </div>
             <div className={style.circle}>
-              <a href="/szolgaltatasok">
+              <a href={`${pathTo}`}>
                 <span>
                   {" "}
                   <FaArrowRight />{" "}
@@ -128,7 +141,7 @@ const Services = () => {
               <div className={style.promo}>{text.text[4].title}</div>
             </div>
             <div className={style.circle}>
-              <a href="/szolgaltatasok">
+              <a href={`${pathTo}`}>
                 <span>
                   {" "}
                   <FaArrowRight />{" "}
@@ -147,7 +160,7 @@ const Services = () => {
               <div className={style.promo}>{text.text[5].title}</div>
             </div>
             <div className={style.circle}>
-              <a href="/szolgaltatasok">
+              <a href={`${pathTo}`}>
                 <span>
                   {" "}
                   <FaArrowRight />{" "}
