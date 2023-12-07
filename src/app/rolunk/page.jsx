@@ -58,7 +58,7 @@ const page = () => {
       </div>
       <NumberUp rolunk={true} />
       <WhyUs rolunk={true} />
-      <Team />
+      <div style={{paddingBottom:'8rem'}}></div>
     </>
   );
 };
