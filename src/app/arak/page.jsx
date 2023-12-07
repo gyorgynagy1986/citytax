@@ -52,7 +52,7 @@ const Page = () => {
               typeBlack={true}
               rolunk={true}
               name={"Visszahívást kérek"}
-              url={"/"}
+              url={"/kapcsolat"}
             />
           </div>
           <div className={style.imageContainer}>
