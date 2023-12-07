@@ -82,15 +82,16 @@
 }
 
 .icon {
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  height: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
 .icon img {
- max-width: none;
+ width: auto;
+ height: auto;
   color: var(--iconColor);
 }
 
