@@ -42,6 +42,7 @@ export const buttons = {
   services: "Szolgáltatások",
   contactLink: "/kapcsolat",
   servicesLink: "/szolgaltatasok",
+  callbackLink:"/kapcsoalt/callback",
   mainpage: "/",
 };
 
@@ -51,6 +52,8 @@ export const buttonsEn = {
   services: "services",
   contactLink: "/en/contact",
   servicesLink: "/en/services",
+  callbackLink:"/en/contact/callback",
+
   mainpage: "/en",
 };
 
@@ -60,6 +63,8 @@ export const buttonsDe = {
   services: "Dienstleistungen",
   contactLink: "/de/kontakt",
   servicesLink: "/de/dienstleistungen",
+  callbackLink:"/de/kontakt/callback",
+
   mainpage: "/de",
 };
 

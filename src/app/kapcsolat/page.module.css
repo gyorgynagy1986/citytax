@@ -190,6 +190,14 @@
   flex-direction: column;
 }
 
+.agreement {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.4rem;
+}
+
 @media screen and (max-width: 860px) {
   .iconContainer {
     flex-direction: column;

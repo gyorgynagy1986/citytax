@@ -27,25 +27,22 @@ const Page = () => {
 
   const handleSendEmail = async (event) => {
     event.preventDefault();
-    setButton("Sendevorgang läuft");
+    setButton("Senden läuft");
     try {
-      await fetch("https://formsubmit.co/ajax/gy.nagy86@gmail.com", {
+      await fetch("/api/mail", {
         method: "post",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
         body: JSON.stringify({ name, email, message }),
       });
-
+  
       setEmail("");
       setName("");
       setMessage("");
       setButton("GESCHICKT");
     } catch (error) {
-      console.error("Error sending email:", error);
+      console.error("Fehler beim Senden der E-Mail:", error);
     }
   };
+  
 
   return (
     <>
@@ -136,7 +133,18 @@ const Page = () => {
               </div>
 
               {/* End .col-12 */}
-
+              <div className={style.agreement}>
+                {" "}
+                <input
+                  type="checkbox"
+                  id="elfogadCheckbox"
+                  name="elfogadCheckbox"
+                  required
+                />
+                <label htmlFor="elfogadCheckbox">
+                <a style={{textDecoration:"underline"}} href="policy">Ich stimme der Verarbeitung meiner Daten gemäß der Datenschutzrichtlinie zu.</a>
+                </label>
+              </div>
               <div className="w-full">
                 <button className={style.btn}>{button}</button>
               </div>

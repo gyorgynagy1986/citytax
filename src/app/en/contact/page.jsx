@@ -29,15 +29,11 @@ const Page = () => {
     event.preventDefault();
     setButton("Sending in progress");
     try {
-      await fetch("https://formsubmit.co/ajax/gy.nagy86@gmail.com", {
+      await fetch("/api/mail", {
         method: "post",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
         body: JSON.stringify({ name, email, message }),
       });
-
+  
       setEmail("");
       setName("");
       setMessage("");
@@ -46,6 +42,7 @@ const Page = () => {
       console.error("Error sending email:", error);
     }
   };
+  
 
   return (
     <>
@@ -136,6 +133,21 @@ const Page = () => {
               </div>
 
               {/* End .col-12 */}
+              <div className={style.agreement}>
+                {" "}
+                <input
+                  type="checkbox"
+                  id="elfogadCheckbox"
+                  name="elfogadCheckbox"
+                  required
+                />
+                <label htmlFor="elfogadCheckbox">
+                  <a style={{ textDecoration: "underline" }} href="policy">
+                    I consent to the processing of my data based on the privacy
+                    policy.
+                  </a>
+                </label>
+              </div>
 
               <div className="w-full">
                 <button className={style.btn}>{button}</button>

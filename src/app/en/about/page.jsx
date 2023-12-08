@@ -39,7 +39,7 @@ const page = () => {
                 typeBlack={true}
                 rolunk={true}
                 name={"I request a callback"}
-                url={'/en/contact'}
+                url={'/en/contact/callback'}
               />
             </div>
             <div className={style.imageContainer}>

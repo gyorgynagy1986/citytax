@@ -68,7 +68,7 @@ const Services = () => {
             <Button
               typeBlack={true}
               name={buttontext.callback}
-              url={buttontext.contactLink}
+              url={buttontext.callbackLink}
             />
           </div>
         </div>

@@ -31,13 +31,9 @@ const Page = () => {
     event.preventDefault();
     setButton("Küldés folyamaban");
     try {
-      await fetch("https://formsubmit.co/ajax/gy.nagy86@gmail.com", {
+      await fetch("api/mail", {
         method: "post",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({ name, email, message, str }),
+        body: JSON.stringify({ name, email, message }),
       });
 
       setEmail("");
@@ -69,17 +65,17 @@ const Page = () => {
             </div>
 
             <div className={style.iconBoxes}>
-                {" "}
-                <Image className={style.image} alt="phone" src={direction} />
-                <p>{contactData.address}</p>
+              {" "}
+              <Image className={style.image} alt="phone" src={direction} />
+              <p>{contactData.address}</p>
             </div>
 
             <div className={style.iconBoxes}>
-                <Image className={style.image} alt="phone" src={phone} />
-                <div className={style.phone}>
-                  <a href="tel:+36307993615">{contactData.phone}</a>
-                  <a href="tel:+36302436942">{contactData.phone2}</a>
-                </div>
+              <Image className={style.image} alt="phone" src={phone} />
+              <div className={style.phone}>
+                <a href="tel:+36307993615">{contactData.phone}</a>
+                <a href="tel:+36302436942">{contactData.phone2}</a>
+              </div>
             </div>
           </div>
 
@@ -135,6 +131,18 @@ const Page = () => {
                   required="required"
                   data-error="Please,leave us a message."
                 />
+              </div>
+              <div className={style.agreement}>
+                {" "}
+                <input
+                  type="checkbox"
+                  id="elfogadCheckbox"
+                  name="elfogadCheckbox"
+                  required
+                />
+                <label for="elfogadCheckbox">
+                  <a style={{textDecoration:"underline"}} href="/policy">Hozzájárulok adataim kezeléséhez az  adatvédelmi szabályzat alapján.</a>
+                </label>
               </div>
 
               {/* End .col-12 */}

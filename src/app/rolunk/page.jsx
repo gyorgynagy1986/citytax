@@ -6,7 +6,7 @@ import style from "./page.module.css";
 import Button from "@/components/UI/Buttons/Button";
 import { IBM_Plex_Sans } from "next/font/google";
 const imb = IBM_Plex_Sans({ subsets: ["latin"], weight: "500" });
-import { linksButtonsHu } from "@/data/data";
+import { buttons } from "@/data/data";
 
 import Team from "@/components/Team/Team";
 
@@ -42,7 +42,7 @@ const page = () => {
                 typeBlack={true}
                 rolunk={true}
                 name={"Visszahívást kérek"}
-                url={linksButtonsHu.contact}
+                url={buttons.callbackLink}
               />
             </div>
             <div className={style.imageContainer}>

@@ -41,7 +41,7 @@ const page = () => {
                 typeBlack={true}
                 rolunk={true}
                 name={"Ich bitte um Rückruf"}
-                url={"/de/kontakt"}
+                url={"/de/kontakt/callback"}
               />
             </div>
             <div className={style.imageContainer}>

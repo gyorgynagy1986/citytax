@@ -48,7 +48,7 @@ const CallBack = () => {
     <div className={style.callbackContainer}>
       <div className={style.btnContainer}>
         {language}
-        <Button url={text.contactLink} name={text.callback} />
+        <Button url={text.callbackLink} name={text.callback} />
       </div>
     </div>
   );
