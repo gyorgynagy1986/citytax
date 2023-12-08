@@ -42,7 +42,7 @@ export const buttons = {
   services: "Szolgáltatások",
   contactLink: "/kapcsolat",
   servicesLink: "/szolgaltatasok",
-  callbackLink:"/kapcsoalt/callback",
+  callbackLink:"/kapcsolat/callback",
   mainpage: "/",
 };
 
