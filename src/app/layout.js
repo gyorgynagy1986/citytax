@@ -17,6 +17,16 @@ export const metadata = {
   title: "Könyvelőiroda Makó - City Tax",
   description:
     "Weboldalunkon könyvelési és adótanácsadási szolgáltatásokat kínálunk, miközben széles körű támogatást nyújtunk ügyfeleinknek a vállalkozásuk sikeréért.",
+  openGraph: {
+    siteName: "City Tax könyvelőiroda",
+    images: [
+      {
+        url: "https://www.citytax.hu/logo.svg",
+        width: 800,
+        height: 600,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
