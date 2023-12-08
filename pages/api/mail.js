@@ -1,14 +1,10 @@
-
-
-
 /*RESEND*/
 
 import { Resend } from "resend";
 import EmailTemplate from "../email/getEmail";
- // import WelcomeEmailTemplate from "../email/welcome/welcomeEmail";
+// import WelcomeEmailTemplate from "../email/welcome/welcomeEmail";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default async (req, res) => {
@@ -26,14 +22,14 @@ export default async (req, res) => {
     const dataPromises = [
       resend.emails.send({
         ...commonEmailOptions,
-        to: ["gyurzi@gmail.com"],
+        to: ["info@citytax.hu"],
       }),
-     // resend.emails.send({
-     //   ...commonEmailOptions,
-     //   to: email,
-     //   subject: "Köszönjük a megkeresést",
-     //   react: WelcomeEmailTemplate({ firstName: name }),
-     // }),
+      // resend.emails.send({
+      //   ...commonEmailOptions,
+      //   to: email,
+      //   subject: "Köszönjük a megkeresést",
+      //   react: WelcomeEmailTemplate({ firstName: name }),
+      // }),
     ];
 
     const [data, toSender] = await Promise.all(dataPromises);
