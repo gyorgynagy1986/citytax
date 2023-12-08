@@ -22,8 +22,8 @@ export const metadata = {
     images: [
       {
         url: "https://www.citytax.hu/logo.svg",
-        width: 800,
-        height: 600,
+        width: 250,
+        height: 100,
       },
     ],
   },
