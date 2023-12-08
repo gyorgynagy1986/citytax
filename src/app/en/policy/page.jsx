@@ -60,7 +60,7 @@ const page = () => {
               <li>
                 {" "}
                 <b>Personal data </b>: any information relating to an identified
-                or identifiable natural person ("data subject"). This includes
+                or identifiable natural person (data subject). This includes
                 names, addresses, email addresses, and any other personal data
                 that can be used to identify an individual.
               </li>
@@ -86,7 +86,7 @@ const page = () => {
                 data controller.
               </li>
               <li>
-                <b>Consent</b>: the data subject's voluntary, specific,
+                <b>Consent</b>: the data subjects voluntary, specific,
                 informed, and unambiguous expression of will, by which the data
                 subject agrees to the processing of their personal data.
               </li>
@@ -97,14 +97,14 @@ const page = () => {
             <p className="policy-txt">
               We may collect personal data from visitors (data subjects) when
               they use the contact form on our website. The collected personal
-              data may include the visitor's name, email address, phone number,
+              data may include the visitors name, email address, phone number,
               and message.
             </p>
           </div>
           <div className="process_main-head policy-margin">
             <h2 className="fs-4">2. Legal Basis for Data Processing</h2>
             <p className="policy-txt">
-              The data subject's consent statement during the completion of the
+              The data subjects consent statement during the completion of the
               contact form.
             </p>
           </div>

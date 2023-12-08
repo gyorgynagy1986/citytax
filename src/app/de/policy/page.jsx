@@ -65,7 +65,7 @@ const page = () => {
                 {" "}
                 <b>Personenbezogene Daten </b>: jede Information, die sich auf
                 eine identifizierte oder identifizierbare natürliche Person
-                ("betroffene Person") bezieht. Dies umfasst Namen, Adressen,
+                (betroffene Person) bezieht. Dies umfasst Namen, Adressen,
                 E-Mail-Adressen und alle anderen personenbezogenen Daten, die zur
                 Identifizierung einer Person verwendet werden können.
               </li>
