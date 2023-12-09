@@ -18,24 +18,24 @@ export const metadata = {
   description:
     "Weboldalunkon könyvelési és adótanácsadási szolgáltatásokat kínálunk, miközben széles körű támogatást nyújtunk ügyfeleinknek a vállalkozásuk sikeréért.",
 
-    openGraph: {
-      title: 'City Tax Könyvelőiroda',
-      description: 'City Tax makói könyvelőiroda weboldala',
-      url: 'https://www.citytax.hu',
-      siteName: 'City Tax Könyvelőiroda',
-      images: [
-        {
-          url: 'https://www.citytax.hu/meta.png',
-          width: 250,
-          height: 350,
-        },
-      ],
-      other: {
-        ["fb:app_id"]: "324583737152189",
+  openGraph: {
+    title: "City Tax Könyvelőiroda",
+    description: "Könyvelőiroda makói és szegedi székhellyel",
+    url: "https://www.citytax.hu",
+    siteName: "City Tax Könyvelőiroda",
+    images: [
+      {
+        url: "https://www.citytax.hu/meta.png",
+        width: 250,
+        height: 350,
       },
-      locale:'hu_HU',
-      type: 'website',
+    ],
+    locale: "hu_HU",
+    type: "website",
+    other: {
+      ["fb:app_id"]: "324583737152189",
     },
+  },
 };
 
 export default function RootLayout({ children }) {
