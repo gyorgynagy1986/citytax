@@ -71,3 +71,14 @@
   max-width: 25px;
   height: auto;
 }
+
+.laguageButton {
+  color: black;
+}
+
+.active {
+  color: var(--iconColor) !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+

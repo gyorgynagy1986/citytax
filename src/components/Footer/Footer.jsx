@@ -16,6 +16,7 @@ import {
 } from "../../data/data";
 
 import Logo from "@/components/UI/Logo/LogoWhite";
+import LangugaModule from "../NavTop/LangugaModule";
 
 const Footer = () => {
   const { text } = useLocalContent(footerData, footerDataEn, footerDataDe);
@@ -87,6 +88,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className={style.languageContainer}>
+        <LangugaModule />
       </div>
       <div className={style.footerBottom}>
         <p>

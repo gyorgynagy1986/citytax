@@ -3,7 +3,6 @@
 import style from "@/components/NavTop/NavTop.module.css";
 import { RiMailLine } from "react-icons/ri";
 import { PiClockBold } from "react-icons/pi";
-import useLanguagePathHandler from "../../app/hooks/languageHandler";
 import { useLocalContent } from "@/app/hooks/languageHandler";
 import {
   contactData,
@@ -15,8 +14,6 @@ import {
 import LangugaModule from "./LangugaModule";
 
 const NavTop = () => {
-  const { langHandlerEn, langHandlerHu, langHandlerDe } =
-    useLanguagePathHandler();
   const { text } = useLocalContent(navTopdata, navTopdataEn, navTopdataDe);
   const mailTo = `mailto:${contactData.email}`;
 
@@ -52,11 +49,7 @@ const NavTop = () => {
 
         <div className="flex text-2xl	 justify-center gap-10">
           <ul className="flex justify-center items-center text-[#244f7a] gap-4">
-            <LangugaModule
-              langHandlerEn={langHandlerEn}
-              langHandlerHu={langHandlerHu}
-              langHandlerDe={langHandlerDe}
-            />
+            <LangugaModule />
           </ul>
         </div>
       </div>

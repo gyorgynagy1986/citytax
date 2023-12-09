@@ -5,14 +5,12 @@ import MobileMenuItem from "./MobileMenuItem";
 import Button from "../UI/Buttons/Button";
 import { usePathname } from "next/navigation";
 import { IoCloseSharp } from "react-icons/io5";
-import useLanguagePathHandler from "../../app/hooks/languageHandler";
 import LangugaModule from "../NavTop/LangugaModule";
 import { useLocalContent } from "@/app/hooks/languageHandler";
 import { buttons, buttonsEn, buttonsDe } from "@/data/data";
 
 const MobileMenu = ({ mobileClose }) => {
-  const { langHandlerEn, langHandlerHu, langHandlerDe } =
-    useLanguagePathHandler();
+  
 
   const { text } = useLocalContent(buttons, buttonsEn, buttonsDe);
   return (
@@ -22,11 +20,7 @@ const MobileMenu = ({ mobileClose }) => {
           <div className={style.clsoeContainer}>
             <div className={style.languageChangeContainer}>
               {" "}
-              <LangugaModule
-                langHandlerEn={langHandlerEn}
-                langHandlerHu={langHandlerHu}
-                langHandlerDe={langHandlerDe}
-              />
+              <LangugaModule />
             </div>{" "}
             <IoCloseSharp onClick={mobileClose} className={style.mobileClose} />
           </div>
