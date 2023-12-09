@@ -18,16 +18,26 @@ export const metadata = {
   description:
     "Weboldalunkon könyvelési és adótanácsadási szolgáltatásokat kínálunk, miközben széles körű támogatást nyújtunk ügyfeleinknek a vállalkozásuk sikeréért.",
   openGraph: {
-    metadataBase: new URL('https://www.citytax.hu'),
-    alternates: {
-      canonical: '/',
-      languages: {
-        'en-US': '/en-US',
-        'de-DE': '/de-DE',
-      },
-    },
     openGraph: {
-      images: '/logo.svg',
+      title: 'City Tax Könyvelőiroda',
+      description: 'City Tax makói könyvelőiroda weboldala',
+      url: 'https://www.citytax.hu',
+      siteName: 'City Tax Könyvelőiroda',
+      images: [
+        {
+          url: 'https://www.citytax.hu/logo.png',
+          width: 800,
+          height: 600,
+        },
+        {
+          url: 'https://www.citytax.hu/logo.png',
+          width: 1800,
+          height: 1600,
+          alt: 'City Tax logo',
+        },
+      ],
+      locale: 'hu_HU',
+      type: 'website',
     },
   },
 };
