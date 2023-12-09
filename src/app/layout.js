@@ -26,14 +26,8 @@ export const metadata = {
       images: [
         {
           url: 'https://www.citytax.hu/logo.png',
-          width: 800,
-          height: 600,
-        },
-        {
-          url: 'https://www.citytax.hu/logo.png',
-          width: 1800,
-          height: 1600,
-          alt: 'City Tax logo',
+          width: 200,
+          height: 200,
         },
       ],
       locale: 'hu_HU',
