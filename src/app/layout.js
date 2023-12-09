@@ -25,12 +25,12 @@ export const metadata = {
       siteName: 'City Tax Könyvelőiroda',
       images: [
         {
-          url: 'https://www.citytax.hu/logo.png',
-          width: 200,
-          height: 200,
+          url: 'https://www.citytax.hu/meta.png',
+          width: 250,
+          height: 350,
         },
       ],
-      locale: 'hu_HU',
+      locale:'hu_HU',
       type: 'website',
     },
 };
