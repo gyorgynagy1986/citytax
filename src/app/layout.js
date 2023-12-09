@@ -17,7 +17,7 @@ export const metadata = {
   title: "Könyvelőiroda Makó - City Tax",
   description:
     "Weboldalunkon könyvelési és adótanácsadási szolgáltatásokat kínálunk, miközben széles körű támogatást nyújtunk ügyfeleinknek a vállalkozásuk sikeréért.",
-  openGraph: {
+
     openGraph: {
       title: 'City Tax Könyvelőiroda',
       description: 'City Tax makói könyvelőiroda weboldala',
@@ -39,7 +39,6 @@ export const metadata = {
       locale: 'hu_HU',
       type: 'website',
     },
-  },
 };
 
 export default function RootLayout({ children }) {
