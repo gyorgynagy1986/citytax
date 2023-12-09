@@ -30,6 +30,9 @@ export const metadata = {
           height: 350,
         },
       ],
+      other: {
+        ["fb:app_id"]: "324583737152189",
+      },
       locale:'hu_HU',
       type: 'website',
     },
