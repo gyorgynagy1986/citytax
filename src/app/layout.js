@@ -1,6 +1,6 @@
 import "./globals.css";
 import "aos/dist/aos.css";
-
+import { Analytics } from '@vercel/analytics/react';
 import NavTop from "@/components/NavTop/NavTop";
 import Nav from "@/components/Navbar/NavCenter/Navbar";
 import MobileNav from "@/components/Mobile/MobileNav/MobileNav";
@@ -26,8 +26,8 @@ export const metadata = {
     images: [
       {
         url: "https://www.citytax.hu/meta.png",
-        width: 250,
-        height: 350,
+        width: 150,
+        height: 250,
       },
     ],
     locale: "hu_HU",
@@ -46,6 +46,7 @@ export default function RootLayout({ children }) {
         <Nav />
         <MobileNav />
         {children}
+        <Analytics />
         <CallBack />
         <Footer />
       </body>
