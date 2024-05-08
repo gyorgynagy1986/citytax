@@ -95,7 +95,7 @@ const Footer = () => {
       </div>
       <div className={style.footerBottom}>
         <p>
-          All rights reserved © citytax.hu | 2023{" "}
+          All rights reserved © citytax.hu | 2024{" "}
           <b>
             Weboldalt készítette{" "}
             <a href="https://studiobromo.hu/">Studio Bromo</a>
